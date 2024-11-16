@@ -1,0 +1,205 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\astroncite{Bahlo et~al.}{2019}]{bahlo2019role}
+Bahlo, C., Dahlhaus, P., Thompson, H., and Trotter, M. (2019).
+\newblock The role of interoperable data standards in precision livestock
+  farming in extensive livestock systems: A review.
+\newblock {\em Computers and electronics in agriculture}, 156:459--466.
+
+\bibitem[\protect\astroncite{Bercovich et~al.}{2013}]{bercovich2013development}
+Bercovich, A., Edan, Y., Alchanatis, V., Moallem, U., Parmet, Y., Honig, H.,
+  Maltz, E., Antler, A., and Halachmi, I. (2013).
+\newblock Development of an automatic cow body condition scoring using body
+  shape signature and fourier descriptors.
+\newblock {\em Journal of dairy science}, 96(12):8047--8059.
+
+\bibitem[\protect\astroncite{Dickinson et~al.}{2013}]{dickinson2013automated}
+Dickinson, R., Morton, J., Beggs, D., Anderson, G., Pyman, M., Mansell, P., and
+  Blackwood, C. (2013).
+\newblock An automated walk-over weighing system as a tool for measuring
+  liveweight change in lactating dairy cows.
+\newblock {\em Journal of dairy science}, 96(7):4477--4486.
+
+\bibitem[\protect\astroncite{Dikmen et~al.}{2012}]{dikmen2012effect}
+Dikmen, S., Ustuner, H., and Orman, A. (2012).
+\newblock The effect of body weight on some welfare indicators in feedlot
+  cattle in a hot environment.
+\newblock {\em International journal of biometeorology}, 56:297--303.
+
+\bibitem[\protect\astroncite{Dohmen et~al.}{2022}]{dohmen2022computer}
+Dohmen, R., Catal, C., and Liu, Q. (2022).
+\newblock Computer vision-based weight estimation of livestock: a systematic
+  literature review.
+\newblock {\em New Zealand journal of agricultural research}, 65(2-3):227--247.
+
+\bibitem[\protect\astroncite{Fadlelmoula
+  et~al.}{2020}]{fadlelmoula2020prediction}
+Fadlelmoula, A.~A., Mudarris, M.~S., and Hariri, M.~S. (2020).
+\newblock Prediction of live body weights in dromedary camels (camelus
+  dromedarius) from morphometric body measurements.
+\newblock {\em World journal of biology and biotechnology}, 5(1):25--29.
+
+\bibitem[\protect\astroncite{Faucitano and
+  Goumon}{2018}]{faucitano2018transport}
+Faucitano, L. and Goumon, S. (2018).
+\newblock Transport of pigs to slaughter and associated handling.
+\newblock In {\em Advances in pig welfare}, pages 261--293. Elsevier.
+
+\bibitem[\protect\astroncite{Franco et~al.}{2017}]{franco2017evaluation}
+Franco, M. d.~O., Marcondes, M.~I., Campos, J. M. d.~S., Freitas, D. R.~d.,
+  Detmann, E., and Valadares~Filho, S. d.~C. (2017).
+\newblock Evaluation of body weight prediction equations in growing heifers.
+\newblock {\em Acta Scientiarum. Animal Sciences}, 39(2):201--206.
+
+\bibitem[\protect\astroncite{Gjergji et~al.}{2020}]{gjergji2020deep}
+Gjergji, M., de~Moraes~Weber, V., Silva, L. O.~C., da~Costa~Gomes, R.,
+  De~Ara{\'u}jo, T. L. A.~C., Pistori, H., and Alvarez, M. (2020).
+\newblock Deep learning techniques for beef cattle body weight prediction.
+\newblock In {\em 2020 International Joint Conference on Neural Networks
+  (IJCNN)}, pages 1--8. IEEE.
+
+\bibitem[\protect\astroncite{G{\'o}mez et~al.}{2021}]{gomez2021systematic}
+G{\'o}mez, Y., Stygar, A.~H., Boumans, I.~J., Bokkers, E.~A., Pedersen, L.~J.,
+  Niemi, J.~K., Pastell, M., Manteca, X., and Llonch, P. (2021).
+\newblock A systematic review on validated precision livestock farming
+  technologies for pig production and its potential to assess animal welfare.
+\newblock {\em Frontiers in veterinary science}, 8:660565.
+
+\bibitem[\protect\astroncite{Jun et~al.}{2018}]{jun2018estimating}
+Jun, K., Kim, S.~J., and Ji, H.~W. (2018).
+\newblock Estimating pig weights from images without constraint on posture and
+  illumination.
+\newblock {\em Computers and Electronics in Agriculture}, 153:169--176.
+
+\bibitem[\protect\astroncite{K{\'a}rpinszky and
+  Dobsinszki}{2023}]{karpinszky2023pig}
+K{\'a}rpinszky, A. and Dobsinszki, G. (2023).
+\newblock Pig weight estimation according to rgb image analysis.
+
+\bibitem[\protect\astroncite{Kollis et~al.}{2007}]{kollis2007weight}
+Kollis, K., Phang, C.~S., Banhazi, T.~M., and Searle, S.~J. (2007).
+\newblock Weight estimation using image analysis and statistical modelling: A
+  preliminary study.
+\newblock {\em Applied engineering in agriculture}, 23(1):91--96.
+
+\bibitem[\protect\astroncite{Li et~al.}{2014}]{li2014estimation}
+Li, Z., Luo, C., Teng, G., and Liu, T. (2014).
+\newblock Estimation of pig weight by machine vision: A review.
+\newblock In {\em Computer and Computing Technologies in Agriculture VII: 7th
+  IFIP WG 5.14 International Conference, CCTA 2013, Beijing, China, September
+  18-20, 2013, Revised Selected Papers, Part II 7}, pages 42--49. Springer.
+
+\bibitem[\protect\astroncite{Ma et~al.}{2024}]{ma2024computer}
+Ma, W., Qi, X., Sun, Y., Gao, R., Ding, L., Wang, R., Peng, C., Zhang, J., Wu,
+  J., Xu, Z., et~al. (2024).
+\newblock Computer vision-based measurement techniques for livestock body
+  dimension and weight: A review.
+\newblock {\em Agriculture}, 14(2):306.
+
+\bibitem[\protect\astroncite{Monteiro et~al.}{2021}]{monteiro2021precision}
+Monteiro, A., Santos, S., and Gon{\c{c}}alves, P. (2021).
+\newblock Precision agriculture for crop and livestock farming—brief review.
+\newblock {\em Animals}, 11(8):2345.
+
+\bibitem[\protect\astroncite{Neethirajan and
+  Kemp}{2021}]{neethirajan2021digital}
+Neethirajan, S. and Kemp, B. (2021).
+\newblock Digital livestock farming.
+\newblock {\em Sensing and Bio-Sensing Research}, 32:100408.
+
+\bibitem[\protect\astroncite{Ng et~al.}{2023}]{ng2023machine}
+Ng, W.~C., Soong, Y.~Q., and Teh, S.~Y. (2023).
+\newblock Machine learning in food security and sustainability.
+\newblock In {\em Handbook of Sustainability Science in the Future: Policies,
+  Technologies and Education by 2050}, pages 1583--1599. Springer.
+
+\bibitem[\protect\astroncite{Ozkaya}{2013}]{ozkaya2013prediction}
+Ozkaya, S. (2013).
+\newblock The prediction of live weight from body measurements on female
+  holstein calves by digital image analysis.
+\newblock {\em The Journal of Agricultural Science}, 151(4):570--576.
+
+\bibitem[\protect\astroncite{Pe{\~n}a~Fern{\'a}ndez
+  et~al.}{2019}]{pena2019carcass}
+Pe{\~n}a~Fern{\'a}ndez, A., Norton, T., Vranken, E., and Berckmans, D. (2019).
+\newblock Carcass quality traits of fattening pigs estimated using 3d image
+  technology.
+\newblock In {\em proceedings of the 9th European Conference on Precision
+  Livestock Farming}. ECPLF.
+
+\bibitem[\protect\astroncite{Pezzuolo et~al.}{2018}]{pezzuolo2018barn}
+Pezzuolo, A., Guarino, M., Sartori, L., Gonz{\'a}lez, L.~A., and Marinello, F.
+  (2018).
+\newblock On-barn pig weight estimation based on body measurements by a kinect
+  v1 depth camera.
+\newblock {\em Computers and electronics in agriculture}, 148:29--36.
+
+\bibitem[\protect\astroncite{Rousing et~al.}{2004}]{rousing2004stepping}
+Rousing, T., Bonde, M., Badsberg, J.~H., and S{\o}rensen, J.~T. (2004).
+\newblock Stepping and kicking behaviour during milking in relation to response
+  in human--animal interaction test and clinical health in loose housed dairy
+  cows.
+\newblock {\em Livestock Production Science}, 88(1-2):1--8.
+
+\bibitem[\protect\astroncite{Ruchay et~al.}{2022}]{ruchay2022live}
+Ruchay, A., Kober, V., Dorofeev, K., Kolpakov, V., Gladkov, A., and Guo, H.
+  (2022).
+\newblock Live weight prediction of cattle based on deep regression of rgb-d
+  images.
+\newblock {\em Agriculture}, 12(11):1794.
+
+\bibitem[\protect\astroncite{Samperio et~al.}{2021}]{samperio2021lambs}
+Samperio, E., Lid{\'o}n, I., Rebollar, R., Castej{\'o}n-Limas, M., and
+  {\'A}lvarez-Aparicio, C. (2021).
+\newblock Lambs’ live weight estimation using 3d images.
+\newblock {\em Animal}, 15(5):100212.
+
+\bibitem[\protect\astroncite{Shukla and Anand}{2016}]{shukla2016metric}
+Shukla, A. and Anand, S. (2016).
+\newblock Metric learning based automatic segmentation of patterned species.
+\newblock In {\em 2016 IEEE International Conference on Image Processing
+  (ICIP)}, pages 3982--3986. IEEE.
+
+\bibitem[\protect\astroncite{Singh et~al.}{2022}]{singh2022smart}
+Singh, A., Jadoun, Y., Brar, P.~S., and Kour, G. (2022).
+\newblock Smart technologies in livestock farming.
+\newblock In {\em Smart and sustainable food technologies}, pages 25--57.
+  Springer.
+
+\bibitem[\protect\astroncite{Soussi et~al.}{2024}]{soussi2024smart}
+Soussi, A., Zero, E., Sacile, R., Trinchero, D., and Fossa, M. (2024).
+\newblock Smart sensors and smart data for precision agriculture: A review.
+\newblock {\em Sensors}, 24(8):2647.
+
+\bibitem[\protect\astroncite{Tasdemir and Ozkan}{2019}]{tasdemir2019ann}
+Tasdemir, S. and Ozkan, I.~A. (2019).
+\newblock Ann approach for estimation of cow weight depending on
+  photogrammetric body dimensions.
+\newblock {\em International Journal of Engineering and Geosciences},
+  4(1):36--44.
+
+\bibitem[\protect\astroncite{Terence et~al.}{2024}]{terence2024systematic}
+Terence, S., Immaculate, J., Raj, A., and Nadarajan, J. (2024).
+\newblock Systematic review on internet of things in smart livestock management
+  systems.
+\newblock {\em Sustainability}, 16(10):4073.
+
+\bibitem[\protect\astroncite{Wang et~al.}{2024}]{wang2024review}
+Wang, Z., Li, Q., Yu, Q., Qian, W., Gao, R., Wang, R., Wu, T., and Li, X.
+  (2024).
+\newblock A review of visual estimation research on live pig weight.
+\newblock {\em Sensors}, 24(21):7093.
+
+\bibitem[\protect\astroncite{Witten et~al.}{1993}]{witten1993practical}
+Witten, I.~H., Holmes, G., McQueen, R.~J., Smith, L.~A., and Cunningham, S.~J.
+  (1993).
+\newblock Practical machine learning and its application to problems in
+  agriculture.
+
+\bibitem[\protect\astroncite{Yan et~al.}{2019}]{yan2019body}
+Yan, Q., Ding, L., Wei, H., Wang, X., Jiang, C., and Degen, A. (2019).
+\newblock Body weight estimation of yaks using body measurements from image
+  analysis.
+\newblock {\em Measurement}, 140:76--80.
+
+\end{thebibliography}

@@ -1,0 +1,103 @@
+\chapter{INTRODUCTION}
+
+{\baselineskip=2\baselineskip
+
+\section{Background of the Study}
+
+Accurate weight estimation in livestock is crucial for effective farm management, as it directly impacts feed optimization, breeding decisions, health assessment, and overall animal welfare (Wang et al., 2021). Proper weight management allows farmers to adjust feeding schedules, monitor growth, and make timely decisions that contribute to better productivity and profitability. Traditional weight measurement methods, primarily through the use of weighing scales, are labor-intensive, time-consuming, and stressful for animals, which can result in reduced productivity, increased risk of injury, and negative effects on animal welfare (Faucitano and Goumon, 2018). The high cost, operational complexity, and maintenance requirements of these weighing systems further limit their practicality, especially for small and medium-sized farms (Dickinson et al., 2013).
+
+
+The primary function of telemetry systems is to collect data from sensors and transmit it to a centralized system for analysis. This process involves several key components: sensors to capture data, transmitters to send the data, receivers to collect the data, and a central processing unit to analyze and store the data. With the advent of the Internet of Things (IoT) and advancements in wireless communication technologies, telemetry has evolved significantly, enabling more efficient and comprehensive data acquisition and monitoring systems. 
+
+In aerospace, telemetry is crucial for monitoring the status and health of spacecraft and satellites, providing data on parameters such as temperature, pressure, and velocity. In healthcare, telemetry systems are used to monitor patients' vital signs remotely, allowing for timely medical interventions and reducing the need for prolonged hospital stays. Environmental telemetry systems play a pivotal role in tracking weather conditions, pollution levels, and natural disaster warnings, contributing to better disaster management and environmental protection.
+
+The integration of telemetry in industrial applications has revolutionized how industries operate. Through real-time monitoring of machinery and processes, industries can minimize downtime, optimize performance, and enhance safety. Predictive maintenance, powered by telemetry data, allows for the identification of potential issues before they lead to failures, thereby reducing maintenance costs and improving operational efficiency.
+
+This paper aims to explore the advancements in telemetry technology, its applications across various fields, and the future trends that could shape its development. By understanding the current state and potential of telemetry, we can better appreciate its critical role in modern technology and its impact on improving operational efficiencies and safety across different sectors.
+
+%-----------------------------------------------------------------------------------------------
+
+%-----------------------------------------------------------------------------------------------------------------------------------
+\section{Statement of the Problem}
+
+Accurate and efficient weight calculation in pig farming is crucial for optimizing feeding strategies, monitoring growth, and making informed management decisions \citep{pezzuolo2018barn}. Proper weight monitoring directly impacts the productivity and profitability of pig farming operations as it affects key decisions such as health monitoring and determining the optimal time for the market. However, traditional methods, such as manual weighing, are often time-consuming, labor-intensive, and stressful for the animals, potentially impacting their well-being and productivity \citep{li2014estimation}. Manual weighing involves physically moving pigs to weighing scales which not only causes stress for the animals but also requires significant labor resources and poses safety risks for the handlers. This highlights the need for alternative approaches that are non-invasive, automated, and cost-effective.
+
+While some investigations have explored imaging techniques for pig weight estimation, most existing studies have primarily focused on traditional monocular vision or single-camera systems \citep{pezzuolo2018barn}\citep{kollis2007weight}. These systems are often limited by their inability to capture depth information accurately which is crucial for estimating body volume and weight. Furthermore, traditional imaging methods may be prone to inaccuracies due to variations in lighting conditions, pig movement, and occlusion.
+
+Recent advancements in multi-camera systems have shown promise in improving the accuracy of livestock weight estimation \citep{dohmen2022computer}. These multi-camera setups can provide more precise three-dimensional (3D) information, as a result enhancing the precision of weight estimation. Nevertheless, the complexity and cost associated with setting up and maintaining multiple cameras pose significant barriers to widespread adoption in commercial pig farming. The need for specialized equipment and significant computational ability makes such systems impractical for farmers, especially those with limited resources. 
+Moreover, the weight of pigs and other livestock has been estimated by previous studies using a range of modeling techniques, including machine learning algorithms and linear and nonlinear functions. Although these approaches have demonstrated promise, their accuracy is frequently hampered by the quality of the input data coming from 2D photos or crude 3D reconstructions, particularly in cases when animal postures or occlusions vary.
+
+Despite this progress made in imaging-based weight estimation, there is still a gap in the literature regarding the full utilization of  Kinect’s depth-sensing capabilities for weight estimation, which could offer a more practical and precise solution. Kinect cameras provide a unique opportunity to capture accurate 3D data without the need for complex multi-camera setups. It is relatively affordable, capable of capturing high-quality depth information, and easy to use, making it a practical solution for weight estimation in pig farming.
+
+This research aims to bridge that gap by leveraging the Kinect system to capture depth image data for weight estimation in pigs. Unlike previous approaches, the Kinect-based system offers the potential to reduce reliance on complex, multi-camera setups while improving estimation accuracy. By providing detailed depth information, Kinect technology can enable more precise body volume measurements. The development of an automated, non-invasive, and cost-effective Kinect-based system could transform weight monitoring in pig farming, making it accessible even to smaller-scale farmers.
+
+\section{Objectives of the Study}
+
+The main objective of this study is to develop a non-invasive Pig Weight Estimation System that utilizes depth imaging, specifically:
+\begin{enumerate}
+	\item To develop a web application for the Pig Weight Estimation System.
+	\item To utilize machine learning algorithms for model training and validation to analyze depth data for pig weight estimation.
+	\item To assess the accuracy and efficiency of the Kinect-based pig weight estimation system in various settings.
+\end{enumerate}
+
+\section{Significance of the Study}
+
+The results of this study would benefit the following: 
+
+\textit{Academe.} This study will contribute to the existing knowledge on the application of computer vision technology in the industry, particularly in livestock management. This study could serve as a valuable reference for academic institutions for agriculture, computer science, engineering, and computer vision technology. The findings of this study can also be an inspiration for further research in these fields of study.
+
+\textit{Business Owners.} This study can offer business owners, particularly those in the agricultural and livestock sectors a more efficient and data-driven method of managing their livestock operations. The results of this study can help automate tasks such as livestock monitoring, feed rationing, and health checks. This can reduce labor costs and improve decision-making processes. Additionally, this innovation can encourage entrepreneurship in tech-driven agriculture, creating business opportunities.
+
+\textit{Livestock Caretakers.} The results of this study can aid in the adoption of computer vision technology in livestock agriculture and can assist livestock caretakers in optimizing feed rations, monitoring growth rates, and improving overall herd management. Thus can ensure better animal health and welfare, reduce workload, and enhance productivity by providing data-driven insights into the daily operations of the livestock.
+
+\textit{Government Organizations.} Government organizations can utilize the study’s findings to develop strategies that promote the modernization of agriculture through technological adoption. By using computer vision technologies, government organizations can improve farm-to-market systems and boost overall agricultural productivity.
+
+\textit{Non-Governmental Organizations.} NGOs and other agricultural cooperatives can make use of the results of this study to provide support and training to farmers and livestock owners. By implementing the results in this study, cost-effective solutions based on computer vision can help improve the lives of farmers, especially in rural communities, and boost productivity in livestock farms.
+
+\textit{Veterinarians.} Results from this study could assist veterinarians involved in livestock by creating tools that enable veterinarians to remotely monitor, reducing the need for frequent on-site visits. It can also help in establishing preventive care strategies by being able to identify early signs of illness through variations in weight, improving animal welfare.
+
+\textit{Agriculture Technology Developers.} Companies and developers in the field of agricultural technology can use the findings of this study to design and enhance their products. The research can inform them about the specific needs of livestock management and provide insights into how computer vision solutions can be tailored to address these requirements, resulting in more market-relevant and effective innovations.
+
+\textit{Future Researchers.} This study can be used as a future reference for researchers who plan to engage in the same field of study. It can potentially be adapted for other agricultural applications, leading to increased efficiency and productivity in the sector. The methodologies found in the study can guide subsequent research, encouraging innovation and advancement in agriculture technology.
+
+\section{Scope and Limitations}
+
+This research will focus on the estimation of weight in Landrace pigs using the Kinect sensor under controlled conditions(height, posture, and lighting). The scope is limited to analyzing data collected from pigs of this specific breed, and the study will not generalize results to other pig varieties. Additionally, only pigs with a straight posture will be considered, as posture may affect the accuracy of the sensors. Pigs in other positions or with varied postures will not be considered. Environmental conditions, such as lighting and background, will be maintained as constant as possible, and while these factors may influence the sensor's accuracy, their impact will not be the subject of in-depth analysis. 
+
+The system developed in this research will employ batch processing of the collected data, meaning that real-time monitoring or continuous data acquisition is beyond the scope of this study. Instead, the data will be gathered and analyzed after the fact, limiting the immediate applicability of the system in dynamic, real-world farming environments.
+
+
+\section{Definition of Terms}
+
+\begin{description}
+
+	\item[Artificial Intelligence] -
+	A set of technologies that enable computers to perform a variety of advanced functions, including the ability to see, understand, and translate spoken and written language, analyze data, make recommendations, and more.
+	
+	\item[Computer Vision] 
+	A field of computer science that focuses on enabling computers to identify and understand objects and people in images and videos.
+	
+	\item[Deep Learning] 
+	A subset of machine learning that uses multilayered neural networks, called deep neural networks, to simulate the complex decision-making power of the human brain.
+	
+	\item[Depth Imaging] 
+	A technique that captures the distance between a sensor (like a depth camera) and objects in its view, creating a 3D representation of the scene. Depth imaging provides additional data on the spatial positioning of objects.
+	
+	\item[Landrace] 
+	A domesticated, locally adapted, traditional variety grown by farmers and their successors since ancient times.
+	
+	\item[Image Processing] 
+	Techniques used to enhance or extract information from images, are crucial for analyzing data from the Kinect sensor.
+	
+	\item[Machine Learning] 
+	A subset of artificial intelligence that involves the use of algorithms to learn from data and make predictions or decisions based on that data.
+	
+	\item[Microsoft Kinect Sensor] 
+	A motion-sensing input device that uses a camera to capture depth data and track movements.
+	
+	\item[Pig Weight Estimation] 
+	The process of determining the weight of pigs uses various methods, in this case, image processing and machine learning.
+
+\end{description}
+
+}
