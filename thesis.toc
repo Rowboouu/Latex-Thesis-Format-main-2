@@ -30,22 +30,21 @@
 \contentsline {section}{\numberline {3.4}Segmentation Model}{37}{section.3.4}%
 \contentsline {subsection}{\numberline {3.4.1}Image Preprocessing}{37}{subsection.3.4.1}%
 \contentsline {subsection}{\numberline {3.4.2}Slicing the Image}{38}{subsection.3.4.2}%
-\contentsline {subsection}{\numberline {3.4.3}Valley Detection}{39}{subsection.3.4.3}%
+\contentsline {subsection}{\numberline {3.4.3}Valley Detection}{40}{subsection.3.4.3}%
 \contentsline {subsection}{\numberline {3.4.4}Segmentation into Sections}{40}{subsection.3.4.4}%
-\contentsline {section}{\numberline {3.5}Feature Extraction}{41}{section.3.5}%
+\contentsline {section}{\numberline {3.5}Feature Extraction}{42}{section.3.5}%
 \contentsline {subsection}{\numberline {3.5.1}Height Extraction}{42}{subsection.3.5.1}%
-\contentsline {subsection}{\numberline {3.5.2}Area Extraction}{42}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.5.2}Area Extraction}{43}{subsection.3.5.2}%
 \contentsline {subsection}{\numberline {3.5.3}Gradient Information from Depth Data}{43}{subsection.3.5.3}%
 \contentsline {section}{\numberline {3.6}Model Training}{44}{section.3.6}%
-\contentsline {section}{\numberline {3.7}Evaluation}{45}{section.3.7}%
-\contentsline {subsection}{\numberline {3.7.1}Test Dataset}{45}{subsection.3.7.1}%
+\contentsline {section}{\numberline {3.7}Evaluation}{46}{section.3.7}%
+\contentsline {subsection}{\numberline {3.7.1}Test Dataset}{46}{subsection.3.7.1}%
 \contentsline {subsection}{\numberline {3.7.2}Performance Metrics}{46}{subsection.3.7.2}%
-\contentsline {subsection}{\numberline {3.7.3}Root Mean Squared Error (RMSE)}{46}{subsection.3.7.3}%
-\contentsline {section}{\numberline {3.8}Testing Method}{47}{section.3.8}%
-\contentsline {section}{\numberline {3.9}Location}{47}{section.3.9}%
+\contentsline {subsection}{\numberline {3.7.3}Root Mean Squared Error (RMSE)}{47}{subsection.3.7.3}%
+\contentsline {section}{\numberline {3.8}Testing Method}{48}{section.3.8}%
+\contentsline {section}{\numberline {3.9}Location}{48}{section.3.9}%
 \contentsline {section}{\numberline {3.10}Equipment}{48}{section.3.10}%
-\contentsline {section}{\numberline {3.11}Data Collection}{48}{section.3.11}%
-\contentsline {section}{\numberline {3.12}Verification}{49}{section.3.12}%
-\contentsline {chapter}{APPENDICES}{51}{chapter*.11}%
-\contentsline {chapter}{REFERENCES}{52}{chapter*.11}%
+\contentsline {section}{\numberline {3.11}Data Collection}{49}{section.3.11}%
+\contentsline {section}{\numberline {3.12}Verification}{50}{section.3.12}%
+\contentsline {chapter}{REFERENCES}{51}{section.3.12}%
 \contentsfinish 

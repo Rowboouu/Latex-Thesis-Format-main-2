@@ -9,7 +9,7 @@ This chapter presents the research methodology used in the study, it covers the 
 \begin{figure}[h]
 	\centering
 	\includegraphics[height=0.4\textheight]{figures/Architectureofniggas}
-	\caption{}
+	\caption{System Architecture}
 	\label{fig:System Architecture}
 \end{figure}
 
@@ -19,7 +19,7 @@ Figure 1 shows the system architecture of the pig weight estimation system. It c
 \begin{figure}[h]
 	\centering
 	\includegraphics[height=0.4\textheight]{figures/Requirement Analysis (4)}
-	\caption{}
+	\caption{Waterfall Model}
 	\label{fig:Waterfall Model}
 \end{figure}
 
@@ -29,7 +29,7 @@ Figure 2 shows the Waterfall Model of the Weight Estimation System. Requirement 
 \begin{figure}[h]
 	\centering
 	\includegraphics[height=0.6\textheight]{figures/kinectpigNIGGA}
-	\caption{}
+	\caption{Flowchart}
 	\label{fig:Flowchart}
 \end{figure}
 
@@ -39,7 +39,7 @@ Figure 3 outlines the flowchart of the weight estimation system. The process beg
 \begin{figure}[h]
 	\centering
 	\includegraphics[height=0.4\textheight]{figures/Untitled-1wqw}
-	\caption{}
+	\caption{Pigpen Diagram}
 	\label{fig:Pigpen Diagram}
 \end{figure}
 
@@ -57,42 +57,43 @@ This study employs the Segmentation Anything Model (SAM) to achieve precise segm
 \subsection{Image Preprocessing}
 During the preprocessing stage, the image is converted to grayscale and resized. If its dimensions are smaller than the target size, symmetric padding is applied to ensure the entire pig is visible within the frame. Next, a Gaussian blur with a kernel size of (13,13) is applied; this kernel size is chosen arbitrarily to balance blurring and detail preservation. The blurred image is then subtracted from the original to enhance edges, expressed as follows:
 
-\myequation{}
+
 \begin{equation}
 	I_{\text{sharp}}(x, y) = I(x, y) + \alpha (I(x, y) - I_{\text{blur}}(x, y))
 \end{equation}
+\myequation{Image Processing}
 
 where I(x,y) is the original intensity and Iblur(x,y) is the blurred intensity. A threshold value of T=5 is chosen for binarization to effectively distinguish the pig’s silhouette from the background; this value is determined based on preliminary testing to optimize contrast without losing important details. This preprocessing workflow ensures a standardized input for subsequent models, facilitating accurate feature extraction.
 
 \subsection{Slicing the Image}
 The image is split into upper and lower halves based on the principal direction of the pig’s body. This is achieved using the eigenvalue decomposition of the covariance matrix derived from the contour points of the pig. First, the centroid of the contour is calculated using the image moments:
 
-\myequation{}
 \begin{equation}
 	cX = \frac{M_{10}}{M_{00}}, \quad cY = \frac{M_{01}}{M_{00}}
 \end{equation}
+\myequation{Centroid of the Contour}
 
 Where $M_00$ is the area of the contour, and$M_10$, $M_01$ are the first-order moments along with the x and y axes, respectively.
 The covariance matrix $\sigma$ of the contour points is then computed as:
 
-\myequation{}
 \begin{equation}
 	\Sigma = \frac{1}{N} \sum_{i=1}^{N} (p_i - \mu)(p_i - \mu)^T
 \end{equation}
+\myequation{Covariance Matrix}
 
 Where $p_1$ represents a contour point, $\mu$ is the mean of the contour points, and N is the total number of points. The eigenvector corresponding to the largest eigenvalue defines the primary direction along which the image is sliced. The eigenvector, $v=[v_x, v_y]^T$ , is used to define the slope of the line that divides the pig into upper and lower halves:
 
-\myequation{}
 \begin{equation}
 	y_line(x)=\frac{v_y}{v_x} (x-cX) + cY
 \end{equation}
+\myequation{Slicing the Image}
 
 After slicing, gaps in the binary mask are filled using a morphological closing operation. This ensures that the segmentation is continuous, filling any small holes that might have been created during slicing.
 
-\myequation{}
 \begin{equation}
 	I_{\text{filled}} = I_{\text{mask}} \oplus K
 \end{equation}
+\myequation{Morphological Closing}
 
 where K is a kernel of size (5,5) used for morphological closing.
 
@@ -101,27 +102,27 @@ To segment the pig into distinct anatomical regions (head, body, legs), we detec
 First, we extract the outline of the pig and smooth the contour using linear interpolation. The interpolated contour points are then analyzed using peak detection on the inverted y-coordinates to find the valleys, representing the points of maximum curvature.
 let ${(x_i, y_i)}^N _i=1$ represent the sorted interpolated contour points. The valleys are found by identifying the local maxima in the inverted contour:
 
-\myequation{}
 \begin{equation}
 	v_i=arg max(-y(x))
 \end{equation}
+\myequation{Valley Detection}
 
 The detected valleys are sorted based on their xxx-coordinates to establish the segmentation boundaries.
 
 \subsection{Segmentation into Sections}
 Using the detected valleys, we define four primary sections: legs, body, shoulders, head. Each section is extracted by crearing binary masks between consecutive valleys:
 
-\myequation{}
 \begin{equation}
 	S_region (x,y) = I_sharp (x,y) (1_[x_start,x_end])
 \end{equation}
+\myequation{Segmented Region of Interest}
 
 where $S_region$ is the segmented region of interest.
 
 \begin{figure}[h]
 	\centering
 	\includegraphics[height=0.4\textheight]{figures/Untitled-1 (1)}
-	\caption{}
+	\caption{Schematic representation of segmentation}
 	\label{fig: Schematic representation of segmentation}
 \end{figure}
 
@@ -133,47 +134,47 @@ After segmentation, depth information is used to extract key features from the p
 \subsection{Height Extraction}
 The height of the pig is determined by finding the maximum and minimum depth values within the segmented region. Let S(x,y) be the segmented mask of the pig. The height is calculated as:
 
-\myequation{}
 \begin{equation}
 	x_{\text{highest}} = \max\{D(x, y) \mid (x, y) \in S(x, y)\}
 \end{equation}
+\myequation{Highest Intensity}
 
-\myequation{}
 \begin{equation}
 	x_{\text{lowest}} = \min\{D(x, y) \mid (x, y) \in S(x, y)\}
 \end{equation}
+\myequation{Lowest Intensity}
 
-\myequation{}
 \begin{equation}
 	y_{\text{height}} = x_{\text{highest}} - x_{\text{lowest}}
 \end{equation}
+\myequation{Height Extraction}
 
 where $x_highest$ denotes the highest intensity and $x_lowest$ denotes the lowest intensity $S(x,y)$.
 
 \subsection{Area Extraction}
 The area occupied by the pig in the image is calculated by counting the number of pixels in the segmented region:
 
-\myequation{}
 \begin{equation}
 	Area= \sum_{(x, y) \in S(x, y)} 1
 \end{equation}
+\myequation{Area Extraction}
 
 The area corresponds to the total number of pixels within the segmented pig’s contour, representing the surface area in the depth image.
 
 \subsection{Gradient Information from Depth Data}
 The depth gradient across the pig’s body provides additional insight into the pig’s shape. The gradient of the depth image D(x,y) can be computed using the finite difference approximation:
 
-\myequation{}
 \begin{equation}
 	\delta(x,y)= (\frac{\partial}{\partial x} , \frac{\partial}{\partial y})
 \end{equation}
+\myequation{Depth Gradient}
 
-This gradient gives us information about the slope of the pig’s body, which can be used to under more detailed features such as the body curvature and the slope of different anatomical regions The gradient magnitude can be used to detect regions of rapid change in depth, such as the transition from the pig’s back to its sides:
+This gradient gives us information about the slope of the pig’s body, which can be used to under more detailed features such as the body curvature and the slope of different anatomical regions. The gradient magnitude can be used to detect regions of rapid change in depth, such as the transition from the pig’s back to its sides:
 
-\myequation{}
 \begin{equation}
 	\left| \delta(x,y) \right| = \sqrt{\left( \frac{\partial}{\partial x} \right)^2 + \left( \frac{\partial}{\partial y} \right)^2}
 \end{equation}
+\myequation{Gradient Magnitude}
 
 \section{Model Training}
 In the model training phase, the extracted features will serve as inputs to various regression models aimed at estimating pig weight. We will explore several algorithms to identify the most accurate model for weight estimation: Linear Regression, Ridge Regression, Decision Trees, LightGBM, and XGBoost.
@@ -193,20 +194,20 @@ By reserving 30 percent of the total dataset as the test dataset, we establish a
 To quantitatively evaluate the models, we will utilize the following performance metrics:
 Mean Absolute Error (MAE). MAE calculates the average absolute difference between the actual values and the predicted values. It is a robust metric that does not penalize larger errors as heavily as MSE, making it more appropriate for interpreting the accuracy of regression models. The formula for MAE is:
 
-\myequation{}
 \begin{equation}
 	MAE = \frac{1}{N} \sum_{t=1}^{N} \left| \hat{y_t} - y_t \right|
 \end{equation}
+\myequation{Mean Absolute Error}
 
 The MAE metric gives a straightforward interpretation of error, as it expresses the average error directly in terms of the target variable (i.e., weight). It also equally weights all errors, making it a preferred choice for evaluating models that must perform reliably across a range of errors.
 
 \subsection{Root Mean Squared Error (RMSE)}
 RMSE provides a measure of how well the model's predictions match the actual data, expressed in the same units as the target variable. It is particularly useful as it penalizes larger errors more heavily, making it sensitive to outliers. The equation for RMSE is given by:
 
-\myequation{}
 \begin{equation}
 	RMSE = \sqrt{\frac{1}{N} \sum_{t=1}^{N} \left( y_t - \hat{y_t} \right)^2}
 \end{equation}
+\myequation{Root Mean Squared Error}
 
 Where n is the number of observations in the test dataset, yi is the actual weight of the pig for the t-th observation, and yi is the predicted weight of the pig for the t-th observation.
 

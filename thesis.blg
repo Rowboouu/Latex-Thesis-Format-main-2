@@ -7,8 +7,6 @@ Reallocating 'name_of_file' (item size: 1) to 13 items.
 A level-1 auxiliary file: chapter2.aux
 Reallocating 'name_of_file' (item size: 1) to 13 items.
 A level-1 auxiliary file: chapter3.aux
-Reallocating 'name_of_file' (item size: 1) to 13 items.
-A level-1 auxiliary file: appendix.aux
 Reallocating 'name_of_file' (item size: 1) to 17 items.
 A level-1 auxiliary file: bibliography.aux
 Reallocating 'name_of_file' (item size: 1) to 4 items.
@@ -36,7 +34,7 @@ Warning--empty journal in karpinszky2023pig
 Warning--empty journal in witten1993practical
 You've used 32 entries,
             1940 wiz_defined-function locations,
-            681 strings with 11236 characters,
+            680 strings with 11224 characters,
 and the built_in function-call counts, 15446 in all, are:
 = -- 1466
 > -- 825

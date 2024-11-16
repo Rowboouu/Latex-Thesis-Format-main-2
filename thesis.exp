@@ -1,16 +1,16 @@
 {\bfseries No.\hfill Equation\hspace {3in} Page No.\vspace \bigskipamount \par }
-\contentsline {myequations}{\numberline {0}}{37}{subsection.3.4.1}%
-\contentsline {myequations}{\numberline {1}}{38}{subsection.3.4.2}%
-\contentsline {myequations}{\numberline {2}}{38}{equation.3.2}%
-\contentsline {myequations}{\numberline {3}}{39}{equation.3.3}%
-\contentsline {myequations}{\numberline {4}}{39}{equation.3.4}%
-\contentsline {myequations}{\numberline {5}}{40}{subsection.3.4.3}%
-\contentsline {myequations}{\numberline {6}}{40}{subsection.3.4.4}%
-\contentsline {myequations}{\numberline {7}}{42}{subsection.3.5.1}%
-\contentsline {myequations}{\numberline {8}}{42}{equation.3.8}%
-\contentsline {myequations}{\numberline {9}}{42}{equation.3.9}%
-\contentsline {myequations}{\numberline {10}}{42}{subsection.3.5.2}%
-\contentsline {myequations}{\numberline {11}}{43}{subsection.3.5.3}%
-\contentsline {myequations}{\numberline {12}}{43}{equation.3.12}%
-\contentsline {myequations}{\numberline {13}}{46}{subsection.3.7.2}%
-\contentsline {myequations}{\numberline {14}}{46}{subsection.3.7.3}%
+\contentsline {myequations}{\numberline {1}Image Processing}{38}{equation.3.1}%
+\contentsline {myequations}{\numberline {2}Centroid of the Contour}{38}{equation.3.2}%
+\contentsline {myequations}{\numberline {3}Covariance Matrix}{39}{equation.3.3}%
+\contentsline {myequations}{\numberline {4}Slicing the Image}{39}{equation.3.4}%
+\contentsline {myequations}{\numberline {5}Morphological Closing}{39}{equation.3.5}%
+\contentsline {myequations}{\numberline {6}Valley Detection}{40}{equation.3.6}%
+\contentsline {myequations}{\numberline {7}Segmented Region of Interest}{41}{equation.3.7}%
+\contentsline {myequations}{\numberline {8}Highest Intensity}{42}{equation.3.8}%
+\contentsline {myequations}{\numberline {9}Lowest Intensity}{42}{equation.3.9}%
+\contentsline {myequations}{\numberline {10}Height Extraction}{43}{equation.3.10}%
+\contentsline {myequations}{\numberline {11}Area Extraction}{43}{equation.3.11}%
+\contentsline {myequations}{\numberline {12}Depth Gradient}{44}{equation.3.12}%
+\contentsline {myequations}{\numberline {13}Gradient Magnitude}{44}{equation.3.13}%
+\contentsline {myequations}{\numberline {14}Mean Absolute Error}{47}{equation.3.14}%
+\contentsline {myequations}{\numberline {15}Root Mean Squared Error}{47}{equation.3.15}%

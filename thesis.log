@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.11.15)  16 NOV 2024 09:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.11.15)  16 NOV 2024 12:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -518,7 +518,7 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 
 (C:\Users\Brian\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
 ) (basicinfo.tex) (thesis.aux (chapter1.aux) (chapter2.aux) (chapter3.aux)
-(appendix.aux) (bibliography.aux))
+(bibliography.aux))
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
@@ -2051,7 +2051,7 @@ d-els, achiev-
 
  (chapter3.tex
 Chapter 3.
-<figures/Architectureofniggas.png, id=558, 2890.8pt x 1626.075pt>
+<figures/Architectureofniggas.png, id=562, 2890.8pt x 1626.075pt>
 File: figures/Architectureofniggas.png Graphic file (type png)
 <use figures/Architectureofniggas.png>
 Package pdftex.def Info: figures/Architectureofniggas.png  used on input line 1
@@ -2070,7 +2070,7 @@ Overfull \hbox (11.0618pt too wide) in paragraph at lines 11--12
 
 
  <./figures/Architectureofniggas.png (PNG copy)>]
-<figures/Requirement Analysis (4).png, id=563, 1445.4pt x 813.0375pt>
+<figures/Requirement Analysis (4).png, id=567, 1445.4pt x 813.0375pt>
 File: figures/Requirement Analysis (4).png Graphic file (type png)
 <use figures/Requirement Analysis (4).png>
 Package pdftex.def Info: figures/Requirement Analysis (4).png  used on input li
@@ -2086,7 +2086,7 @@ Overfull \hbox (11.0618pt too wide) in paragraph at lines 21--22
 [31 <./figures/Requirement Analysis (4).png (PNG copy)>]
 
 [32]
-<figures/kinectpigNIGGA.png, id=573, 221.82875pt x 563.10374pt>
+<figures/kinectpigNIGGA.png, id=577, 221.82875pt x 563.10374pt>
 File: figures/kinectpigNIGGA.png Graphic file (type png)
 <use figures/kinectpigNIGGA.png>
 Package pdftex.def Info: figures/kinectpigNIGGA.png  used on input line 31.
@@ -2094,7 +2094,7 @@ Package pdftex.def Info: figures/kinectpigNIGGA.png  used on input line 31.
 
 
 [33 <./figures/kinectpigNIGGA.png>]
-<figures/Untitled-1wqw.png, id=580, 4890.27pt x 3195.94pt>
+<figures/Untitled-1wqw.png, id=584, 4890.27pt x 3195.94pt>
 File: figures/Untitled-1wqw.png Graphic file (type png)
 <use figures/Untitled-1wqw.png>
 Package pdftex.def Info: figures/Untitled-1wqw.png  used on input line 41.
@@ -2118,18 +2118,14 @@ Overfull \hbox (3.07407pt too wide) in paragraph at lines 56--57
 [38]
 
 [39]
-<figures/Untitled-1 (1).png, id=614, 4020.01875pt x 3089.5425pt>
-File: figures/Untitled-1 (1).png Graphic file (type png)
-<use figures/Untitled-1 (1).png>
-Package pdftex.def Info: figures/Untitled-1 (1).png  used on input line 123.
-(pdftex.def)             Requested size: 298.97343pt x 229.815pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
 
 [40]
+<figures/Untitled-1 (1).png, id=620, 4020.01875pt x 3089.5425pt>
+File: figures/Untitled-1 (1).png Graphic file (type png)
+<use figures/Untitled-1 (1).png>
+Package pdftex.def Info: figures/Untitled-1 (1).png  used on input line 124.
+(pdftex.def)             Requested size: 298.97343pt x 229.815pt.
+
 
 [41 <./figures/Untitled-1 (1).png>]
 
@@ -2145,14 +2141,14 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [47]
 
-[48])
+[48]
 
-[49]
+[49])
 
 [50]
-\openout2 = `appendix.aux'.
+\openout2 = `bibliography.aux'.
 
- (appendix.tex)
+ (bibliography.tex (thesis.bbl
 
 [51
 
@@ -2160,46 +2156,35 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 ]
-\openout2 = `bibliography.aux'.
 
- (bibliography.tex (thesis.bbl
+[52]
 
-[52
+[53]))
 
-
-
-
-]
-
-[53]
-
-[54]))
-
-[55]
+[54]
 
 Package natbib Warning: There were undefined citations.
 
-(thesis.aux (chapter1.aux) (chapter2.aux) (chapter3.aux) (appendix.aux)
-(bibliography.aux))
+(thesis.aux (chapter1.aux) (chapter2.aux) (chapter3.aux) (bibliography.aux))
  ***********
 LaTeX2e <2024-11-01>
 L3 programming layer <2020/03/25>
  ***********
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: AD066D947AD73ABDF910637C640F460B;7784.
+(rerunfilecheck)             Checksum: 48EF16FFF284B59394A39BB07FEF39B6;7689.
  )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 2 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 15101 strings out of 473682
- 242810 string characters out of 5719215
- 664997 words of memory out of 5000000
- 37740 multiletter control sequences out of 15000+600000
+ 15074 strings out of 473682
+ 242029 string characters out of 5719215
+ 664562 words of memory out of 5000000
+ 37721 multiletter control sequences out of 15000+600000
  565526 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 80i,10n,82p,2390b,731s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 80i,10n,82p,2390b,709s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Brian\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/
 ec/dpi600\tcrm1200.pk><C:/Users/Brian/AppData/Local/Programs/MiKTeX/fonts/type1
 /public/amsfonts/cm/cmbx12.pfb><C:/Users/Brian/AppData/Local/Programs/MiKTeX/fo
@@ -2212,9 +2197,9 @@ rs/Brian/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pf
 b><C:/Users/Brian/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmsy8.pfb><C:/Users/Brian/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
 onts/cm/cmti12.pfb>
-Output written on thesis.pdf (61 pages, 1509993 bytes).
+Output written on thesis.pdf (60 pages, 1509048 bytes).
 PDF statistics:
- 772 PDF objects out of 1000 (max. 8388607)
- 168 named destinations out of 1000 (max. 500000)
- 418 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 762 PDF objects out of 1000 (max. 8388607)
+ 166 named destinations out of 1000 (max. 500000)
+ 410 words of extra memory for PDF output out of 10000 (max. 10000000)
 
