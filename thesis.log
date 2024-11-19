@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.11.15)  16 NOV 2024 12:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.11.15)  20 NOV 2024 00:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2051,17 +2051,12 @@ d-els, achiev-
 
  (chapter3.tex
 Chapter 3.
-<figures/Architectureofniggas.png, id=562, 2890.8pt x 1626.075pt>
+<figures/Architectureofniggas.png, id=562, 1559.8275pt x 1428.08531pt>
 File: figures/Architectureofniggas.png Graphic file (type png)
 <use figures/Architectureofniggas.png>
 Package pdftex.def Info: figures/Architectureofniggas.png  used on input line 1
 1.
-(pdftex.def)             Requested size: 408.54681pt x 229.815pt.
-
-Overfull \hbox (11.0618pt too wide) in paragraph at lines 11--12
- [][] 
- []
-
+(pdftex.def)             Requested size: 313.76886pt x 287.27313pt.
 
 
 [30
@@ -2069,32 +2064,32 @@ Overfull \hbox (11.0618pt too wide) in paragraph at lines 11--12
 
 
 
- <./figures/Architectureofniggas.png (PNG copy)>]
-<figures/Requirement Analysis (4).png, id=567, 1445.4pt x 813.0375pt>
+ <./figures/Architectureofniggas.png>]
+<figures/Requirement Analysis (4).png, id=569, 1268.48906pt x 526.96875pt>
 File: figures/Requirement Analysis (4).png Graphic file (type png)
 <use figures/Requirement Analysis (4).png>
 Package pdftex.def Info: figures/Requirement Analysis (4).png  used on input li
 ne 21.
-(pdftex.def)             Requested size: 408.54681pt x 229.815pt.
+(pdftex.def)             Requested size: 414.90578pt x 172.36563pt.
 
-Overfull \hbox (11.0618pt too wide) in paragraph at lines 21--22
+Overfull \hbox (17.42076pt too wide) in paragraph at lines 21--22
  [][] 
  []
 
 
 
-[31 <./figures/Requirement Analysis (4).png (PNG copy)>]
+[31 <./figures/Requirement Analysis (4).png>]
 
 [32]
-<figures/kinectpigNIGGA.png, id=577, 221.82875pt x 563.10374pt>
-File: figures/kinectpigNIGGA.png Graphic file (type png)
-<use figures/kinectpigNIGGA.png>
-Package pdftex.def Info: figures/kinectpigNIGGA.png  used on input line 31.
-(pdftex.def)             Requested size: 135.80273pt x 344.73126pt.
+<figures/Thesis Flowchart.png, id=580, 183.68625pt x 603.25375pt>
+File: figures/Thesis Flowchart.png Graphic file (type png)
+<use figures/Thesis Flowchart.png>
+Package pdftex.def Info: figures/Thesis Flowchart.png  used on input line 31.
+(pdftex.def)             Requested size: 104.9657pt x 344.73126pt.
 
 
-[33 <./figures/kinectpigNIGGA.png>]
-<figures/Untitled-1wqw.png, id=584, 4890.27pt x 3195.94pt>
+[33 <./figures/Thesis Flowchart.png>]
+<figures/Untitled-1wqw.png, id=586, 4890.27pt x 3195.94pt>
 File: figures/Untitled-1wqw.png Graphic file (type png)
 <use figures/Untitled-1wqw.png>
 Package pdftex.def Info: figures/Untitled-1wqw.png  used on input line 41.
@@ -2120,7 +2115,7 @@ Overfull \hbox (3.07407pt too wide) in paragraph at lines 56--57
 [39]
 
 [40]
-<figures/Untitled-1 (1).png, id=620, 4020.01875pt x 3089.5425pt>
+<figures/Untitled-1 (1).png, id=622, 4020.01875pt x 3089.5425pt>
 File: figures/Untitled-1 (1).png Graphic file (type png)
 <use figures/Untitled-1 (1).png>
 Package pdftex.def Info: figures/Untitled-1 (1).png  used on input line 124.
@@ -2179,7 +2174,7 @@ Package rerunfilecheck Info: File `thesis.out' has not changed.
 ### bottom level 
 Here is how much of TeX's memory you used:
  15074 strings out of 473682
- 242029 string characters out of 5719215
+ 242051 string characters out of 5719215
  664562 words of memory out of 5000000
  37721 multiletter control sequences out of 15000+600000
  565526 words of font info for 67 fonts, out of 8000000 for 9000
@@ -2197,9 +2192,9 @@ rs/Brian/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pf
 b><C:/Users/Brian/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmsy8.pfb><C:/Users/Brian/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
 onts/cm/cmti12.pfb>
-Output written on thesis.pdf (60 pages, 1509048 bytes).
+Output written on thesis.pdf (60 pages, 1474501 bytes).
 PDF statistics:
- 762 PDF objects out of 1000 (max. 8388607)
+ 764 PDF objects out of 1000 (max. 8388607)
  166 named destinations out of 1000 (max. 500000)
  410 words of extra memory for PDF output out of 10000 (max. 10000000)
 
