@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.11.15)  20 NOV 2024 00:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.11.15)  21 NOV 2024 13:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2030,7 +2030,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 128--130
  []
 
 
-Overfull \hbox (1.96748pt too wide) in alignment at lines 65--131
+Overfull \hbox (2.76747pt too wide) in alignment at lines 65--131
  [] [] [] [] [] 
  []
 
@@ -2175,7 +2175,7 @@ Package rerunfilecheck Info: File `thesis.out' has not changed.
 Here is how much of TeX's memory you used:
  15074 strings out of 473682
  242051 string characters out of 5719215
- 664562 words of memory out of 5000000
+ 664561 words of memory out of 5000000
  37721 multiletter control sequences out of 15000+600000
  565526 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2192,7 +2192,7 @@ rs/Brian/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pf
 b><C:/Users/Brian/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmsy8.pfb><C:/Users/Brian/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
 onts/cm/cmti12.pfb>
-Output written on thesis.pdf (60 pages, 1474501 bytes).
+Output written on thesis.pdf (60 pages, 1474611 bytes).
 PDF statistics:
  764 PDF objects out of 1000 (max. 8388607)
  166 named destinations out of 1000 (max. 500000)
