@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.11.15)  21 NOV 2024 14:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.11.15)  21 NOV 2024 15:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -716,37 +716,37 @@ Chapter 1.
 [8]
 
 [9]
-Overfull \hbox (1.01706pt too wide) in paragraph at lines 87--88
+Overfull \hbox (1.01706pt too wide) in paragraph at lines 85--86
 []\OT1/cmr/m/n/12 A do-mes-ti-cated, lo-cally adapted, tra-di-tional va-ri-ety 
 grown by farm-
  []
 
-)
 
-[10]
+
+[10])
+
+[11]
 \openout2 = `chapter2.aux'.
 
  (chapter2.tex
 Chapter 2.
 
 
-[11
+[12
 
 
 
 
 ]
 
-[12]
-
 [13]
 
-Package natbib Warning: Citation `farooqui2024precision' on page 14 undefined o
+[14]
+
+Package natbib Warning: Citation `farooqui2024precision' on page 15 undefined o
 n input line 16.
 
 
-
-[14]
 
 [15]
 
@@ -765,6 +765,8 @@ n input line 16.
 [22]
 
 [23]
+
+[24]
 Overfull \hbox (2.66304pt too wide) in paragraph at lines 69--69
 []|\OT1/cmr/bx/n/12 Author(s),
  []
@@ -2034,9 +2036,9 @@ Overfull \hbox (2.76747pt too wide) in alignment at lines 65--131
  [] [] [] [] [] 
  []
 
-[24] [25] [26]
+[25] [26] [27]
 
-[27]
+[28]
 Overfull \hbox (1.6916pt too wide) in paragraph at lines 135--136
 \OT1/cmr/m/n/12 cam-eras com-bined with seg-men-ta-tion (Mask R-CNN) and MLP mo
 d-els, achiev-
@@ -2044,14 +2046,14 @@ d-els, achiev-
 
 
 
-[28])
+[29])
 
-[29]
+[30]
 \openout2 = `chapter3.aux'.
 
  (chapter3.tex
 Chapter 3.
-<figures/Architectureofniggas.png, id=562, 1559.8275pt x 1428.08531pt>
+<figures/Architectureofniggas.png, id=581, 1559.8275pt x 1428.08531pt>
 File: figures/Architectureofniggas.png Graphic file (type png)
 <use figures/Architectureofniggas.png>
 Package pdftex.def Info: figures/Architectureofniggas.png  used on input line 1
@@ -2059,13 +2061,13 @@ Package pdftex.def Info: figures/Architectureofniggas.png  used on input line 1
 (pdftex.def)             Requested size: 313.76886pt x 287.27313pt.
 
 
-[30
+[31
 
 
 
 
  <./figures/Architectureofniggas.png>]
-<figures/Requirement Analysis (4).png, id=569, 1268.48906pt x 526.96875pt>
+<figures/Requirement Analysis (4).png, id=589, 1268.48906pt x 526.96875pt>
 File: figures/Requirement Analysis (4).png Graphic file (type png)
 <use figures/Requirement Analysis (4).png>
 Package pdftex.def Info: figures/Requirement Analysis (4).png  used on input li
@@ -2078,29 +2080,29 @@ Overfull \hbox (17.42076pt too wide) in paragraph at lines 21--22
 
 
 
-[31 <./figures/Requirement Analysis (4).png>]
+[32 <./figures/Requirement Analysis (4).png>]
 
-[32]
-<figures/Thesis Flowchart.png, id=580, 183.68625pt x 603.25375pt>
+[33]
+<figures/Thesis Flowchart.png, id=599, 183.68625pt x 603.25375pt>
 File: figures/Thesis Flowchart.png Graphic file (type png)
 <use figures/Thesis Flowchart.png>
 Package pdftex.def Info: figures/Thesis Flowchart.png  used on input line 31.
 (pdftex.def)             Requested size: 104.9657pt x 344.73126pt.
 
 
-[33 <./figures/Thesis Flowchart.png>]
-<figures/Untitled-1wqw.png, id=586, 4890.27pt x 3195.94pt>
+[34 <./figures/Thesis Flowchart.png>]
+<figures/Untitled-1wqw.png, id=605, 4890.27pt x 3195.94pt>
 File: figures/Untitled-1wqw.png Graphic file (type png)
 <use figures/Untitled-1wqw.png>
 Package pdftex.def Info: figures/Untitled-1wqw.png  used on input line 41.
 (pdftex.def)             Requested size: 351.60669pt x 229.815pt.
 
 
-[34 <./figures/Untitled-1wqw.png>]
-
-[35]
+[35 <./figures/Untitled-1wqw.png>]
 
 [36]
+
+[37]
 Overfull \hbox (3.07407pt too wide) in paragraph at lines 56--57
 []\OT1/cmr/m/n/12 This study em-ploys the Seg-men-ta-tion Any-thing Model (SAM)
  to achieve
@@ -2108,23 +2110,21 @@ Overfull \hbox (3.07407pt too wide) in paragraph at lines 56--57
 
 
 
-[37]
-
 [38]
 
 [39]
 
 [40]
-<figures/Untitled-1 (1).png, id=622, 4020.01875pt x 3089.5425pt>
+
+[41]
+<figures/Untitled-1 (1).png, id=641, 4020.01875pt x 3089.5425pt>
 File: figures/Untitled-1 (1).png Graphic file (type png)
 <use figures/Untitled-1 (1).png>
 Package pdftex.def Info: figures/Untitled-1 (1).png  used on input line 124.
 (pdftex.def)             Requested size: 298.97343pt x 229.815pt.
 
 
-[41 <./figures/Untitled-1 (1).png>]
-
-[42]
+[42 <./figures/Untitled-1 (1).png>]
 
 [43]
 
@@ -2138,27 +2138,29 @@ Package pdftex.def Info: figures/Untitled-1 (1).png  used on input line 124.
 
 [48]
 
-[49])
+[49]
 
-[50]
+[50])
 
 [51]
+
+[52]
 \openout2 = `bibliography.aux'.
 
  (bibliography.tex (thesis.bbl
 
-[52
+[53
 
 
 
 
 ]
 
-[53]
+[54]
 
-[54]))
+[55]))
 
-[55]
+[56]
 
 Package natbib Warning: There were undefined citations.
 
@@ -2175,8 +2177,8 @@ Package rerunfilecheck Info: File `thesis.out' has not changed.
 ### simple group (level 1) entered at line 2 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 15075 strings out of 473682
- 242058 string characters out of 5719215
+ 15076 strings out of 473682
+ 242065 string characters out of 5719215
  664561 words of memory out of 5000000
  37721 multiletter control sequences out of 15000+600000
  565526 words of font info for 67 fonts, out of 8000000 for 9000
@@ -2194,9 +2196,9 @@ rs/Brian/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pf
 b><C:/Users/Brian/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmsy8.pfb><C:/Users/Brian/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
 onts/cm/cmti12.pfb>
-Output written on thesis.pdf (61 pages, 1475261 bytes).
+Output written on thesis.pdf (62 pages, 1479185 bytes).
 PDF statistics:
- 769 PDF objects out of 1000 (max. 8388607)
- 167 named destinations out of 1000 (max. 500000)
+ 788 PDF objects out of 1000 (max. 8388607)
+ 168 named destinations out of 1000 (max. 500000)
  410 words of extra memory for PDF output out of 10000 (max. 10000000)
 
