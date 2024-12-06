@@ -32,45 +32,45 @@ I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "farooqui2024precision"
 Warning--empty journal in karpinszky2023pig
 Warning--empty journal in witten1993practical
-You've used 32 entries,
+You've used 36 entries,
             1940 wiz_defined-function locations,
-            680 strings with 11224 characters,
-and the built_in function-call counts, 15446 in all, are:
-= -- 1466
-> -- 825
-< -- 12
-+ -- 304
-- -- 292
-* -- 1462
-:= -- 2653
-add.period$ -- 101
-call.type$ -- 32
-change.case$ -- 305
-chr.to.int$ -- 32
-cite$ -- 34
-duplicate$ -- 524
-empty$ -- 973
-format.name$ -- 334
-if$ -- 2977
+            710 strings with 11661 characters,
+and the built_in function-call counts, 16598 in all, are:
+= -- 1593
+> -- 844
+< -- 15
++ -- 308
+- -- 296
+* -- 1554
+:= -- 2862
+add.period$ -- 115
+call.type$ -- 36
+change.case$ -- 327
+chr.to.int$ -- 36
+cite$ -- 38
+duplicate$ -- 572
+empty$ -- 1058
+format.name$ -- 342
+if$ -- 3195
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 32
-newline$ -- 161
-num.names$ -- 96
-pop$ -- 279
+missing$ -- 34
+newline$ -- 183
+num.names$ -- 108
+pop$ -- 288
 preamble$ -- 1
-purify$ -- 305
+purify$ -- 327
 quote$ -- 0
-skip$ -- 386
+skip$ -- 425
 stack$ -- 0
-substring$ -- 1011
-swap$ -- 112
+substring$ -- 1095
+swap$ -- 118
 text.length$ -- 6
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 192
+type$ -- 216
 warning$ -- 2
-while$ -- 118
+while$ -- 131
 width$ -- 0
-write$ -- 418
+write$ -- 472
 (There were 4 error messages)

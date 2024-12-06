@@ -1,16 +1,17 @@
 {\bfseries No.\hfill Equation\hspace {3in} Page No.\vspace \bigskipamount \par }
-\contentsline {myequations}{\numberline {1}Image Processing}{39}{equation.3.1}%
-\contentsline {myequations}{\numberline {2}Centroid of the Contour}{39}{equation.3.2}%
-\contentsline {myequations}{\numberline {3}Covariance Matrix}{40}{equation.3.3}%
-\contentsline {myequations}{\numberline {4}Slicing the Image}{40}{equation.3.4}%
-\contentsline {myequations}{\numberline {5}Morphological Closing}{40}{equation.3.5}%
-\contentsline {myequations}{\numberline {6}Valley Detection}{41}{equation.3.6}%
-\contentsline {myequations}{\numberline {7}Segmented Region of Interest}{42}{equation.3.7}%
-\contentsline {myequations}{\numberline {8}Highest Intensity}{43}{equation.3.8}%
-\contentsline {myequations}{\numberline {9}Lowest Intensity}{43}{equation.3.9}%
-\contentsline {myequations}{\numberline {10}Height Extraction}{44}{equation.3.10}%
-\contentsline {myequations}{\numberline {11}Area Extraction}{44}{equation.3.11}%
-\contentsline {myequations}{\numberline {12}Depth Gradient}{45}{equation.3.12}%
-\contentsline {myequations}{\numberline {13}Gradient Magnitude}{45}{equation.3.13}%
-\contentsline {myequations}{\numberline {14}Mean Absolute Error}{48}{equation.3.14}%
-\contentsline {myequations}{\numberline {15}Root Mean Squared Error}{48}{equation.3.15}%
+\contentsline {myequations}{\numberline {1}Traditional Weight}{24}{equation.2.1}%
+\contentsline {myequations}{\numberline {2}Image Processing}{45}{equation.3.2}%
+\contentsline {myequations}{\numberline {3}Centroid of the Contour}{45}{equation.3.3}%
+\contentsline {myequations}{\numberline {4}Covariance Matrix}{46}{equation.3.4}%
+\contentsline {myequations}{\numberline {5}Slicing the Image}{46}{equation.3.5}%
+\contentsline {myequations}{\numberline {6}Morphological Closing}{46}{equation.3.6}%
+\contentsline {myequations}{\numberline {7}Valley Detection}{47}{equation.3.7}%
+\contentsline {myequations}{\numberline {8}Segmented Region of Interest}{48}{equation.3.8}%
+\contentsline {myequations}{\numberline {9}Highest Intensity}{49}{equation.3.9}%
+\contentsline {myequations}{\numberline {10}Lowest Intensity}{49}{equation.3.10}%
+\contentsline {myequations}{\numberline {11}Height Extraction}{50}{equation.3.11}%
+\contentsline {myequations}{\numberline {12}Area Extraction}{50}{equation.3.12}%
+\contentsline {myequations}{\numberline {13}Depth Gradient}{51}{equation.3.13}%
+\contentsline {myequations}{\numberline {14}Gradient Magnitude}{51}{equation.3.14}%
+\contentsline {myequations}{\numberline {15}Mean Absolute Error}{54}{equation.3.15}%
+\contentsline {myequations}{\numberline {16}Root Mean Squared Error}{54}{equation.3.16}%

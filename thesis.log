@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.11.15)  21 NOV 2024 15:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.11.15)  6 DEC 2024 17:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -704,10 +704,22 @@ Chapter 1.
 [2]
 
 [3]
+Overfull \hbox (1.4601pt too wide) in paragraph at lines 28--29
+[]\OT1/cmr/m/n/12 To cir-cum-vent these chal-lenges, farm-ers of-ten re-sort to
+ al-ter-na-tive meth-
+ []
+
+
 
 [4]
 
 [5]
+Overfull \hbox (0.53242pt too wide) in paragraph at lines 34--35
+[]\OT1/cmr/m/n/12 A promis-ing yet un-der-ex-plored so-lu-tion lies in uti-liz-
+ing Mi-crosoft Kinect
+ []
+
+
 
 [6]
 
@@ -716,45 +728,45 @@ Chapter 1.
 [8]
 
 [9]
-Overfull \hbox (1.01706pt too wide) in paragraph at lines 85--86
+
+[10]
+
+[11]
+
+[12]
+
+[13]
+Overfull \hbox (1.01706pt too wide) in paragraph at lines 105--106
 []\OT1/cmr/m/n/12 A do-mes-ti-cated, lo-cally adapted, tra-di-tional va-ri-ety 
 grown by farm-
  []
 
 
 
-[10])
+[14])
 
-[11]
+[15]
 \openout2 = `chapter2.aux'.
 
  (chapter2.tex
 Chapter 2.
 
 
-[12
+[16
 
 
 
 
 ]
 
-[13]
-
-[14]
-
-Package natbib Warning: Citation `farooqui2024precision' on page 15 undefined o
-n input line 16.
-
-
-
-[15]
-
-[16]
-
 [17]
 
 [18]
+
+Package natbib Warning: Citation `farooqui2024precision' on page 19 undefined o
+n input line 16.
+
+
 
 [19]
 
@@ -767,1293 +779,1311 @@ n input line 16.
 [23]
 
 [24]
-Overfull \hbox (2.66304pt too wide) in paragraph at lines 69--69
+<figures/Pig Tape Measure.png, id=546, 511.9125pt x 202.95825pt>
+File: figures/Pig Tape Measure.png Graphic file (type png)
+<use figures/Pig Tape Measure.png>
+Package pdftex.def Info: figures/Pig Tape Measure.png  used on input line 56.
+(pdftex.def)             Requested size: 362.28874pt x 143.63657pt.
+
+
+[25 <./figures/Pig Tape Measure.png>]
+
+[26]
+
+[27]
+
+[28]
+
+[29]
+
+[30]
+Overfull \hbox (2.66304pt too wide) in paragraph at lines 98--98
 []|\OT1/cmr/bx/n/12 Author(s),
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 71--72
+Underfull \hbox (badness 10000) in paragraph at lines 100--101
 []|\OT1/cmr/m/n/12 On-barn
  []
 
 
-Underfull \hbox (badness 4084) in paragraph at lines 71--72
+Underfull \hbox (badness 4084) in paragraph at lines 100--101
 \OT1/cmr/m/n/12 pig weight
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 71--72
+Underfull \hbox (badness 10000) in paragraph at lines 100--101
 \OT1/cmr/m/n/12 es-ti-ma-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 71--72
+Underfull \hbox (badness 10000) in paragraph at lines 100--101
 \OT1/cmr/m/n/12 based on
  []
 
 
-Underfull \hbox (badness 1776) in paragraph at lines 71--72
+Underfull \hbox (badness 1776) in paragraph at lines 100--101
 \OT1/cmr/m/n/12 body mea-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 71--72
+Underfull \hbox (badness 10000) in paragraph at lines 100--101
 \OT1/cmr/m/n/12 sure-ments
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 71--72
+Underfull \hbox (badness 10000) in paragraph at lines 100--101
 \OT1/cmr/m/n/12 v1 depth
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--74
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
 []|\OT1/cmr/m/n/12 Pezzuolo,
  []
 
 
-Underfull \hbox (badness 7344) in paragraph at lines 73--74
+Underfull \hbox (badness 7344) in paragraph at lines 102--103
 \OT1/cmr/m/n/12 A., Guar-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--74
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
 \OT1/cmr/m/n/12 ino, M.,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--74
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
 \OT1/cmr/m/n/12 Gonz^^Salez,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--74
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
 \OT1/cmr/m/n/12 Marinello,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 75--80
+Underfull \hbox (badness 10000) in paragraph at lines 104--109
 []|\OT1/cmr/m/n/12 - Kinect v1
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 75--80
+Underfull \hbox (badness 10000) in paragraph at lines 104--109
 \OT1/cmr/m/n/12 weight from
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 75--80
+Underfull \hbox (badness 10000) in paragraph at lines 104--109
 \OT1/cmr/m/n/12 im-ages in a
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 75--80
+Underfull \hbox (badness 10000) in paragraph at lines 104--109
 \OT1/cmr/m/n/12 barn en-vi-ron-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 75--80
+Underfull \hbox (badness 10000) in paragraph at lines 104--109
 \OT1/cmr/m/n/12 - Ex-tracted
  []
 
 
-Underfull \hbox (badness 3098) in paragraph at lines 75--80
+Underfull \hbox (badness 3098) in paragraph at lines 104--109
 \OT1/cmr/m/n/12 length, width,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 75--80
+Underfull \hbox (badness 10000) in paragraph at lines 104--109
 \OT1/cmr/m/n/12 and vol-ume
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 75--80
+Underfull \hbox (badness 10000) in paragraph at lines 104--109
 \OT1/cmr/m/n/12 from depth
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 75--80
+Underfull \hbox (badness 10000) in paragraph at lines 104--109
 \OT1/cmr/m/n/12 - De-vel-oped
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 75--80
+Underfull \hbox (badness 10000) in paragraph at lines 104--109
 \OT1/cmr/m/n/12 a re-gres-sion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 75--80
+Underfull \hbox (badness 10000) in paragraph at lines 104--109
 \OT1/cmr/m/n/12 model for
  []
 
 
-Underfull \hbox (badness 1675) in paragraph at lines 75--80
+Underfull \hbox (badness 1675) in paragraph at lines 104--109
 \OT1/cmr/m/n/12 weight es-ti-ma-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 81--82
+Underfull \hbox (badness 10000) in paragraph at lines 110--111
 []|\OT1/cmr/m/n/12 Both lin-ear
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 81--82
+Underfull \hbox (badness 10000) in paragraph at lines 110--111
 \OT1/cmr/m/n/12 and second-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 81--82
+Underfull \hbox (badness 10000) in paragraph at lines 110--111
 \OT1/cmr/m/n/12 degree re-gres-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 81--82
+Underfull \hbox (badness 10000) in paragraph at lines 110--111
 \OT1/cmr/m/n/12 sion mod-els
  []
 
 
-Underfull \hbox (badness 4378) in paragraph at lines 81--82
+Underfull \hbox (badness 4378) in paragraph at lines 110--111
 \OT1/cmr/m/n/12 showed strong
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 81--82
+Underfull \hbox (badness 10000) in paragraph at lines 110--111
 \OT1/cmr/m/n/12 cor-re-la-tions
  []
 
 
-Underfull \hbox (badness 5302) in paragraph at lines 81--82
+Underfull \hbox (badness 5302) in paragraph at lines 110--111
 \OT1/cmr/m/n/12 with ref-er-ence
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 81--82
+Underfull \hbox (badness 10000) in paragraph at lines 110--111
 \OT1/cmr/m/n/12 weights, with
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 81--82
+Underfull \hbox (badness 10000) in paragraph at lines 110--111
 \OT1/cmr/m/n/12 co-ef-fi-cients
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 81--82
+Underfull \hbox (badness 10000) in paragraph at lines 110--111
 \OT1/cmr/m/n/12 of de-ter-mi-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 81--82
+Underfull \hbox (badness 10000) in paragraph at lines 110--111
 \OT1/cmr/m/n/12 na-tion above
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 81--82
+Underfull \hbox (badness 10000) in paragraph at lines 110--111
 \OT1/cmr/m/n/12 linear model
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 81--82
+Underfull \hbox (badness 10000) in paragraph at lines 110--111
 \OT1/cmr/m/n/12 re-duced the
  []
 
 
-Underfull \hbox (badness 2418) in paragraph at lines 81--82
+Underfull \hbox (badness 2418) in paragraph at lines 110--111
 \OT1/cmr/m/n/12 stan-dard er-ror
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 81--82
+Underfull \hbox (badness 10000) in paragraph at lines 110--111
 \OT1/cmr/m/n/12 second-degree
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 81--82
+Underfull \hbox (badness 10000) in paragraph at lines 110--111
 \OT1/cmr/m/n/12 re-gres-sion
  []
 
 
-Underfull \hbox (badness 1342) in paragraph at lines 81--82
+Underfull \hbox (badness 1342) in paragraph at lines 110--111
 \OT1/cmr/m/n/12 model had an
  []
 
 
-Underfull \hbox (badness 7540) in paragraph at lines 81--82
+Underfull \hbox (badness 7540) in paragraph at lines 110--111
 \OT1/cmr/m/n/12 ab-so-lute er-ror
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 83--85
+Underfull \hbox (badness 10000) in paragraph at lines 112--114
 []|\OT1/cmr/m/n/12 The cur-
  []
 
 
-Underfull \hbox (badness 3965) in paragraph at lines 83--85
+Underfull \hbox (badness 3965) in paragraph at lines 112--114
 \OT1/cmr/m/n/12 rent study
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 83--85
+Underfull \hbox (badness 10000) in paragraph at lines 112--114
 \OT1/cmr/m/n/12 is closely
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 83--85
+Underfull \hbox (badness 10000) in paragraph at lines 112--114
 \OT1/cmr/m/n/12 cor-re-lated
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 83--85
+Underfull \hbox (badness 10000) in paragraph at lines 112--114
 \OT1/cmr/m/n/12 with this
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 83--85
+Underfull \hbox (badness 10000) in paragraph at lines 112--114
 \OT1/cmr/m/n/12 study, es-
  []
 
 
-Underfull \hbox (badness 4084) in paragraph at lines 83--85
+Underfull \hbox (badness 4084) in paragraph at lines 112--114
 \OT1/cmr/m/n/12 pe-cially in
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 83--85
+Underfull \hbox (badness 10000) in paragraph at lines 112--114
 \OT1/cmr/m/n/12 terms of
  []
 
 
-Underfull \hbox (badness 2142) in paragraph at lines 83--85
+Underfull \hbox (badness 2142) in paragraph at lines 112--114
 \OT1/cmr/m/n/12 the Kinect
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 83--85
+Underfull \hbox (badness 10000) in paragraph at lines 112--114
 \OT1/cmr/m/n/12 how-ever,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 83--85
+Underfull \hbox (badness 10000) in paragraph at lines 112--114
 \OT1/cmr/m/n/12 uses 3D
  []
 
 
-Underfull \hbox (badness 4569) in paragraph at lines 83--85
+Underfull \hbox (badness 4569) in paragraph at lines 112--114
 \OT1/cmr/m/n/12 im-ages for
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 83--85
+Underfull \hbox (badness 10000) in paragraph at lines 112--114
 \OT1/cmr/m/n/12 the cal-cu-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 83--85
+Underfull \hbox (badness 10000) in paragraph at lines 112--114
 \OT1/cmr/m/n/12 la-tion of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 83--85
+Underfull \hbox (badness 10000) in paragraph at lines 112--114
 \OT1/cmr/m/n/12 es-ti-mated
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 86--87
+Underfull \hbox (badness 10000) in paragraph at lines 115--116
 \OT1/cmr/m/n/12 Es-ti-ma-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 86--87
+Underfull \hbox (badness 10000) in paragraph at lines 115--116
 \OT1/cmr/m/n/12 Ac-cord-ing
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 86--87
+Underfull \hbox (badness 10000) in paragraph at lines 115--116
 \OT1/cmr/m/n/12 to RGB
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 86--87
+Underfull \hbox (badness 10000) in paragraph at lines 115--116
 \OT1/cmr/m/n/12 Im-age
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 88--89
+Underfull \hbox (badness 10000) in paragraph at lines 117--118
 []|\OT1/cmr/m/n/12 Andras
  []
 
 
-Overfull \hbox (0.82211pt too wide) in paragraph at lines 88--89
+Overfull \hbox (0.82211pt too wide) in paragraph at lines 117--118
 \OT1/cmr/m/n/12 K^^Sarpinszky,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 88--89
+Underfull \hbox (badness 10000) in paragraph at lines 117--118
 \OT1/cmr/m/n/12 Gergely
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 88--89
+Underfull \hbox (badness 10000) in paragraph at lines 117--118
 \OT1/cmr/m/n/12 Dob-sin-
  []
 
 
-Underfull \hbox (badness 4391) in paragraph at lines 90--96
+Underfull \hbox (badness 4391) in paragraph at lines 119--125
 []|\OT1/cmr/m/n/12 - RGB Cam-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 90--96
+Underfull \hbox (badness 10000) in paragraph at lines 119--125
 \OT1/cmr/m/n/12 eras (Dahua
  []
 
 
-Underfull \hbox (badness 2772) in paragraph at lines 90--96
+Underfull \hbox (badness 2772) in paragraph at lines 119--125
 \OT1/cmr/m/n/12 - RGB im-age
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 90--96
+Underfull \hbox (badness 10000) in paragraph at lines 119--125
 \OT1/cmr/m/n/12 for seg-men-ta-
  []
 
 
-Underfull \hbox (badness 1728) in paragraph at lines 90--96
+Underfull \hbox (badness 1728) in paragraph at lines 119--125
 \OT1/cmr/m/n/12 - Pretty Con-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 90--96
+Underfull \hbox (badness 10000) in paragraph at lines 119--125
 \OT1/cmr/m/n/12 tour Picker
  []
 
 
-Underfull \hbox (badness 1817) in paragraph at lines 90--96
+Underfull \hbox (badness 1817) in paragraph at lines 119--125
 \OT1/cmr/m/n/12 (PCP) for fil-
  []
 
 
-Underfull \hbox (badness 1616) in paragraph at lines 90--96
+Underfull \hbox (badness 1616) in paragraph at lines 119--125
 \OT1/cmr/m/n/12 - Weight es-ti-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 90--96
+Underfull \hbox (badness 10000) in paragraph at lines 119--125
 \OT1/cmr/m/n/12 ma-tion us-ing
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 90--96
+Underfull \hbox (badness 10000) in paragraph at lines 119--125
 \OT1/cmr/m/n/12 Multi-Layer
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 90--96
+Underfull \hbox (badness 10000) in paragraph at lines 119--125
 \OT1/cmr/m/n/12 Per-cep-tron
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 97--98
+Underfull \hbox (badness 10000) in paragraph at lines 126--127
 []|\OT1/cmr/m/n/12 The sys-tem
  []
 
 
-Underfull \hbox (badness 4013) in paragraph at lines 97--98
+Underfull \hbox (badness 4013) in paragraph at lines 126--127
 \OT1/cmr/m/n/12 achieved more
  []
 
 
-Underfull \hbox (badness 6608) in paragraph at lines 97--98
+Underfull \hbox (badness 6608) in paragraph at lines 126--127
 \OT1/cmr/m/n/12 than 97 per-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 97--98
+Underfull \hbox (badness 10000) in paragraph at lines 126--127
 \OT1/cmr/m/n/12 cent ac-cu-racy
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 97--98
+Underfull \hbox (badness 10000) in paragraph at lines 126--127
 \OT1/cmr/m/n/12 in pre-dict-ing
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 97--98
+Underfull \hbox (badness 10000) in paragraph at lines 126--127
 \OT1/cmr/m/n/12 pig weights
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 97--98
+Underfull \hbox (badness 10000) in paragraph at lines 126--127
 \OT1/cmr/m/n/12 com-pared to
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 97--98
+Underfull \hbox (badness 10000) in paragraph at lines 126--127
 \OT1/cmr/m/n/12 man-u-ally
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 97--98
+Underfull \hbox (badness 10000) in paragraph at lines 126--127
 \OT1/cmr/m/n/12 recorded
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 97--98
+Underfull \hbox (badness 10000) in paragraph at lines 126--127
 \OT1/cmr/m/n/12 weights.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 97--98
+Underfull \hbox (badness 10000) in paragraph at lines 126--127
 \OT1/cmr/m/n/12 Among the
  []
 
 
-Underfull \hbox (badness 2772) in paragraph at lines 97--98
+Underfull \hbox (badness 2772) in paragraph at lines 126--127
 \OT1/cmr/m/n/12 mod-els tested,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 97--98
+Underfull \hbox (badness 10000) in paragraph at lines 126--127
 \OT1/cmr/m/n/12 Model V2
  []
 
 
-Underfull \hbox (badness 2735) in paragraph at lines 97--98
+Underfull \hbox (badness 2735) in paragraph at lines 126--127
 \OT1/cmr/m/n/12 was the most
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 97--98
+Underfull \hbox (badness 10000) in paragraph at lines 126--127
 \OT1/cmr/m/n/12 con-sis-tent,
  []
 
 
-Underfull \hbox (badness 1742) in paragraph at lines 97--98
+Underfull \hbox (badness 1742) in paragraph at lines 126--127
 \OT1/cmr/m/n/12 pro-vid-ing high
  []
 
 
-Underfull \hbox (badness 1152) in paragraph at lines 97--98
+Underfull \hbox (badness 1152) in paragraph at lines 126--127
 \OT1/cmr/m/n/12 vary-ing weight
  []
 
 
-Underfull \hbox (badness 2903) in paragraph at lines 97--98
+Underfull \hbox (badness 2903) in paragraph at lines 126--127
 \OT1/cmr/m/n/12 ranges. The
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 97--98
+Underfull \hbox (badness 10000) in paragraph at lines 126--127
 \OT1/cmr/m/n/12 RGB image-
  []
 
 
-Underfull \hbox (badness 6691) in paragraph at lines 97--98
+Underfull \hbox (badness 6691) in paragraph at lines 126--127
 \OT1/cmr/m/n/12 based method
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 97--98
+Underfull \hbox (badness 10000) in paragraph at lines 126--127
 \OT1/cmr/m/n/12 al-lows faster
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 97--98
+Underfull \hbox (badness 10000) in paragraph at lines 126--127
 \OT1/cmr/m/n/12 and stress-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 97--98
+Underfull \hbox (badness 10000) in paragraph at lines 126--127
 \OT1/cmr/m/n/12 free weight
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 97--98
+Underfull \hbox (badness 10000) in paragraph at lines 126--127
 \OT1/cmr/m/n/12 mea-sure-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 97--98
+Underfull \hbox (badness 10000) in paragraph at lines 126--127
 \OT1/cmr/m/n/12 ment, which
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 97--98
+Underfull \hbox (badness 10000) in paragraph at lines 126--127
 \OT1/cmr/m/n/12 is valu-able
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 97--98
+Underfull \hbox (badness 10000) in paragraph at lines 126--127
 \OT1/cmr/m/n/12 for decision-
  []
 
 
-Underfull \hbox (badness 1082) in paragraph at lines 97--98
+Underfull \hbox (badness 1082) in paragraph at lines 126--127
 \OT1/cmr/m/n/12 making in pig
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 99--101
+Underfull \hbox (badness 10000) in paragraph at lines 128--130
 []|\OT1/cmr/m/n/12 Although
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 99--101
+Underfull \hbox (badness 10000) in paragraph at lines 128--130
 \OT1/cmr/m/n/12 a Kinect
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 99--101
+Underfull \hbox (badness 10000) in paragraph at lines 128--130
 \OT1/cmr/m/n/12 cam-era
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 99--101
+Underfull \hbox (badness 10000) in paragraph at lines 128--130
 \OT1/cmr/m/n/12 wasn't
  []
 
 
-Underfull \hbox (badness 4391) in paragraph at lines 99--101
+Underfull \hbox (badness 4391) in paragraph at lines 128--130
 \OT1/cmr/m/n/12 study, the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 99--101
+Underfull \hbox (badness 10000) in paragraph at lines 128--130
 \OT1/cmr/m/n/12 setup for
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 99--101
+Underfull \hbox (badness 10000) in paragraph at lines 128--130
 \OT1/cmr/m/n/12 si-tion and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 99--101
+Underfull \hbox (badness 10000) in paragraph at lines 128--130
 \OT1/cmr/m/n/12 pro-cess-ing
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 99--101
+Underfull \hbox (badness 10000) in paragraph at lines 128--130
 \OT1/cmr/m/n/12 is sim-i-lar.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 99--101
+Underfull \hbox (badness 10000) in paragraph at lines 128--130
 \OT1/cmr/m/n/12 Top-view
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 99--101
+Underfull \hbox (badness 10000) in paragraph at lines 128--130
 \OT1/cmr/m/n/12 pho-tos of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 99--101
+Underfull \hbox (badness 10000) in paragraph at lines 128--130
 \OT1/cmr/m/n/12 pigs were
  []
 
 
-Underfull \hbox (badness 2818) in paragraph at lines 99--101
+Underfull \hbox (badness 2818) in paragraph at lines 128--130
 \OT1/cmr/m/n/12 this study,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 99--101
+Underfull \hbox (badness 10000) in paragraph at lines 128--130
 \OT1/cmr/m/n/12 closely
  []
 
 
-Underfull \hbox (badness 3009) in paragraph at lines 99--101
+Underfull \hbox (badness 3009) in paragraph at lines 128--130
 \OT1/cmr/m/n/12 re-lat-ing to
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 99--101
+Underfull \hbox (badness 10000) in paragraph at lines 128--130
 \OT1/cmr/m/n/12 how the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 99--101
+Underfull \hbox (badness 10000) in paragraph at lines 128--130
 \OT1/cmr/m/n/12 cur-rent
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 102--103
+Underfull \hbox (badness 10000) in paragraph at lines 131--132
 []|\OT1/cmr/m/n/12 Estimating
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 102--103
+Underfull \hbox (badness 10000) in paragraph at lines 131--132
 \OT1/cmr/m/n/12 Pig
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 102--103
+Underfull \hbox (badness 10000) in paragraph at lines 131--132
 \OT1/cmr/m/n/12 Weights
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 102--103
+Underfull \hbox (badness 10000) in paragraph at lines 131--132
 \OT1/cmr/m/n/12 from
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 102--103
+Underfull \hbox (badness 10000) in paragraph at lines 131--132
 \OT1/cmr/m/n/12 Im-ages
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 102--103
+Underfull \hbox (badness 10000) in paragraph at lines 131--132
 \OT1/cmr/m/n/12 with-out
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 102--103
+Underfull \hbox (badness 10000) in paragraph at lines 131--132
 \OT1/cmr/m/n/12 Con-straint
  []
 
 
-Underfull \hbox (badness 1009) in paragraph at lines 102--103
+Underfull \hbox (badness 1009) in paragraph at lines 131--132
 \OT1/cmr/m/n/12 on Pos-ture
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 104--105
+Underfull \hbox (badness 10000) in paragraph at lines 133--134
 []|\OT1/cmr/m/n/12 Kyungkoo
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 104--105
+Underfull \hbox (badness 10000) in paragraph at lines 133--134
 \OT1/cmr/m/n/12 Jun, Si
  []
 
 
-Underfull \hbox (badness 1960) in paragraph at lines 104--105
+Underfull \hbox (badness 1960) in paragraph at lines 133--134
 \OT1/cmr/m/n/12 Jung Kim,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 104--105
+Underfull \hbox (badness 10000) in paragraph at lines 133--134
 \OT1/cmr/m/n/12 Hyun
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 104--105
+Underfull \hbox (badness 10000) in paragraph at lines 133--134
 \OT1/cmr/m/n/12 Wook Ji
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 106--111
+Underfull \hbox (badness 10000) in paragraph at lines 135--140
 []|\OT1/cmr/m/n/12 - 2D Im-age
  []
 
 
-Underfull \hbox (badness 7047) in paragraph at lines 106--111
+Underfull \hbox (badness 7047) in paragraph at lines 135--140
 \OT1/cmr/m/n/12 - No re-laxed
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 106--111
+Underfull \hbox (badness 10000) in paragraph at lines 135--140
 \OT1/cmr/m/n/12 pos-ture and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 106--111
+Underfull \hbox (badness 10000) in paragraph at lines 135--140
 \OT1/cmr/m/n/12 il-lu-mi-na-tion
  []
 
 
-Underfull \hbox (badness 6625) in paragraph at lines 106--111
+Underfull \hbox (badness 6625) in paragraph at lines 135--140
 \OT1/cmr/m/n/12 - Im-age pro-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 106--111
+Underfull \hbox (badness 10000) in paragraph at lines 135--140
 \OT1/cmr/m/n/12 cess-ing: bi-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 106--111
+Underfull \hbox (badness 10000) in paragraph at lines 135--140
 \OT1/cmr/m/n/12 na-riza-tion,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 106--111
+Underfull \hbox (badness 10000) in paragraph at lines 135--140
 \OT1/cmr/m/n/12 mor-pho-log-i-cal
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 106--111
+Underfull \hbox (badness 10000) in paragraph at lines 135--140
 \OT1/cmr/m/n/12 ops, con-tour
  []
 
 
-Underfull \hbox (badness 3861) in paragraph at lines 106--111
+Underfull \hbox (badness 3861) in paragraph at lines 135--140
 \OT1/cmr/m/n/12 - Neu-ral net-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 106--111
+Underfull \hbox (badness 10000) in paragraph at lines 135--140
 \OT1/cmr/m/n/12 work model
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 106--111
+Underfull \hbox (badness 10000) in paragraph at lines 135--140
 \OT1/cmr/m/n/12 trained and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 106--111
+Underfull \hbox (badness 10000) in paragraph at lines 135--140
 \OT1/cmr/m/n/12 tested for
  []
 
 
-Underfull \hbox (badness 4634) in paragraph at lines 106--111
+Underfull \hbox (badness 4634) in paragraph at lines 135--140
 \OT1/cmr/m/n/12 weight pre-dic-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 112--113
+Underfull \hbox (badness 10000) in paragraph at lines 141--142
 []|\OT1/cmr/m/n/12 The study
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 112--113
+Underfull \hbox (badness 10000) in paragraph at lines 141--142
 \OT1/cmr/m/n/12 achieved an
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 112--113
+Underfull \hbox (badness 10000) in paragraph at lines 141--142
 \OT1/cmr/m/n/12 av-er-age es-ti-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 112--113
+Underfull \hbox (badness 10000) in paragraph at lines 141--142
 \OT1/cmr/m/n/12 ma-tion er-ror
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 112--113
+Underfull \hbox (badness 10000) in paragraph at lines 141--142
 \OT1/cmr/m/n/12 de-ter-mi-na-tion
  []
 
 
-Underfull \hbox (badness 1275) in paragraph at lines 112--113
+Underfull \hbox (badness 1275) in paragraph at lines 141--142
 \OT1/cmr/m/n/12 (R\TS1/cmr/m/n/12 ²\OT1/cmr/m/n/12 ) of 0.792.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 112--113
+Underfull \hbox (badness 10000) in paragraph at lines 141--142
 \OT1/cmr/m/n/12 the method
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 112--113
+Underfull \hbox (badness 10000) in paragraph at lines 141--142
 \OT1/cmr/m/n/12 was able to
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 112--113
+Underfull \hbox (badness 10000) in paragraph at lines 141--142
 \OT1/cmr/m/n/12 es-ti-mate pig
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 112--113
+Underfull \hbox (badness 10000) in paragraph at lines 141--142
 \OT1/cmr/m/n/12 weights with-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 112--113
+Underfull \hbox (badness 10000) in paragraph at lines 141--142
 \OT1/cmr/m/n/12 the en-vi-ron-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 112--113
+Underfull \hbox (badness 10000) in paragraph at lines 141--142
 \OT1/cmr/m/n/12 or light-ing,
  []
 
 
-Underfull \hbox (badness 1648) in paragraph at lines 112--113
+Underfull \hbox (badness 1648) in paragraph at lines 141--142
 \OT1/cmr/m/n/12 mak-ing it ap-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 112--113
+Underfull \hbox (badness 10000) in paragraph at lines 141--142
 \OT1/cmr/m/n/12 con-strained
  []
 
 
-Underfull \hbox (badness 6691) in paragraph at lines 112--113
+Underfull \hbox (badness 6691) in paragraph at lines 141--142
 \OT1/cmr/m/n/12 model showed
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 112--113
+Underfull \hbox (badness 10000) in paragraph at lines 141--142
 \OT1/cmr/m/n/12 that posture-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 112--113
+Underfull \hbox (badness 10000) in paragraph at lines 141--142
 \OT1/cmr/m/n/12 con-tributed
  []
 
 
-Underfull \hbox (badness 4634) in paragraph at lines 112--113
+Underfull \hbox (badness 4634) in paragraph at lines 141--142
 \OT1/cmr/m/n/12 weight pre-dic-
  []
 
 
-Underfull \hbox (badness 4569) in paragraph at lines 114--116
+Underfull \hbox (badness 4569) in paragraph at lines 143--145
 []|\OT1/cmr/m/n/12 The study
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--116
+Underfull \hbox (badness 10000) in paragraph at lines 143--145
 \OT1/cmr/m/n/12 uti-lized a
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--116
+Underfull \hbox (badness 10000) in paragraph at lines 143--145
 \OT1/cmr/m/n/12 mean-while
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--116
+Underfull \hbox (badness 10000) in paragraph at lines 143--145
 \OT1/cmr/m/n/12 study will
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--116
+Underfull \hbox (badness 10000) in paragraph at lines 143--145
 \OT1/cmr/m/n/12 uti-lize a
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--116
+Underfull \hbox (badness 10000) in paragraph at lines 143--145
 \OT1/cmr/m/n/12 Kinect v1
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--116
+Underfull \hbox (badness 10000) in paragraph at lines 143--145
 \OT1/cmr/m/n/12 cam-era.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--116
+Underfull \hbox (badness 10000) in paragraph at lines 143--145
 \OT1/cmr/m/n/12 dif-fer-ence,
  []
 
 
-Underfull \hbox (badness 2460) in paragraph at lines 114--116
+Underfull \hbox (badness 2460) in paragraph at lines 143--145
 \OT1/cmr/m/n/12 both stud-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--116
+Underfull \hbox (badness 10000) in paragraph at lines 143--145
 \OT1/cmr/m/n/12 ies have
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--116
+Underfull \hbox (badness 10000) in paragraph at lines 143--145
 \OT1/cmr/m/n/12 sim-i-lar
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--116
+Underfull \hbox (badness 10000) in paragraph at lines 143--145
 \OT1/cmr/m/n/12 top-down
  []
 
 
-Underfull \hbox (badness 6125) in paragraph at lines 114--116
+Underfull \hbox (badness 6125) in paragraph at lines 143--145
 \OT1/cmr/m/n/12 view cam-
  []
 
 
-Underfull \hbox (badness 1342) in paragraph at lines 114--116
+Underfull \hbox (badness 1342) in paragraph at lines 143--145
 \OT1/cmr/m/n/12 era se-tups.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--116
+Underfull \hbox (badness 10000) in paragraph at lines 143--145
 \OT1/cmr/m/n/12 es-ti-mat-ing
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--116
+Underfull \hbox (badness 10000) in paragraph at lines 143--145
 \OT1/cmr/m/n/12 with-out
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--116
+Underfull \hbox (badness 10000) in paragraph at lines 143--145
 \OT1/cmr/m/n/12 con-straints
  []
 
 
-Underfull \hbox (badness 1708) in paragraph at lines 114--116
+Underfull \hbox (badness 1708) in paragraph at lines 143--145
 \OT1/cmr/m/n/12 on pos-ture
  []
 
 
-Underfull \hbox (badness 2142) in paragraph at lines 114--116
+Underfull \hbox (badness 2142) in paragraph at lines 143--145
 \OT1/cmr/m/n/12 na-tion can
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--116
+Underfull \hbox (badness 10000) in paragraph at lines 143--145
 \OT1/cmr/m/n/12 in-spi-ra-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--116
+Underfull \hbox (badness 10000) in paragraph at lines 143--145
 \OT1/cmr/m/n/12 for fu-ture
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--116
+Underfull \hbox (badness 10000) in paragraph at lines 143--145
 \OT1/cmr/m/n/12 der-tak-ings
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--116
+Underfull \hbox (badness 10000) in paragraph at lines 143--145
 \OT1/cmr/m/n/12 with the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--116
+Underfull \hbox (badness 10000) in paragraph at lines 143--145
 \OT1/cmr/m/n/12 Kinect v1
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 117--118
+Underfull \hbox (badness 10000) in paragraph at lines 146--147
 []|\OT1/cmr/m/n/12 Carcass
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 117--118
+Underfull \hbox (badness 10000) in paragraph at lines 146--147
 \OT1/cmr/m/n/12 Qual-ity
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 117--118
+Underfull \hbox (badness 10000) in paragraph at lines 146--147
 \OT1/cmr/m/n/12 Traits of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 117--118
+Underfull \hbox (badness 10000) in paragraph at lines 146--147
 \OT1/cmr/m/n/12 Fat-ten-ing
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 117--118
+Underfull \hbox (badness 10000) in paragraph at lines 146--147
 \OT1/cmr/m/n/12 Pigs Es-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 117--118
+Underfull \hbox (badness 10000) in paragraph at lines 146--147
 \OT1/cmr/m/n/12 ti-mated
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 117--118
+Underfull \hbox (badness 10000) in paragraph at lines 146--147
 \OT1/cmr/m/n/12 Us-ing 3D
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 117--118
+Underfull \hbox (badness 10000) in paragraph at lines 146--147
 \OT1/cmr/m/n/12 Im-age
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 119--120
+Underfull \hbox (badness 10000) in paragraph at lines 148--149
 []|\OT1/cmr/m/n/12 A. Pe~na
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 119--120
+Underfull \hbox (badness 10000) in paragraph at lines 148--149
 \OT1/cmr/m/n/12 Fern^^Sandez,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 119--120
+Underfull \hbox (badness 10000) in paragraph at lines 148--149
 \OT1/cmr/m/n/12 T. Nor-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 119--120
+Underfull \hbox (badness 10000) in paragraph at lines 148--149
 \OT1/cmr/m/n/12 ton, E.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 119--120
+Underfull \hbox (badness 10000) in paragraph at lines 148--149
 \OT1/cmr/m/n/12 Vranken,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 119--120
+Underfull \hbox (badness 10000) in paragraph at lines 148--149
 \OT1/cmr/m/n/12 D. Berck-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 119--120
+Underfull \hbox (badness 10000) in paragraph at lines 148--149
 \OT1/cmr/m/n/12 mans
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 121--125
+Underfull \hbox (badness 10000) in paragraph at lines 150--154
 []|\OT1/cmr/m/n/12 - Kinect 3D
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 121--125
+Underfull \hbox (badness 10000) in paragraph at lines 150--154
 \OT1/cmr/m/n/12 - Cap-ture
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 121--125
+Underfull \hbox (badness 10000) in paragraph at lines 150--154
 \OT1/cmr/m/n/12 3D top-view
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 121--125
+Underfull \hbox (badness 10000) in paragraph at lines 150--154
 \OT1/cmr/m/n/12 im-ages pre-
  []
 
 
-Underfull \hbox (badness 2707) in paragraph at lines 121--125
+Underfull \hbox (badness 2707) in paragraph at lines 150--154
 \OT1/cmr/m/n/12 - Ex-tract im-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 121--125
+Underfull \hbox (badness 10000) in paragraph at lines 150--154
 \OT1/cmr/m/n/12 age fea-tures:
  []
 
 
-Underfull \hbox (badness 1661) in paragraph at lines 121--125
+Underfull \hbox (badness 1661) in paragraph at lines 150--154
 \OT1/cmr/m/n/12 lengths, ar-eas,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 121--125
+Underfull \hbox (badness 10000) in paragraph at lines 150--154
 \OT1/cmr/m/n/12 step-wise lin-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 121--125
+Underfull \hbox (badness 10000) in paragraph at lines 150--154
 \OT1/cmr/m/n/12 ear re-gres-sion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 126--127
+Underfull \hbox (badness 10000) in paragraph at lines 155--156
 []|\OT1/cmr/m/n/12 The re-gres-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 126--127
+Underfull \hbox (badness 10000) in paragraph at lines 155--156
 \OT1/cmr/m/n/12 sion mod-els
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 126--127
+Underfull \hbox (badness 10000) in paragraph at lines 155--156
 \OT1/cmr/m/n/12 achieved an
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 126--127
+Underfull \hbox (badness 10000) in paragraph at lines 155--156
 \OT1/cmr/m/n/12 ad-justed R\TS1/cmr/m/n/12 ²
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 126--127
+Underfull \hbox (badness 10000) in paragraph at lines 155--156
 \OT1/cmr/m/n/12 rang-ing from
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 126--127
+Underfull \hbox (badness 10000) in paragraph at lines 155--156
 \OT1/cmr/m/n/12 70-85 per-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 126--127
+Underfull \hbox (badness 10000) in paragraph at lines 155--156
 \OT1/cmr/m/n/12 cent dur-ing
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 126--127
+Underfull \hbox (badness 10000) in paragraph at lines 155--156
 \OT1/cmr/m/n/12 train-ing, but
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 126--127
+Underfull \hbox (badness 10000) in paragraph at lines 155--156
 \OT1/cmr/m/n/12 per-for-mance
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 126--127
+Underfull \hbox (badness 10000) in paragraph at lines 155--156
 \OT1/cmr/m/n/12 de-creased to
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 126--127
+Underfull \hbox (badness 10000) in paragraph at lines 155--156
 \OT1/cmr/m/n/12 50-60 per-cent
  []
 
 
-Underfull \hbox (badness 6842) in paragraph at lines 126--127
+Underfull \hbox (badness 6842) in paragraph at lines 155--156
 \OT1/cmr/m/n/12 dur-ing val-i-da-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 126--127
+Underfull \hbox (badness 10000) in paragraph at lines 155--156
 \OT1/cmr/m/n/12 cor-re-la-tions
  []
 
 
-Underfull \hbox (badness 2865) in paragraph at lines 126--127
+Underfull \hbox (badness 2865) in paragraph at lines 155--156
 \OT1/cmr/m/n/12 with slaugh-ter
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 126--127
+Underfull \hbox (badness 10000) in paragraph at lines 155--156
 \OT1/cmr/m/n/12 fi-nal weight
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 126--127
+Underfull \hbox (badness 10000) in paragraph at lines 155--156
 \OT1/cmr/m/n/12 found us-ing
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 126--127
+Underfull \hbox (badness 10000) in paragraph at lines 155--156
 \OT1/cmr/m/n/12 the me-dian
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 126--127
+Underfull \hbox (badness 10000) in paragraph at lines 155--156
 \OT1/cmr/m/n/12 fea-tures from
  []
 
 
-Underfull \hbox (badness 3009) in paragraph at lines 126--127
+Underfull \hbox (badness 3009) in paragraph at lines 155--156
 \OT1/cmr/m/n/12 the last week
  []
 
 
-Overfull \hbox (1.15266pt too wide) in paragraph at lines 128--130
+Overfull \hbox (1.15266pt too wide) in paragraph at lines 157--159
 []|\OT1/cmr/m/n/12 Considering
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 128--130
+Underfull \hbox (badness 10000) in paragraph at lines 157--159
 \OT1/cmr/m/n/12 only the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 128--130
+Underfull \hbox (badness 10000) in paragraph at lines 157--159
 \OT1/cmr/m/n/12 sec-tions
  []
 
 
-Underfull \hbox (badness 1460) in paragraph at lines 128--130
+Underfull \hbox (badness 1460) in paragraph at lines 157--159
 \OT1/cmr/m/n/12 rel-e-vant to
  []
 
 
-Underfull \hbox (badness 4084) in paragraph at lines 128--130
+Underfull \hbox (badness 4084) in paragraph at lines 157--159
 \OT1/cmr/m/n/12 pig weight
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 128--130
+Underfull \hbox (badness 10000) in paragraph at lines 157--159
 \OT1/cmr/m/n/12 es-ti-ma-tion,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 128--130
+Underfull \hbox (badness 10000) in paragraph at lines 157--159
 \OT1/cmr/m/n/12 the study
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 128--130
+Underfull \hbox (badness 10000) in paragraph at lines 157--159
 \OT1/cmr/m/n/12 as a ref-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 128--130
+Underfull \hbox (badness 10000) in paragraph at lines 157--159
 \OT1/cmr/m/n/12 er-ence for
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 128--130
+Underfull \hbox (badness 10000) in paragraph at lines 157--159
 \OT1/cmr/m/n/12 meth-ods
  []
 
 
-Underfull \hbox (badness 3009) in paragraph at lines 128--130
+Underfull \hbox (badness 3009) in paragraph at lines 157--159
 \OT1/cmr/m/n/12 for fea-ture
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 128--130
+Underfull \hbox (badness 10000) in paragraph at lines 157--159
 \OT1/cmr/m/n/12 ex-trac-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 128--130
+Underfull \hbox (badness 10000) in paragraph at lines 157--159
 \OT1/cmr/m/n/12 and pig
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 128--130
+Underfull \hbox (badness 10000) in paragraph at lines 157--159
 \OT1/cmr/m/n/12 anal-y-sis
  []
 
 
-Underfull \hbox (badness 4739) in paragraph at lines 128--130
+Underfull \hbox (badness 4739) in paragraph at lines 157--159
 \OT1/cmr/m/n/12 as one of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 128--130
+Underfull \hbox (badness 10000) in paragraph at lines 157--159
 \OT1/cmr/m/n/12 the bases
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 128--130
+Underfull \hbox (badness 10000) in paragraph at lines 157--159
 \OT1/cmr/m/n/12 for the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 128--130
+Underfull \hbox (badness 10000) in paragraph at lines 157--159
 \OT1/cmr/m/n/12 meth-ods
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 128--130
+Underfull \hbox (badness 10000) in paragraph at lines 157--159
 \OT1/cmr/m/n/12 that will
  []
 
 
-Overfull \hbox (2.76747pt too wide) in alignment at lines 65--131
+Overfull \hbox (2.76747pt too wide) in alignment at lines 94--160
  [] [] [] [] [] 
  []
 
-[25] [26] [27]
+[31] [32] [33]
 
-[28]
-Overfull \hbox (1.6916pt too wide) in paragraph at lines 135--136
+[34]
+Overfull \hbox (1.6916pt too wide) in paragraph at lines 164--165
 \OT1/cmr/m/n/12 cam-eras com-bined with seg-men-ta-tion (Mask R-CNN) and MLP mo
 d-els, achiev-
  []
 
 
 
-[29])
+[35])
 
-[30]
+[36]
 \openout2 = `chapter3.aux'.
 
  (chapter3.tex
 Chapter 3.
-<figures/Architectureofniggas.png, id=581, 1559.8275pt x 1428.08531pt>
+<figures/Architectureofniggas.png, id=651, 1559.8275pt x 1428.08531pt>
 File: figures/Architectureofniggas.png Graphic file (type png)
 <use figures/Architectureofniggas.png>
 Package pdftex.def Info: figures/Architectureofniggas.png  used on input line 1
@@ -2061,13 +2091,13 @@ Package pdftex.def Info: figures/Architectureofniggas.png  used on input line 1
 (pdftex.def)             Requested size: 313.76886pt x 287.27313pt.
 
 
-[31
+[37
 
 
 
 
  <./figures/Architectureofniggas.png>]
-<figures/Requirement Analysis (4).png, id=589, 1268.48906pt x 526.96875pt>
+<figures/Requirement Analysis (4).png, id=658, 1268.48906pt x 526.96875pt>
 File: figures/Requirement Analysis (4).png Graphic file (type png)
 <use figures/Requirement Analysis (4).png>
 Package pdftex.def Info: figures/Requirement Analysis (4).png  used on input li
@@ -2080,53 +2110,35 @@ Overfull \hbox (17.42076pt too wide) in paragraph at lines 21--22
 
 
 
-[32 <./figures/Requirement Analysis (4).png>]
+[38 <./figures/Requirement Analysis (4).png>]
 
-[33]
-<figures/Thesis Flowchart.png, id=599, 183.68625pt x 603.25375pt>
+[39]
+<figures/Thesis Flowchart.png, id=668, 183.68625pt x 603.25375pt>
 File: figures/Thesis Flowchart.png Graphic file (type png)
 <use figures/Thesis Flowchart.png>
 Package pdftex.def Info: figures/Thesis Flowchart.png  used on input line 31.
 (pdftex.def)             Requested size: 104.9657pt x 344.73126pt.
 
 
-[34 <./figures/Thesis Flowchart.png>]
-<figures/Untitled-1wqw.png, id=605, 4890.27pt x 3195.94pt>
+[40 <./figures/Thesis Flowchart.png>]
+<figures/Untitled-1wqw.png, id=674, 4890.27pt x 3195.94pt>
 File: figures/Untitled-1wqw.png Graphic file (type png)
 <use figures/Untitled-1wqw.png>
 Package pdftex.def Info: figures/Untitled-1wqw.png  used on input line 41.
 (pdftex.def)             Requested size: 351.60669pt x 229.815pt.
 
 
-[35 <./figures/Untitled-1wqw.png>]
+[41 <./figures/Untitled-1wqw.png>]
 
-[36]
+[42]
 
-[37]
+[43]
 Overfull \hbox (3.07407pt too wide) in paragraph at lines 56--57
 []\OT1/cmr/m/n/12 This study em-ploys the Seg-men-ta-tion Any-thing Model (SAM)
  to achieve
  []
 
 
-
-[38]
-
-[39]
-
-[40]
-
-[41]
-<figures/Untitled-1 (1).png, id=641, 4020.01875pt x 3089.5425pt>
-File: figures/Untitled-1 (1).png Graphic file (type png)
-<use figures/Untitled-1 (1).png>
-Package pdftex.def Info: figures/Untitled-1 (1).png  used on input line 124.
-(pdftex.def)             Requested size: 298.97343pt x 229.815pt.
-
-
-[42 <./figures/Untitled-1 (1).png>]
-
-[43]
 
 [44]
 
@@ -2135,32 +2147,50 @@ Package pdftex.def Info: figures/Untitled-1 (1).png  used on input line 124.
 [46]
 
 [47]
+<figures/Untitled-1 (1).png, id=707, 4020.01875pt x 3089.5425pt>
+File: figures/Untitled-1 (1).png Graphic file (type png)
+<use figures/Untitled-1 (1).png>
+Package pdftex.def Info: figures/Untitled-1 (1).png  used on input line 124.
+(pdftex.def)             Requested size: 298.97343pt x 229.815pt.
 
-[48]
+
+[48 <./figures/Untitled-1 (1).png>]
 
 [49]
 
-[50])
+[50]
 
 [51]
 
 [52]
+
+[53]
+
+[54]
+
+[55]
+
+[56])
+
+[57]
+
+[58]
 \openout2 = `bibliography.aux'.
 
  (bibliography.tex (thesis.bbl
 
-[53
+[59
 
 
 
 
 ]
 
-[54]
+[60]
 
-[55]))
+[61]))
 
-[56]
+[62]
 
 Package natbib Warning: There were undefined citations.
 
@@ -2170,20 +2200,20 @@ LaTeX2e <2024-11-01>
 L3 programming layer <2020/03/25>
  ***********
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 48EF16FFF284B59394A39BB07FEF39B6;7689.
+(rerunfilecheck)             Checksum: C1CF1BB89DF28FF231D85424E865CED3;8442.
  )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 2 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 15076 strings out of 473682
- 242065 string characters out of 5719215
- 664561 words of memory out of 5000000
- 37721 multiletter control sequences out of 15000+600000
- 565526 words of font info for 67 fonts, out of 8000000 for 9000
+ 15122 strings out of 473682
+ 242889 string characters out of 5719215
+ 664806 words of memory out of 5000000
+ 37751 multiletter control sequences out of 15000+600000
+ 565695 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 80i,10n,82p,2390b,709s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 80i,10n,82p,2390b,721s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Brian\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/
 ec/dpi600\tcrm1200.pk><C:/Users/Brian/AppData/Local/Programs/MiKTeX/fonts/type1
 /public/amsfonts/cm/cmbx12.pfb><C:/Users/Brian/AppData/Local/Programs/MiKTeX/fo
@@ -2195,10 +2225,11 @@ n/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Use
 rs/Brian/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pf
 b><C:/Users/Brian/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmsy8.pfb><C:/Users/Brian/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
-onts/cm/cmti12.pfb>
-Output written on thesis.pdf (62 pages, 1479185 bytes).
+onts/cm/cmti12.pfb><C:/Users/Brian/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/amsfonts/cm/cmtt12.pfb>
+Output written on thesis.pdf (68 pages, 1580272 bytes).
 PDF statistics:
- 788 PDF objects out of 1000 (max. 8388607)
- 168 named destinations out of 1000 (max. 500000)
- 410 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 866 PDF objects out of 1000 (max. 8388607)
+ 183 named destinations out of 1000 (max. 500000)
+ 439 words of extra memory for PDF output out of 10000 (max. 10000000)
 

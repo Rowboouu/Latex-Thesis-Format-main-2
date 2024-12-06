@@ -1,10 +1,9 @@
 \begin{thebibliography}{}
 
-\bibitem[\protect\astroncite{Bahlo et~al.}{2019}]{bahlo2019role}
-Bahlo, C., Dahlhaus, P., Thompson, H., and Trotter, M. (2019).
-\newblock The role of interoperable data standards in precision livestock
-  farming in extensive livestock systems: A review.
-\newblock {\em Computers and electronics in agriculture}, 156:459--466.
+\bibitem[\protect\astroncite{Andújar et~al.}{2016}]{Andujar2016}
+Andújar, D., Escolà, A., and Rosell-Polo, J.~R. (2016).
+\newblock A review of optical sensing systems for plant phenotyping.
+\newblock {\em Precision Agriculture}, 17(1):1--18.
 
 \bibitem[\protect\astroncite{Bercovich et~al.}{2013}]{bercovich2013development}
 Bercovich, A., Edan, Y., Alchanatis, V., Moallem, U., Parmet, Y., Honig, H.,
@@ -44,6 +43,13 @@ Fadlelmoula, A.~A., Mudarris, M.~S., and Hariri, M.~S. (2020).
 Faucitano, L. and Goumon, S. (2018).
 \newblock Transport of pigs to slaughter and associated handling.
 \newblock In {\em Advances in pig welfare}, pages 261--293. Elsevier.
+
+\bibitem[\protect\astroncite{{Food and Agriculture Organization
+  (FAO)}}{2022}]{FAO2022}
+{Food and Agriculture Organization (FAO)} (2022).
+\newblock Global meat consumption statistics.
+\newblock \url{http://www.fao.org}.
+\newblock Accessed: 2024-12-06.
 
 \bibitem[\protect\astroncite{Franco et~al.}{2017}]{franco2017evaluation}
 Franco, M. d.~O., Marcondes, M.~I., Campos, J. M. d.~S., Freitas, D. R.~d.,
@@ -96,6 +102,12 @@ Ma, W., Qi, X., Sun, Y., Gao, R., Ding, L., Wang, R., Peng, C., Zhang, J., Wu,
   dimension and weight: A review.
 \newblock {\em Agriculture}, 14(2):306.
 
+\bibitem[\protect\astroncite{Mañez et~al.}{2020}]{Manez2020}
+Mañez, M., Ortega, J., and Aguilar, D. (2020).
+\newblock Performance evaluation of pig breeds in the philippines: A study on
+  landrace pigs.
+\newblock {\em Philippine Agricultural Science}, 103(3):217--225.
+
 \bibitem[\protect\astroncite{Monteiro et~al.}{2021}]{monteiro2021precision}
 Monteiro, A., Santos, S., and Gon{\c{c}}alves, P. (2021).
 \newblock Precision agriculture for crop and livestock farming—brief review.
@@ -141,13 +153,6 @@ Rousing, T., Bonde, M., Badsberg, J.~H., and S{\o}rensen, J.~T. (2004).
   cows.
 \newblock {\em Livestock Production Science}, 88(1-2):1--8.
 
-\bibitem[\protect\astroncite{Ruchay et~al.}{2022}]{ruchay2022live}
-Ruchay, A., Kober, V., Dorofeev, K., Kolpakov, V., Gladkov, A., and Guo, H.
-  (2022).
-\newblock Live weight prediction of cattle based on deep regression of rgb-d
-  images.
-\newblock {\em Agriculture}, 12(11):1794.
-
 \bibitem[\protect\astroncite{Samperio et~al.}{2021}]{samperio2021lambs}
 Samperio, E., Lid{\'o}n, I., Rebollar, R., Castej{\'o}n-Limas, M., and
   {\'A}lvarez-Aparicio, C. (2021).
@@ -165,6 +170,11 @@ Singh, A., Jadoun, Y., Brar, P.~S., and Kour, G. (2022).
 \newblock Smart technologies in livestock farming.
 \newblock In {\em Smart and sustainable food technologies}, pages 25--57.
   Springer.
+
+\bibitem[\protect\astroncite{Smisek et~al.}{2013}]{Smisek2013}
+Smisek, J., Jancosek, M., and Pajdla, T. (2013).
+\newblock 3d with kinect.
+\newblock {\em Consumer Depth Cameras for Computer Vision}, 17(2):3--25.
 
 \bibitem[\protect\astroncite{Soussi et~al.}{2024}]{soussi2024smart}
 Soussi, A., Zero, E., Sacile, R., Trinchero, D., and Fossa, M. (2024).
@@ -184,6 +194,13 @@ Terence, S., Immaculate, J., Raj, A., and Nadarajan, J. (2024).
   systems.
 \newblock {\em Sustainability}, 16(10):4073.
 
+\bibitem[\protect\astroncite{{The Pig Site}}{nd}]{ThePigSite}
+{The Pig Site} (n.d.).
+\newblock Weighing a pig without a scale.
+\newblock
+  \url{https://www.thepigsite.com/articles/weighing-a-pig-without-a-scale}.
+\newblock Accessed: 2024-12-06.
+
 \bibitem[\protect\astroncite{Wang et~al.}{2024}]{wang2024review}
 Wang, Z., Li, Q., Yu, Q., Qian, W., Gao, R., Wang, R., Wu, T., and Li, X.
   (2024).
@@ -201,5 +218,10 @@ Yan, Q., Ding, L., Wei, H., Wang, X., Jiang, C., and Degen, A. (2019).
 \newblock Body weight estimation of yaks using body measurements from image
   analysis.
 \newblock {\em Measurement}, 140:76--80.
+
+\bibitem[\protect\astroncite{Zhang}{2012}]{Zhang2012}
+Zhang, Z. (2012).
+\newblock Microsoft kinect sensor and its effect.
+\newblock {\em IEEE Multimedia}, 19(2):4--10.
 
 \end{thebibliography}

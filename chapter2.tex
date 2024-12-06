@@ -36,27 +36,56 @@ CV-based systems not only provide budgetary difficulties but also demand special
 
 \subsection{Historical Development}
 
-In the past, weight estimation was primarily performed manually. A common method used was Body Condition Scoring (BCS), which assesses the fatness or thinness of livestock through visual inspection and tactile assessment (Bercovich et al., 2013). However, BCS is prone to errors and biases, as it relies heavily on the evaluator's judgment, making it less reliable.
+In traditional livestock management, weight estimation was primarily performed manually using techniques such as Body Condition Scoring (BCS). This method evaluates the fatness or thinness of animals through visual inspection and tactile assessment \citep{bercovich2013development}. While straightforward and cost-effective, BCS relies heavily on the evaluator's expertise, introducing variability and potential bias in results. Additionally, this method does not provide precise numerical weight values, making it less reliable for data-driven decision-making in modern farming practices.
 
-In recent years, 3D modeling has emerged as a more accurate alternative for weight estimation. Unlike 2D images, 3D modeling captures volumetric data that correlates more precisely with the actual weight of livestock (Liu et al., 2019). The integration of 3D vision cameras with convolutional neural networks (CNNs) has further improved the accuracy and automation of weight estimation systems. CNNs excel at learning and classifying features from images, which enhances the precision of weight estimates in livestock.
+Before the introduction of digital technologies, farmers used scales or manual measurements to estimate livestock weight. With scales, animals were weighed directly, but this required significant infrastructure, such as livestock-specific weighing platforms. These setups were costly, labor-intensive, and often stressful for the animals, impacting their health and productivity.
+
+For situations where scales were unavailable, farmers traditionally estimated pig weight using a tape measure and mathematical formulas. This approach involved measuring specific dimensions of the pig, such as its girth and length, and applying an empirical formula to estimate its weight. For example, pig weight can be approximated using the formula:
+
+\begin{equation}
+	Weight(kg) = \frac{Girth (cm)^2 * Length (cm)}{400}
+\end{equation}
+\myequation{Traditional Weight}
+
+Where \textit{Girth} is the circumference of the pig's chest behind the front legs, and \textit{Length} is the distance from the base of the tail to the middle of the ears.
+
+This method, though simpler than using scales, is prone to human error and variability in measurements. Despite its limitations, it remains popular, especially in rural farming contexts in the Philippines, where such techniques are both accessible and practical
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=0.25\textheight]{figures/Pig Tape Measure}
+	\caption{Illustration of weight estimation using a tape measure}
+	\label{fig:Tape Measure}
+\end{figure}
 
 \subsection{Modern Techniques}
 
 Body weight (BW) prediction in livestock can be modeled using four main approaches of increasing complexity: Traditional Approach, Computer Vision Approach, Computer Vision with Machine Learning, and Computer Vision with Deep Learning. The Traditional Approach relies on manually collected morphometric measurements such as heart girth, wither height, and body length, which are then applied in traditional regression models. This method has been widely used for species such as cattle, pigs, sheep, goats, camels, and yaks \citep{franco2017evaluation}; \citep{fadlelmoula2020prediction}; \citep{yan2019body}. While effective, it is labor-intensive and causes stress to the animals. To mitigate these issues, the Computer Vision (CV) Approach uses 2D and 3D electro-optical sensors, such as RGB or Kinect cameras, to capture images for morphometric measurements \citep{ozkaya2013prediction}. Although 3D cameras improve precision, they are expensive and require complex data processing. The CV with Machine Learning (CV+ML) Approach enhances the CV method by automating feature selection with machine learning techniques, although some manual processes, such as image segmentation and morphometric extraction, remain necessary \citep{tasdemir2019ann}. Finally, the CV with Deep Learning (CV+DL) Approach uses deep learning models, including convolutional neural networks (CNNs) and recurrent convolutional networks (RCNNs), to fully automate the BW prediction process \citep{gjergji2020deep}. While this approach has shown significant improvements, challenges still exist in precisely segmenting animals from complex backgrounds \citep{shukla2016metric}. These approaches highlight the evolution of BW prediction models, transitioning from manual methods to fully automated systems, with deep learning offering promising advancements.
-
-\subsection{Challenges in Weight Estimation}
-
-Weight estimation is a complex process that involves integrating multiple factors to ensure accuracy and effectiveness. In precision livestock farming, intelligent perception plays a crucial role in achieving reliable results. This includes various perception and management tasks designed to monitor and assess livestock health and performance \citep{bahlo2019role}.
-
-One of the main challenges in livestock weight estimation is the variability in animal posture and movement. Since animals rarely maintain a consistent posture during measurement, this can lead to inaccurate assessments of their body condition. A common method for estimating an animal's fat or thinness is Body Condition Scoring (BCS), which evaluates fat reserves through visual and tactile assessments \citep{bercovich2013development}. While BCS is widely recognized for its effectiveness, it has limitations. The manual scoring process, which relies on the expertise of trained scorers, is inherently subjective and prone to inconsistency \citep{gjergji2020deep}. Human judgment introduces variability and potential bias, making the results less precise. The accuracy of BCS can vary depending on the scorer’s experience, perception, and environmental conditions, highlighting the need for more objective, automated methods for assessing livestock conditions.
-
-Another challenge in weight estimation is the complexity of farm environments. These environments often lack the stable conditions necessary for accurate data collection. For example, animal features can appear differently based on posture and lighting \citep{ruchay2022live}. Inconsistent light sources can interfere with 3D imaging systems, while animal movements can shift their posture, resulting in incomplete or erroneous data.
 
 \subsection{Applications of Kinect in Agriculture}
 
 In livestock farming, Kinect sensors are used to monitor animal behavior, health, and growth through 3D imaging. This technology allows for early detection of health issues by analyzing subtle changes in posture, gait, and movement patterns. It can identify lameness in cattle early on, allowing for prompt intervention \citep{singh2022smart}. Moreover, Kinect’s non-invasive methods provide automated weight estimation by capturing 3D images, reducing the need for stressful manual weighing processes. Continuous monitoring helps track growth and optimize feeding schedules, contributing to the overall welfare of livestock. In addition to health monitoring, Kinect sensors contribute to environmental control within livestock facilities, tracking variables like temperature and humidity to ensure optimal conditions. In poultry farming, Kinect can monitor flock movement patterns, alerting farmers to potential issues like overcrowding, which could lead to health or productivity problems.
 
 The integration of Kinect into Precision Livestock Farming (PLF) systems further enhances its value, as it collects real-time data alongside other technologies like RFID and GPS. This combination allows for more efficient resource management, improved reproductive tracking, and more precise feeding practices \citep{monteiro2021precision}. Kinect technology is also being used in crop management. Its 3D imaging capabilities are beneficial in monitoring plant growth, detecting diseases early, and optimizing resource use like water and fertilizers. In automated harvesting, Kinect sensors guide robots through fields, identifying ripe crops based on their size and shape. This reduces the need for manual labor and ensures timely harvesting to maximize yield and quality \citep{singh2022smart}.
+
+\section{Microsoft Kinect V1}
+
+The Kinect V1 sensor employs an infrared (IR) structured light system to capture depth information. It consists of three main components: an RGB camera, an IR projector, and an IR sensor. The RGB camera captures standard color images, while the IR projector emits a structured pattern of infrared light onto the environment. The IR sensor detects distortions in the projected pattern caused by objects in the scene, enabling the device to compute depth information based on the time and spatial displacement of the reflected IR light \citep{Zhang2012}. This technique provides a depth resolution of 640x480 pixels, with a frame rate of up to 30 frames per second, making it suitable for capturing detailed spatial data.
+
+\subsection{Depth Data Acquisition and Processing}
+
+The Kinect V1 produces a 3D point cloud by combining depth and RGB data, representing the spatial coordinates (X, Y, Z) of each pixel in the captured scene. This depth information is particularly useful for applications requiring precise measurements of object size, shape, and volume. The sensor's effective depth range is between 0.8 and 4.0 meters, allowing it to capture accurate data within typical livestock pen dimensions \citep{Smisek2013}. By leveraging its depth-sensing capability, researchers can measure the dimensions of objects without physical contact, making it ideal for non-invasive weight estimation in pigs.
+
+\subsection{Kinect V1 Applications in Agriculture}
+
+The Kinect V1 has been successfully utilized in agricultural studies for tasks such as plant phenotyping, fruit grading, and livestock monitoring. For instance, \citep{Andujar2016} used the Kinect V1 to evaluate crop height and canopy structure, demonstrating its utility in capturing detailed morphological data. Similarly, \citep{pezzuolo2018barn} employed the Kinect V1 to estimate cattle body volume and weight, achieving high accuracy compared to traditional methods. These applications highlight the potential of the Kinect V1 as a versatile tool for precision agriculture.
+
+\subsection{Kinect V1 Potential for Pig Weight Estimation}
+
+In pig farming, accurate weight estimation is crucial for optimizing feeding strategies and monitoring growth. Traditional weighing methods, such as scales or manual measurements, can be labor-intensive, stressful for animals, and prone to errors \citep{faucitano2018transport}. The Kinect V1 offers a non-invasive alternative by capturing detailed depth images that enable the calculation of pig body volume. By processing these depth images using machine learning algorithms, it is possible to develop a system that estimates pig weight based on 3D body volume, eliminating the need for physical contact.
+
+The Kinect V1's structured light technology ensures that depth measurements are unaffected by variations in visible light conditions, making it suitable for use in indoor pig pens where lighting may vary. Additionally, its ability to provide real-time depth data opens the possibility for developing dynamic weight monitoring systems that can track pig growth continuously.
+
 
 \section{Synthesis Matrix}
 
