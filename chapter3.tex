@@ -13,7 +13,7 @@ This chapter presents the research methodology used in the study, it covers the 
 	\label{fig:System Architecture}
 \end{figure}
 
-Figure 1 shows the system architecture of the pig weight estimation system. It consists of the pig to be captured, the Kinect camera that will be used for taking depth images, and the system for the processing of all the data. A laptop will be used for the processing of data, which will include the processing of images, extraction of pig’s features, and calculation of estimated weight with a machine learning model. The result can then be accessed in a web application, where actual and estimated weights can be validated.
+Figure 2 shows the system architecture of the pig weight estimation system. It consists of the pig to be captured, the Kinect camera that will be used for taking depth images, and the system for the processing of all the data. A laptop will be used for the processing of data, which will include the processing of images, extraction of pig’s features, and calculation of estimated weight with a machine learning model. The result can then be accessed in a web application, where actual and estimated weights can be validated.
 
 \subsection { Waterfall Model}
 \begin{figure}[h]
@@ -23,7 +23,7 @@ Figure 1 shows the system architecture of the pig weight estimation system. It c
 	\label{fig:Waterfall Model}
 \end{figure}
 
-Figure 2 shows the Waterfall Model of the Weight Estimation System. Requirement Analysis, defines the goal for creating a non-invasive pig weight estimation system using a Kinect depth sensor. The system captures depth images, extracts features like height and volume, and predicts weight through machine learning models, with results available via a web app. System Design plans the architecture, including hardware and software components. For the hardware components, a Kinect sensor, a computer system, and a pig pen setup are required. While a Machine learning model and a web application is required for the software components. Implementation involves collecting images, extracting features, and training machine learning models. The Kinect sensor gathers the images to be processed. An algorithm extracts the features such as the height, area and volume from the depth images. The image processing involves grayscale conversion of the gathered images, contour detection and feature segmentation to isolate pig features. The training of the machine learning model follows a ratio of 7:3 for the training data and the testing data respectively. The testing phase assesses the system's accuracy using performance metrics such as MAE and RMSE. Following the 7:3 ratio, 30 percent of the gathered data set is used in the testing of the machine learning models in which the most accurate model is selected. The system is deployed using a web application that displays the weight estimates based on input depths.
+Figure 3 shows the Waterfall Model of the Weight Estimation System. Requirement Analysis, defines the goal for creating a non-invasive pig weight estimation system using a Kinect depth sensor. The system captures depth images, extracts features like height and volume, and predicts weight through machine learning models, with results available via a web app. System Design plans the architecture, including hardware and software components. For the hardware components, a Kinect sensor, a computer system, and a pig pen setup are required. While a Machine learning model and a web application is required for the software components. Implementation involves collecting images, extracting features, and training machine learning models. The Kinect sensor gathers the images to be processed. An algorithm extracts the features such as the height, area and volume from the depth images. The image processing involves grayscale conversion of the gathered images, contour detection and feature segmentation to isolate pig features. The training of the machine learning model follows a ratio of 7:3 for the training data and the testing data respectively. The testing phase assesses the system's accuracy using performance metrics such as MAE and RMSE. Following the 7:3 ratio, 30 percent of the gathered data set is used in the testing of the machine learning models in which the most accurate model is selected. The system is deployed using a web application that displays the weight estimates based on input depths.
 \newpage
 \subsection {Flowchart}
 \begin{figure}[h]
@@ -33,7 +33,7 @@ Figure 2 shows the Waterfall Model of the Weight Estimation System. Requirement 
 	\label{fig:Flowchart}
 \end{figure}
 
-Figure 3 outlines the flowchart of the weight estimation system. The process begins with system initialization, where the Kinect camera and other equipment are powered on, and the pig is prepared for imaging. Images are captured using the Kinect camera, and a good quality image is defined as clear, well-lit, free of motion blur, and accurately representing the pig's dimensions. To select the highest quality image, a max voting ensemble algorithm evaluates multiple captured images based on metrics like sharpness, contrast, and brightness (Gonzalez and Woods, 2018). If no satisfactory image is found, additional captures are made until a quality image is obtained. Once a high-quality image is secured, the system moves on to image preprocessing and feature extraction, leading to the prediction of the estimated weight. The final result is then displayed in a web application for user access.
+Figure 4 outlines the flowchart of the weight estimation system. The process begins with system initialization, where the Kinect camera and other equipment are powered on, and the pig is prepared for imaging. Images are captured using the Kinect camera, and a good quality image is defined as clear, well-lit, free of motion blur, and accurately representing the pig's dimensions. To select the highest quality image, a max voting ensemble algorithm evaluates multiple captured images based on metrics like sharpness, contrast, and brightness (Gonzalez and Woods, 2018). If no satisfactory image is found, additional captures are made until a quality image is obtained. Once a high-quality image is secured, the system moves on to image preprocessing and feature extraction, leading to the prediction of the estimated weight. The final result is then displayed in a web application for user access.
 \subsection {Pigpen Diagram}
 
 \begin{figure}[h]
@@ -43,14 +43,23 @@ Figure 3 outlines the flowchart of the weight estimation system. The process beg
 	\label{fig:Pigpen Diagram}
 \end{figure}
 
-Figure 4 presents a diagram of the pigpen, illustrating the positioning of the Kinect camera. The camera is strategically suspended 1.25 meters above the ground. This height ensures a clear capture of the pig within the pen, while remaining low enough to minimize the likelihood of capturing workers as they move around the area. Additionally, this positioning keeps the camera within its optimal range of 2 meters, maximizing its effectiveness for monitoring purposes.
+Figure 5 presents a diagram of the pigpen, illustrating the positioning of the Kinect camera. The camera is strategically suspended 1.25 meters above the ground. This height ensures a clear capture of the pig within the pen, while remaining low enough to minimize the likelihood of capturing workers as they move around the area. Additionally, this positioning keeps the camera within its optimal range of 2 meters, maximizing its effectiveness for monitoring purposes. This setup is designed to predict the weight of one pig at a time
 
 \section{Study Design and Data Collection}
 The study will be conducted in commercial pig weaning farms located in Northern Mindanao, Philippines, focusing on pigs of the Landrace breed. These pigs, with an average live weight ranging from 40 to 100 kilograms, are fed using commercial dry pellet feed and have access to water through standard feeders in the weaning pens. Data collection will take place within these farms, where depth images of the pigs will be captured using the Kinect V1 camera. The camera will record depth data, essential for calculating the distance between the sensor and the top of the pig, and between the sensor and the ground. This is needed for the calculation of the height of the pig, which will be used to estimate the pig's weight.
 Several environmental factors will also be monitored during data collection, such as lighting conditions and temperature. The size of the pen in the weaning barn will be recorded to ensure consistent environmental conditions for all pigs observed. Additionally, the temperature of the area during observation will be measured, as fluctuations in temperature can influence the pigs’ behavior and posture. The lighting conditions within the observation area will also be documented, given that lighting can impact the quality of the depth images captured by the Kinect sensor. By controlling and documenting these variables, the study aims to minimize external factors that could affect the accuracy of the weight estimation model.
 
 \section{Object Detection}
-Object detection in this study isolates the pig within each frame using depth images from Kinect sensors to identify the region of interest (ROI). We employ YOLOv5 (You Only Look Once, version 5), a single-shot object detection model known for its high efficiency and accuracy in real-time applications (Bochkovskiy et al., 2020). With a CNN-based architecture, YOLOv5 processes entire images in a single pass, which optimizes speed and accuracy—key factors for agricultural use (Redmon and Farhadi, 2016; Jocher, 2021). This version was chosen over zero-shot and multi-stage detectors due to its consistent performance in detecting complex, variable shapes like animals. A pre trained YOLOv5 model, trained on Microsoft’s COCO dataset, was selected to leverage transfer learning, enabling robust adaptation to pig detection without extensive retraining (Lin et al., 2014; Howard et al., 2018). By adopting this approach, we reduce training overhead and improve detection reliability, making YOLOv5 ideal for our farm setting.
+Object detection in this study isolates the pig within each frame using depth images from Kinect sensors to identify the region of interest (ROI). We employ YOLOv11 (You Only Look Once, version 11), a state-of-the-art single-shot object detection model that delivers superior efficiency and accuracy in real-time applications.
+
+YOLOv11 incorporates several advanced features that make it ideal for agricultural applications, including pig detection. It utilizes an improved backbone and neck architecture, significantly enhancing its feature extraction capabilities. This enhancement allows the model to handle complex object detection tasks, such as identifying pigs with varying poses and sizes, with higher precision. Additionally, YOLOv11 introduces refined architectural designs and optimized training pipelines, achieving faster processing speeds without compromising accuracy, making it highly suitable for real-time detection in a dynamic farm environment.
+
+The model achieves a higher mean Average Precision (mAP) on benchmark datasets, such as COCO, while using 22 percent fewer parameters compared to earlier versions like YOLOv8. This computational efficiency reduces hardware requirements, enabling deployment on edge devices without sacrificing performance. Its flexibility allows seamless integration across various platforms, including edge devices, cloud systems, and NVIDIA GPU-supported hardware, ensuring adaptability to different farm setups and computational infrastructures.
+
+Furthermore, YOLOv11 supports a broad range of computer vision tasks, including instance segmentation, image classification, pose estimation, and oriented object detection. While this study focuses on object detection, YOLOv11’s versatility ensures scalability for future enhancements, making it a robust choice for agricultural applications.
+
+A pre-trained YOLOv11 model, fine-tuned with depth image data specific to our study, was selected to leverage transfer learning. This approach minimizes training overhead and maximizes detection reliability. YOLOv11’s ability to process entire images in a single pass ensures optimized speed and accuracy—key factors for real-time agricultural applications. Its enhanced feature extraction and superior accuracy make it particularly well-suited for detecting complex and variable shapes, such as pigs, in the farm environment.
+
 
 \section{Segmentation Model}
 This study employs the Segmentation Anything Model (SAM) to achieve precise segmentation of the pig within the detected ROI. SAM is uniquely suited for this task due to its prompt-based, generalizable approach, which allows for accurate segmentation with minimal retraining (Kirillov et al., 2023). SAM’s adaptability is essential in agricultural settings, where it reliably captures complex shapes and contours, ensuring high-quality feature extraction of key metrics like height and area. By using SAM, we enhance the segmentation accuracy and efficiency, enabling more consistent and precise data for weight estimation.
@@ -212,18 +221,88 @@ RMSE provides a measure of how well the model's predictions match the actual dat
 Where n is the number of observations in the test dataset, yi is the actual weight of the pig for the t-th observation, and yi is the predicted weight of the pig for the t-th observation.
 
 \section{Testing Method}
-An experimental setup will be used in this study to evaluate the accuracy and efficiency of the Kinect-based pig weight estimation system. The experimental setup will involve capturing depth images of pigs in a farming environment, followed by weight estimation using machine learning algorithms. The experimental setup allows systematic data collection and evaluation to verify the system’s performance compared to traditional weighing methods.
+The trained model will undergo rigorous evaluation to validate its accuracy. This evaluation will involve a cross-validation process utilizing a new set of pigs in a real-world experimental setup. The experimental process includes testing the system by comparing the predicted weights to the actual weights obtained using a traditional weighing scale. This approach ensures that the model is tested under practical farming conditions and its results are benchmarked against ground truth values.
 
 \section{Location}
-The study will take place at a backyard pig-weaning farm located in El Salvador City, Misamis Oriental, Philippines. This particular farm was selected due to its favorable conditions and potential to serve as an ideal research site. To ensure reliable and consistent results, controlled conditions will be maintained throughout the study. The focus will be on Landrace pigs, which are known for their excellent growth and meat quality, with an average live weight ranging between 40 and 100 kg. This controlled environment will help ensure that any variables influencing the outcomes are carefully managed.
-
-\section{Equipment}
-The study utilizes a Microsoft Kinect V1 sensor, which will be mounted approximately 1.25 meters above the pigpen to capture a top-down view of each pig. The Kinect sensor is capable of providing depth images that are essential for measuring the pigs' physical dimensions. These depth images will be processed in real time by a computer system connected to the sensor. The system will run feature extraction algorithms designed to estimate the pigs' weight based on the data collected. To ensure accurate data capture, the pigpen will need to be free of obstructions around the pigs, as any occlusions could interfere with the depth imaging process. Additionally, consistent lighting will be maintained to reduce shadows and avoid image quality variations caused by fluctuating light conditions, both of which are crucial for producing reliable data. By addressing these factors, the study aims to provide precise and consistent measurements throughout the observation period.
+The experimental testing will take place at a backyard pig-weaning farm in El Salvador City, Misamis Oriental, Philippines. This location was selected due to its accessibility and suitability for the study. The study will focus on Landrace pigs, a breed well-suited for controlled weight estimation studies, with an average weight range of 40–100 kg. Environmental variables such as lighting, temperature, and pen dimensions will be monitored to ensure consistent conditions throughout the testing period.
 
 \section{Data Collection}
-The Kinect sensor will be positioned to capture depth images of each pig. Multiple images of each pig will be taken to account for posture variation. The system will discard low-quality images through an automatic image quality check. Using the captured images, the system will extract features such as body height, surface area, and volume from the depth data. These features will then be put into a pre-trained machine-learning model for weight estimation.. 
-The Kinect sensor will be calibrated before the start of the data collection to ensure that the depth measurements are accurate and to compensate for the different lighting in the environment and the distance between the ground and the Kinect sensor. A reference weight for each pug will be recorded using a traditional weighing scale, which will use the accuracy of the Kinect-based system. The estimated weight from the depth images will be calculated automatically using the machine learning model through the system, which was trained using previously available data sets. The estimated values would then be compared to the reference weight values collected manually to assess the system's accuracy.
+The Kinect sensor will be mounted in a fixed position above the pigpen to capture real-time depth images of the pigs. The system will continuously monitor the pigs and process images in real time to estimate their weight. Each depth image captured by the Kinect sensor will undergo preprocessing to ensure it meets the quality standards required for accurate feature extraction. Low-quality images, such as those affected by motion blur or poor lighting, will be automatically filtered out by an image quality check embedded in the system.
 
-\section{Verification}
+Once an acceptable image is identified, the system will extract features such as body height, surface area, and volume directly from the depth data. These features will then be inputted into a pre-trained machine-learning model to predict the pig's weight instantly. The estimated weight will be displayed in real time on a connected interface, such as a web application, for immediate validation and monitoring.
 
-The verification process will involve comparing the weights estimated by the Kinect-based system with the actual weights recorded by the traditional weighing scale. A statistical analysis will be conducted where the Mean Absolute Error and the Root Mean Square Error will be calculated between the estimated and actual weights to quantify the system’s accuracy. Cross-validation will be done using a Test-Train split. The data set will be split into a 70 percent training set and a 30 percent testing set to ensure that the system is not overfitting and can generalize to new pigs. Different Machine learning models will then be tested to select the model with the best performance: Linear Regression, Ridge Regression, Decision Trees, LightGBM, and XGBoost.
+The Kinect sensor will be calibrated at the start of the observation period. This calibration will account for environmental factors such as lighting conditions and the sensor's positioning relative to the ground. For validation purposes, the predicted weight from the system will be periodically compared to the reference weight measured using a traditional weighing scale. These comparisons will be conducted during specific intervals to ensure the accuracy and consistency of real-time predictions.
+
+\section{Experimental Setup}
+
+The experiment aims to evaluate the system's accuracy in real-time pig weight prediction under controlled conditions. The setup includes a Kinect sensor, a computing unit, and a software pipeline for processing depth data and predicting pig weights. The details of the experimental setup are as follows:
+
+\subsection{Environment Preparation}
+
+\begin{description}
+	
+	\item[Pigpen Setup.]
+	The experiment will take place in a typical pigpen environment to simulate real-world conditions. The area will be cleared of obstructions to ensure the Kinect sensor has an unobstructed view of the pigs.
+	
+	\item[Lighting Conditions.]
+	Ambient lighting will be adjusted to minimize shadows and reflections. While the Kinect sensor primarily uses depth imaging, consistent lighting supports system calibration and overall reliability.
+	
+	\item[Sensor Placement.]
+	The Kinect sensor will be mounted overhead, approximately 1.25 meters above the ground, ensuring a clear top-down view of the pigs. The mounting structure will be stable to prevent movement during the experiment.
+	
+\end{description}
+
+\subsection{Kinect Sensor Calibration}
+
+\begin{description}
+	
+	\item[Height and Angle.]
+	The sensor will be carefully positioned, 1.25 meters from the ground, to ensure its depth camera captures accurate data, with the angle adjusted to be perpendicular to the ground.
+	
+	\item[Validation with Calibration Objects.]
+	Objects of known dimensions will be placed within the pigpen to verify the sensor’s accuracy in capturing depth and spatial measurements.
+	
+\end{description}
+
+\subsection{Data Collection and Processing}
+
+\begin{description}
+	\item[Image Capture.]
+	The Kinect sensor will continuously capture depth images of pigs moving naturally within the pen. These images will be processed in real time to extract relevant features.
+	
+	\item[Feature Extraction.]
+	Using depth images, the system will extract features critical to weight prediction, including:
+	\subitem 
+	\textbf{Body Height:} The vertical measurement of the pig from the ground.
+	\subitem
+	\textbf{Surface Area:} The top-down projected area of the pig.
+	\subitem
+	\textbf{Volume:} Estimated using depth data to represent the pig’s three-dimensional structure.
+	
+	\item[Weight Prediction.]
+	Extracted features will be fed into a pre-trained machine learning model that predicts the pig's weight. The model is based on historical data correlating these features with known weights.
+	
+\end{description}
+
+\subsection{Accuracy Evaluation}
+
+\begin{description}
+	\item[Reference Weights.]
+	A subset of pigs will be manually weighed using a calibrated digital scale to provide ground truth measurements. These reference weights will be used to assess the accuracy of the system's predictions.
+	
+	\item[Performance Metrics.]
+	The predicted weights will be compared against the reference weights using the following statistical measures:
+	\subitem
+	\textbf{Mean Absolute Error (MAE):} Indicates the average absolute deviation of predictions from the true values.
+	\subitem
+	\textbf{Root Mean Square Error (RMSE):} Highlights the magnitude of prediction errors, emphasizing larger discrepancies.
+	\subitem
+	\textbf{Correlation Coefficient (R²):} Evaluates the strength and reliability of the relationship between predicted and actual weights.
+	
+	\item[Repeated Measurements.]
+	To ensure consistency, weight predictions will be recorded multiple times for each pig under varying activity levels (e.g., standing, lying down) and averaged to minimize variability.
+	
+\end{description}
+
+\subsection{Validation Process}
+The experiment will be conducted in several sessions, with data collected from different pigs of varying sizes to evaluate the system’s ability to generalize. Results will be analyzed to identify any systematic errors, such as over- or under-prediction for specific weight ranges, and adjustments will be made to the machine learning model if necessary.

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.11.15)  6 DEC 2024 17:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.11.15)  21 DEC 2024 18:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -736,37 +736,37 @@ ing Mi-crosoft Kinect
 [12]
 
 [13]
-Overfull \hbox (1.01706pt too wide) in paragraph at lines 105--106
+Overfull \hbox (1.01706pt too wide) in paragraph at lines 103--104
 []\OT1/cmr/m/n/12 A do-mes-ti-cated, lo-cally adapted, tra-di-tional va-ri-ety 
 grown by farm-
  []
 
+)
 
-
-[14])
-
-[15]
+[14]
 \openout2 = `chapter2.aux'.
 
  (chapter2.tex
 Chapter 2.
 
 
-[16
+[15
 
 
 
 
 ]
 
+[16]
+
 [17]
 
-[18]
-
-Package natbib Warning: Citation `farooqui2024precision' on page 19 undefined o
+Package natbib Warning: Citation `farooqui2024precision' on page 18 undefined o
 n input line 16.
 
 
+
+[18]
 
 [19]
 
@@ -777,16 +777,16 @@ n input line 16.
 [22]
 
 [23]
-
-[24]
-<figures/Pig Tape Measure.png, id=546, 511.9125pt x 202.95825pt>
+<figures/Pig Tape Measure.png, id=562, 511.9125pt x 202.95825pt>
 File: figures/Pig Tape Measure.png Graphic file (type png)
 <use figures/Pig Tape Measure.png>
 Package pdftex.def Info: figures/Pig Tape Measure.png  used on input line 56.
 (pdftex.def)             Requested size: 362.28874pt x 143.63657pt.
 
 
-[25 <./figures/Pig Tape Measure.png>]
+[24 <./figures/Pig Tape Measure.png>]
+
+[25]
 
 [26]
 
@@ -795,8 +795,6 @@ Package pdftex.def Info: figures/Pig Tape Measure.png  used on input line 56.
 [28]
 
 [29]
-
-[30]
 Overfull \hbox (2.66304pt too wide) in paragraph at lines 98--98
 []|\OT1/cmr/bx/n/12 Author(s),
  []
@@ -2066,9 +2064,9 @@ Overfull \hbox (2.76747pt too wide) in alignment at lines 94--160
  [] [] [] [] [] 
  []
 
-[31] [32] [33]
+[30] [31] [32]
 
-[34]
+[33]
 Overfull \hbox (1.6916pt too wide) in paragraph at lines 164--165
 \OT1/cmr/m/n/12 cam-eras com-bined with seg-men-ta-tion (Mask R-CNN) and MLP mo
 d-els, achiev-
@@ -2076,28 +2074,28 @@ d-els, achiev-
 
 
 
-[35])
+[34])
 
-[36]
+[35]
 \openout2 = `chapter3.aux'.
 
  (chapter3.tex
 Chapter 3.
-<figures/Architectureofniggas.png, id=651, 1559.8275pt x 1428.08531pt>
+<figures/Architectureofniggas.png, id=667, 1455.18657pt x 1409.265pt>
 File: figures/Architectureofniggas.png Graphic file (type png)
 <use figures/Architectureofniggas.png>
 Package pdftex.def Info: figures/Architectureofniggas.png  used on input line 1
 1.
-(pdftex.def)             Requested size: 313.76886pt x 287.27313pt.
+(pdftex.def)             Requested size: 296.62766pt x 287.27313pt.
 
 
-[37
+[36
 
 
 
 
  <./figures/Architectureofniggas.png>]
-<figures/Requirement Analysis (4).png, id=658, 1268.48906pt x 526.96875pt>
+<figures/Requirement Analysis (4).png, id=673, 1268.48906pt x 526.96875pt>
 File: figures/Requirement Analysis (4).png Graphic file (type png)
 <use figures/Requirement Analysis (4).png>
 Package pdftex.def Info: figures/Requirement Analysis (4).png  used on input li
@@ -2110,30 +2108,32 @@ Overfull \hbox (17.42076pt too wide) in paragraph at lines 21--22
 
 
 
-[38 <./figures/Requirement Analysis (4).png>]
+[37 <./figures/Requirement Analysis (4).png>]
 
-[39]
-<figures/Thesis Flowchart.png, id=668, 183.68625pt x 603.25375pt>
+[38]
+<figures/Thesis Flowchart.png, id=684, 183.68625pt x 603.25375pt>
 File: figures/Thesis Flowchart.png Graphic file (type png)
 <use figures/Thesis Flowchart.png>
 Package pdftex.def Info: figures/Thesis Flowchart.png  used on input line 31.
 (pdftex.def)             Requested size: 104.9657pt x 344.73126pt.
 
 
-[40 <./figures/Thesis Flowchart.png>]
-<figures/Untitled-1wqw.png, id=674, 4890.27pt x 3195.94pt>
+[39 <./figures/Thesis Flowchart.png>]
+<figures/Untitled-1wqw.png, id=690, 4890.27pt x 3195.94pt>
 File: figures/Untitled-1wqw.png Graphic file (type png)
 <use figures/Untitled-1wqw.png>
 Package pdftex.def Info: figures/Untitled-1wqw.png  used on input line 41.
 (pdftex.def)             Requested size: 351.60669pt x 229.815pt.
 
 
-[41 <./figures/Untitled-1wqw.png>]
+[40 <./figures/Untitled-1wqw.png>]
+
+[41]
 
 [42]
 
 [43]
-Overfull \hbox (3.07407pt too wide) in paragraph at lines 56--57
+Overfull \hbox (3.07407pt too wide) in paragraph at lines 65--66
 []\OT1/cmr/m/n/12 This study em-ploys the Seg-men-ta-tion Any-thing Model (SAM)
  to achieve
  []
@@ -2147,10 +2147,10 @@ Overfull \hbox (3.07407pt too wide) in paragraph at lines 56--57
 [46]
 
 [47]
-<figures/Untitled-1 (1).png, id=707, 4020.01875pt x 3089.5425pt>
+<figures/Untitled-1 (1).png, id=727, 4020.01875pt x 3089.5425pt>
 File: figures/Untitled-1 (1).png Graphic file (type png)
 <use figures/Untitled-1 (1).png>
-Package pdftex.def Info: figures/Untitled-1 (1).png  used on input line 124.
+Package pdftex.def Info: figures/Untitled-1 (1).png  used on input line 133.
 (pdftex.def)             Requested size: 298.97343pt x 229.815pt.
 
 
@@ -2170,27 +2170,37 @@ Package pdftex.def Info: figures/Untitled-1 (1).png  used on input line 124.
 
 [55]
 
-[56])
+[56]
 
 [57]
+Overfull \hbox (1.52159pt too wide) in paragraph at lines 275--277
+[]| \OT1/cmr/bx/n/12 Body Height: \OT1/cmr/m/n/12 The ver-ti-cal mea-sure-ment 
+of the pig from the ground. 
+ []
 
-[58]
+
+
+[58])
+
+[59]
+
+[60]
 \openout2 = `bibliography.aux'.
 
  (bibliography.tex (thesis.bbl
 
-[59
+[61
 
 
 
 
 ]
 
-[60]
-
-[61]))
-
 [62]
+
+[63]))
+
+[64]
 
 Package natbib Warning: There were undefined citations.
 
@@ -2200,36 +2210,37 @@ LaTeX2e <2024-11-01>
 L3 programming layer <2020/03/25>
  ***********
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: C1CF1BB89DF28FF231D85424E865CED3;8442.
+(rerunfilecheck)             Checksum: 69E5BF54F40D5386A5178FF1A4369D57;9298.
  )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 2 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 15122 strings out of 473682
- 242889 string characters out of 5719215
+ 15134 strings out of 473682
+ 243080 string characters out of 5719215
  664806 words of memory out of 5000000
- 37751 multiletter control sequences out of 15000+600000
- 565695 words of font info for 68 fonts, out of 8000000 for 9000
+ 37756 multiletter control sequences out of 15000+600000
+ 566036 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 80i,10n,82p,2390b,721s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 80i,10n,82p,2390b,730s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Brian\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/
-ec/dpi600\tcrm1200.pk><C:/Users/Brian/AppData/Local/Programs/MiKTeX/fonts/type1
-/public/amsfonts/cm/cmbx12.pfb><C:/Users/Brian/AppData/Local/Programs/MiKTeX/fo
-nts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Brian/AppData/Local/Programs/
-MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Brian/AppData/Local/
-Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Brian/AppDat
-a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Bria
-n/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Use
-rs/Brian/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pf
-b><C:/Users/Brian/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
-cmsy8.pfb><C:/Users/Brian/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
-onts/cm/cmti12.pfb><C:/Users/Brian/AppData/Local/Programs/MiKTeX/fonts/type1/pu
-blic/amsfonts/cm/cmtt12.pfb>
-Output written on thesis.pdf (68 pages, 1580272 bytes).
+ec/dpi600\tcbx1200.pk> <C:\Users\Brian\AppData\Local\MiKTeX\fonts/pk/ljfour/jkn
+appen/ec/dpi600\tcrm1200.pk><C:/Users/Brian/AppData/Local/Programs/MiKTeX/fonts
+/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Brian/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Brian/AppData/Local/Pro
+grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Brian/AppData/
+Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Brian/
+AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/User
+s/Brian/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><
+C:/Users/Brian/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cms
+y10.pfb><C:/Users/Brian/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
+ts/cm/cmsy8.pfb><C:/Users/Brian/AppData/Local/Programs/MiKTeX/fonts/type1/publi
+c/amsfonts/cm/cmti12.pfb><C:/Users/Brian/AppData/Local/Programs/MiKTeX/fonts/ty
+pe1/public/amsfonts/cm/cmtt12.pfb>
+Output written on thesis.pdf (70 pages, 1585725 bytes).
 PDF statistics:
- 866 PDF objects out of 1000 (max. 8388607)
- 183 named destinations out of 1000 (max. 500000)
- 439 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 900 PDF objects out of 1000 (max. 8388607)
+ 189 named destinations out of 1000 (max. 500000)
+ 471 words of extra memory for PDF output out of 10000 (max. 10000000)
 
