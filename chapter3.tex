@@ -270,6 +270,16 @@ A hybrid LightGBM-CNN model was developed to leverage tabular features and spati
 
 \subsection{Model Architecture}
 
+In designing an effective model for pig weight estimation, the researchers sought to leverage the strengths of both structured data modeling and spatial pattern recognition. Traditional regression approaches often fall short in capturing the complex relationships between visual features (e.g., shape, size, volume) and biological measurements such as animal weight. Therefore, a hybrid machine learning approach was adopted, integrating both \textbf{Light Gradient Boosting Machine (LightGBM)} and \textbf{Convolutional Neural Networks (CNNs)}.
+
+\textbf{LightGBM} was chosen for its ability to handle high-dimensional, tabular input efficiently. It is particularly suited for regression problems where hand-engineered numerical features—such as pixel area, depth standard deviation, or body aspect ratio—have strong predictive value. LightGBM models are fast to train, robust to overfitting when appropriately tuned, and offer interpretable feature importance metrics. These characteristics made LightGBM a logical choice to model the structured data extracted from segmented pig depth images.
+
+On the other hand, \textbf{CNNs} excel in interpreting raw image data. They automatically extract spatial hierarchies and visual patterns that might be too complex or subtle to quantify manually. In this study, the CNN was utilized to analyze preprocessed depth images, capturing spatial features that are not easily encoded in the structured feature set. These features may include surface contours, variations in pig posture, and localized volume distributions that correlate with body mass but are difficult to represent numerically.
+
+The hybrid model architecture was designed to capitalize on both approaches: LightGBM first generates an initial weight prediction based on the numerical features, which is then passed as an input to the CNN. The CNN processes the depth image and combines the flattened CNN-derived features with the LightGBM prediction to produce a final, refined weight estimate. This integration of structured and unstructured data allows the system to benefit from both types of input representations, improving overall prediction accuracy and robustness across variable pig postures, body types, and imaging conditions.
+
+\newpage
+
 \begin{figure}[h]
 	\centering
 	\includegraphics[height=0.4\textheight]{figures/Untitled-1wqw}

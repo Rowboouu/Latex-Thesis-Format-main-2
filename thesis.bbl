@@ -1,5 +1,10 @@
 \begin{thebibliography}{}
 
+\bibitem[\protect\astroncite{Andr{\'a}si et~al.}{2023}]{andrasi2023pig_weight}
+Andr{\'a}si, K., Dobsinszki, G., and Kov{\'a}cs, L. (2023).
+\newblock Pig weight estimation according to rgb image analysis.
+\newblock {\em Animals}, 14(14):2122.
+
 \bibitem[\protect\astroncite{Andújar et~al.}{2016}]{Andujar2016}
 Andújar, D., Escolà, A., and Rosell-Polo, J.~R. (2016).
 \newblock A review of optical sensing systems for plant phenotyping.
@@ -37,6 +42,12 @@ Fadlelmoula, A.~A., Mudarris, M.~S., and Hariri, M.~S. (2020).
 \newblock Prediction of live body weights in dromedary camels (camelus
   dromedarius) from morphometric body measurements.
 \newblock {\em World journal of biology and biotechnology}, 5(1):25--29.
+
+\bibitem[\protect\astroncite{Farooqui}{2024}]{farooqui2024precision}
+Farooqui, M.~U. (2024).
+\newblock {\em Precision Agriculture and Predictive Analytics: Enhancing
+  Agricultural Efficiency and Yield}, chapter~9.
+\newblock Wiley.
 
 \bibitem[\protect\astroncite{Faucitano and
   Goumon}{2018}]{faucitano2018transport}
@@ -82,6 +93,13 @@ Jun, K., Kim, S.~J., and Ji, H.~W. (2018).
 K{\'a}rpinszky, A. and Dobsinszki, G. (2023).
 \newblock Pig weight estimation according to rgb image analysis.
 
+\bibitem[\protect\astroncite{Ke et~al.}{2017}]{ke2017lightgbm}
+Ke, G., Meng, Q., Finley, T., Wang, T., Chen, W., Ma, W., Ye, Q., and Liu,
+  T.-Y. (2017).
+\newblock Lightgbm: A highly efficient gradient boosting decision tree.
+\newblock In {\em Advances in Neural Information Processing Systems},
+  volume~30, pages 3146--3154.
+
 \bibitem[\protect\astroncite{Khoi}{2024}]{khoi2024data_tonghop}
 Khoi (2024).
 \newblock {DATA\_TONGHOP}: Pig detection dataset.
@@ -99,6 +117,17 @@ Kollis, K., Phang, C.~S., Banhazi, T.~M., and Searle, S.~J. (2007).
 \newblock Weight estimation using image analysis and statistical modelling: A
   preliminary study.
 \newblock {\em Applied engineering in agriculture}, 23(1):91--96.
+
+\bibitem[\protect\astroncite{Krizhevsky et~al.}{2012}]{krizhevsky2012imagenet}
+Krizhevsky, A., Sutskever, I., and Hinton, G.~E. (2012).
+\newblock Imagenet classification with deep convolutional neural networks.
+\newblock In {\em Advances in Neural Information Processing Systems},
+  volume~25.
+
+\bibitem[\protect\astroncite{LeCun et~al.}{2015}]{lecun2015deep_learning}
+LeCun, Y., Bengio, Y., and Hinton, G. (2015).
+\newblock Deep learning.
+\newblock {\em Nature}, 521:436--444.
 
 \bibitem[\protect\astroncite{Li et~al.}{2014}]{li2014estimation}
 Li, Z., Luo, C., Teng, G., and Liu, T. (2014).
@@ -158,6 +187,11 @@ Pezzuolo, A., Guarino, M., Sartori, L., Gonz{\'a}lez, L.~A., and Marinello, F.
   v1 depth camera.
 \newblock {\em Computers and electronics in agriculture}, 148:29--36.
 
+\bibitem[\protect\astroncite{Pinto et~al.}{2024}]{pinto2024pig_weights}
+Pinto, F., Fernandes, T., Oliveira, L., and Faria, D.~R. (2024).
+\newblock Cnn-based estimation of pig weights using top-view images.
+\newblock {\em Computers in Agriculture}, 3:100059.
+
 \bibitem[\protect\astroncite{Rousing et~al.}{2004}]{rousing2004stepping}
 Rousing, T., Bonde, M., Badsberg, J.~H., and S{\o}rensen, J.~T. (2004).
 \newblock Stepping and kicking behaviour during milking in relation to response
@@ -212,6 +246,11 @@ Terence, S., Immaculate, J., Raj, A., and Nadarajan, J. (2024).
 \newblock
   \url{https://www.thepigsite.com/articles/weighing-a-pig-without-a-scale}.
 \newblock Accessed: 2024-12-06.
+
+\bibitem[\protect\astroncite{Wang et~al.}{2021}]{wang2021deep_learning_farming}
+Wang, H., Li, X., Zhao, Y., and Gao, S. (2021).
+\newblock Deep learning in smart farming: A review.
+\newblock {\em AI Open}, 2:1--13.
 
 \bibitem[\protect\astroncite{Wang et~al.}{2024}]{wang2024review}
 Wang, Z., Li, Q., Yu, Q., Qian, W., Gao, R., Wang, R., Wu, T., and Li, X.

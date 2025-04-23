@@ -7,54 +7,57 @@ Reallocating 'name_of_file' (item size: 1) to 13 items.
 A level-1 auxiliary file: chapter2.aux
 Reallocating 'name_of_file' (item size: 1) to 13 items.
 A level-1 auxiliary file: chapter3.aux
+Reallocating 'name_of_file' (item size: 1) to 13 items.
+A level-1 auxiliary file: chapter4.aux
+Reallocating 'name_of_file' (item size: 1) to 13 items.
+A level-1 auxiliary file: chapter5.aux
 Reallocating 'name_of_file' (item size: 1) to 17 items.
 A level-1 auxiliary file: bibliography.aux
 Reallocating 'name_of_file' (item size: 1) to 4 items.
 The style file: apa.bst
 Reallocating 'name_of_file' (item size: 1) to 10 items.
 Database file #1: telemetry.bib
-Warning--I didn't find a database entry for "farooqui2024precision"
 Warning--empty journal in karpinszky2023pig
 Warning--empty journal in witten1993practical
-You've used 38 entries,
+You've used 45 entries,
             1940 wiz_defined-function locations,
-            720 strings with 11933 characters,
-and the built_in function-call counts, 17174 in all, are:
-= -- 1654
-> -- 864
-< -- 17
-+ -- 314
-- -- 302
-* -- 1595
-:= -- 2972
-add.period$ -- 122
-call.type$ -- 38
-change.case$ -- 339
-chr.to.int$ -- 38
-cite$ -- 40
-duplicate$ -- 595
-empty$ -- 1093
-format.name$ -- 351
-if$ -- 3301
+            758 strings with 13140 characters,
+and the built_in function-call counts, 20297 in all, are:
+= -- 1948
+> -- 1014
+< -- 22
++ -- 366
+- -- 354
+* -- 1878
+:= -- 3505
+add.period$ -- 143
+call.type$ -- 45
+change.case$ -- 399
+chr.to.int$ -- 45
+cite$ -- 47
+duplicate$ -- 714
+empty$ -- 1304
+format.name$ -- 410
+if$ -- 3910
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 35
-newline$ -- 194
-num.names$ -- 114
-pop$ -- 295
+missing$ -- 43
+newline$ -- 229
+num.names$ -- 135
+pop$ -- 359
 preamble$ -- 1
-purify$ -- 339
+purify$ -- 400
 quote$ -- 0
-skip$ -- 446
+skip$ -- 529
 stack$ -- 0
-substring$ -- 1123
-swap$ -- 121
-text.length$ -- 6
+substring$ -- 1318
+swap$ -- 149
+text.length$ -- 10
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 228
+type$ -- 268
 warning$ -- 2
-while$ -- 136
+while$ -- 159
 width$ -- 0
-write$ -- 498
-(There were 3 warnings)
+write$ -- 590
+(There were 2 warnings)

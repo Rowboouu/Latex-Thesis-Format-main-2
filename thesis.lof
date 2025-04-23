@@ -3,23 +3,23 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {1}{\ignorespaces Illustration of weight estimation using a tape measure}}{23}{figure.caption.6}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2}{\ignorespaces System Architecture}}{35}{figure.caption.7}%
-\contentsline {figure}{\numberline {3}{\ignorespaces Waterfall Model}}{36}{figure.caption.8}%
-\contentsline {figure}{\numberline {4}{\ignorespaces Flowchart}}{38}{figure.caption.9}%
-\contentsline {figure}{\numberline {5}{\ignorespaces Pigpen Diagram}}{41}{figure.caption.10}%
-\contentsline {figure}{\numberline {6}{\ignorespaces Camera Configuration}}{42}{figure.caption.11}%
-\contentsline {figure}{\numberline {7}{\ignorespaces \textit {Raw Data Collection Output.} Screenshot from the Microsoft Kinect V1 video recording: RGB image on the right, depth image on the left. The camera is mounted overhead at 1.9 meters.}}{44}{figure.caption.12}%
-\contentsline {figure}{\numberline {8}{\ignorespaces \textit {Processed Video for Pig Detection.} The pig is detected in the RGB frame using the DATA\_TONGHOP dataset.}}{45}{figure.caption.13}%
-\contentsline {figure}{\numberline {9}{\ignorespaces \textit {Cropped images using bounding box coordinates.}}}{45}{figure.caption.14}%
-\contentsline {figure}{\numberline {10}{\ignorespaces \textit {Depth image segmentation using RGB-based masking.} The RGB-detected pig mask was applied to the depth frame, isolating only the pig and discarding the background depth values.}}{46}{figure.caption.15}%
-\contentsline {figure}{\numberline {11}{\ignorespaces Model Architecture}}{51}{figure.caption.16}%
-\contentsline {figure}{\numberline {12}{\ignorespaces Deployment Architecture}}{55}{figure.caption.17}%
-\contentsline {figure}{\numberline {13}{\ignorespaces System Architecture}}{59}{figure.caption.18}%
+\contentsline {figure}{\numberline {2}{\ignorespaces System Architecture}}{41}{figure.caption.7}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Waterfall Model}}{42}{figure.caption.8}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Flowchart}}{44}{figure.caption.9}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Pigpen Diagram}}{47}{figure.caption.10}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Camera Configuration}}{48}{figure.caption.11}%
+\contentsline {figure}{\numberline {7}{\ignorespaces \textit {Raw Data Collection Output.} Screenshot from the Microsoft Kinect V1 video recording: RGB image on the right, depth image on the left. The camera is mounted overhead at 1.9 meters.}}{50}{figure.caption.12}%
+\contentsline {figure}{\numberline {8}{\ignorespaces \textit {Processed Video for Pig Detection.} The pig is detected in the RGB frame using the DATA\_TONGHOP dataset.}}{51}{figure.caption.13}%
+\contentsline {figure}{\numberline {9}{\ignorespaces \textit {Cropped images using bounding box coordinates.}}}{51}{figure.caption.14}%
+\contentsline {figure}{\numberline {10}{\ignorespaces \textit {Depth image segmentation using RGB-based masking.} The RGB-detected pig mask was applied to the depth frame, isolating only the pig and discarding the background depth values.}}{52}{figure.caption.15}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Model Architecture}}{59}{figure.caption.16}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Deployment Architecture}}{63}{figure.caption.17}%
+\contentsline {figure}{\numberline {13}{\ignorespaces System Architecture}}{67}{figure.caption.18}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {14}{\ignorespaces Histograms showing the distribution of selected normalized features, illustrating variance and potential anomalies across the dataset.}}{65}{figure.caption.19}%
-\contentsline {figure}{\numberline {15}{\ignorespaces Correlation Heatmap of Features}}{66}{figure.caption.20}%
-\contentsline {figure}{\numberline {16}{\ignorespaces Train Loss, Validation MAE, and RMSE for Selected Epochs}}{71}{figure.caption.21}%
-\contentsline {figure}{\numberline {17}{\ignorespaces Predicted Weights vs Actual Weights}}{73}{figure.caption.22}%
-\contentsline {figure}{\numberline {18}{\ignorespaces Screenshot of the live system in use during field testing in Brgy. Canitoan, Cagayan de Oro City.}}{76}{figure.caption.23}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Histograms showing the distribution of selected normalized features, illustrating variance and potential anomalies across the dataset.}}{73}{figure.caption.19}%
+\contentsline {figure}{\numberline {15}{\ignorespaces Correlation Heatmap of Features}}{74}{figure.caption.20}%
+\contentsline {figure}{\numberline {16}{\ignorespaces Train Loss, Validation MAE, and RMSE for Selected Epochs}}{79}{figure.caption.21}%
+\contentsline {figure}{\numberline {17}{\ignorespaces Predicted Weights vs Actual Weights}}{81}{figure.caption.22}%
+\contentsline {figure}{\numberline {18}{\ignorespaces Screenshot of the live system in use during field testing in Brgy. Canitoan, Cagayan de Oro City.}}{84}{figure.caption.23}%
 \addvspace {10\p@ }
 \contentsfinish 
