@@ -42,7 +42,7 @@ This research aims to bridge this gap by leveraging the depth-sensing capabiliti
 
 The main objective of this study is to develop a non-invasive Pig Weight Estimation System that utilizes depth imaging, specifically:
 \begin{enumerate}
-	\item To utilize machine learning algorithms for model training and validation to analyze depth data for pig weight estimation. 
+	\item To utilize CNN and LightGBM for model training and validation to analyze depth data for pig weight estimation. 
 	\item To develop a web application for the Pig Weight Estimation System.
 	\item To assess the accuracy of the Kinect-based pig weight estimation system.
 \end{enumerate}
@@ -67,19 +67,22 @@ The results of this study would benefit the following:
 
 \section{Scope and Limitations}
 
-This research will focus on the estimation of weight in Landrace pigs using the Kinect sensor under controlled conditions, including consistent height, posture, and lighting. Landrace pigs are commonly used in commercial pig farming in the Philippines due to their desirable traits such as high reproductive efficiency, good growth rates, and quality meat production \citep{Manez2020}. The Landrace breed is particularly well-suited for the tropical climate of the Philippines due to its adaptability, disease resistance, and efficient feed conversion. These pigs typically reach a market weight of around 90-120 kg at 6-7 months of age and demonstrate a high average daily gain (ADG) of approximately 0.7–1.0 kg/day under optimal feeding conditions.
+This research focuses on the non-invasive estimation of weight in Landrace pigs, a breed commonly utilized in commercial pig farming in the Philippines due to its favorable traits and adaptability to the tropical climate \citep{Manez2020}. Depth data for this study was collected using a Microsoft Kinect V1 camera sensor positioned at a fixed height of 1.9 meters from the floor, capturing a top-view perspective of the pigs (primarily showing their backs). The data was gathered in small backyard-type pig farms located in Cagayan de Oro City, Philippines. While data was collected with consistent lighting, this study will analyze depth data of Landrace pigs in various postures using Convolutional Neural Networks (CNNs). The Landrace pigs in this study typically range from 8 to 22 kg in weight, corresponding to an age of approximately 1 to 2 months and exhibiting an average daily gain (ADG) of 0.7–1.0 kg/day under optimal feeding conditions.
 
-Optimal feeding conditions refer to a balanced diet that ensures the pigs’ growth and health, which includes proper nutrition, adequate water intake, and appropriate feed quality. The diet typically consists of a mixture of high-protein grains such as corn, soybeans, and wheat, along with essential vitamins and minerals that promote muscle development, immune health, and overall well-being. The quality and quantity of the feed are adjusted to ensure that the pigs' energy and nutritional requirements are met, based on their age, weight, and stage of growth. Additionally, it is important to provide sufficient clean water, as water intake is directly linked to feed consumption, digestion, and growth performance.
+This study will utilize CNNs to analyze depth images, captured from a top-down view at a consistent height of 1.9 meters, and extract precomputed features, including:
+\begin{itemize}
+	\item \textbf{Pixel Size}: Total pixels in the segmented region ($shape[0] \times shape[1]$).
+	\item \textbf{Non-Zero Pixel Count}: Pixels with $depth > 0$ ($np.count\_nonzero$).
+	\item \textbf{Pixel-to-Non-Pixel Ratio}: Ratio of non-zero to total pixels.
+	\item \textbf{Standard Deviation of Depth}: Depth variability ($np.std$).
+	\item \textbf{Mean Depth}: Average depth of non-zero pixels ($np.mean$ where $depth > 0$).
+	\item \textbf{Pixel Ratio}: Non-zero pixel count relative to 1280$\times$480.
+	\item \textbf{Volume Proxy}: Sum of depth values ($np.sum$), approximating 3D volume.
+	\item \textbf{Aspect Ratio}: Bounding box width-to-height ratio ($shape[1] / shape[0]$).
+	\item \textbf{Perimeter}: Sum of contour arc lengths ($cv.arcLength$).
+\end{itemize}
+The primary goal is to train a CNN model capable of estimating pig weight based on these 3D body volume measurements derived from the depth images captured by the Microsoft Kinect V1 sensor from a fixed overhead position. For the purpose of evaluating the system's real-time accuracy in a controlled environment, a local server implementation will be used. This approach allows for focused testing and immediate feedback on the model's performance without the complexities of a wider network deployment or internet dependency, which can introduce additional variables and potential points of failure during this initial validation phase. The current study's weight estimation will be limited to the 8-22 kg range due to the data collected under these specific conditions. However, the developed model will serve as a foundational step for future research aimed at scaling the system to accommodate a wider range of pig weights and potentially exploring different camera angles or deployment in more diverse farm environments.
 
-In optimal feeding conditions, pigs are typically fed in multiple phases, with adjustments made as they grow. For example, piglets may be given a starter feed high in protein and energy, while finishing pigs (those close to market weight) may receive a grower or finisher diet designed to maximize weight gain while maintaining feed efficiency. Regular monitoring of the pigs' health and growth patterns is also essential to ensure that the feed provided aligns with the pigs' developmental needs. Feeding strategies also take into account environmental factors such as temperature and humidity, which affect the pigs' metabolism and feed conversion efficiency. Under these optimal conditions, Landrace pigs are expected to gain weight at an average daily rate of 0.7–1.0 kg/day, making them one of the most productive pig breeds in terms of growth.
-
-Given these factors, Landrace pigs are the primary focus of this study, as their standardized growth patterns allow for more accurate and consistent data collection. Other pig breeds with different body shapes or growth rates may present variables that are outside the scope of this study, which is why the results will be limited to Landrace pigs.
-
-The study will specifically analyze data from pigs in a straight posture, as posture can significantly affect the accuracy of Kinect’s depth-sensing capabilities. Pigs in non-straight postures or with significant variation in body alignment will be excluded to maintain the integrity of the measurements. Variations in posture could cause inconsistencies in the depth image capture, potentially leading to inaccurate weight estimates. Therefore, a consistent and controlled posture will be required for all subjects.
-
-Environmental conditions, such as lighting and background, will be standardized to minimize their impact on sensor accuracy. However, the influence of environmental factors on Kinect sensor performance will not be the primary focus of the study, as these conditions will be controlled to ensure optimal data quality. Future research could explore the sensor's performance in variable lighting or more complex backgrounds, but this will not be addressed in the present study.
-
-The batch processing of collected data will be used primarily to train machine learning models that will enable real-time weight estimation in pigs. The collected depth images, after being processed, will be analyzed to build models capable of estimating pig weight based on 3D body volume measurements. While the focus will initially be on post-processing, the resulting models will be designed to perform real-time estimation when integrated into a dynamic farm environment. This approach represents a key step in the development of a practical, non-invasive weight estimation system that could be used in active pig farming operations once the system is fully trained.
 
 
 

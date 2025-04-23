@@ -13,64 +13,48 @@ Reallocating 'name_of_file' (item size: 1) to 4 items.
 The style file: apa.bst
 Reallocating 'name_of_file' (item size: 1) to 10 items.
 Database file #1: telemetry.bib
-Repeated entry---line 214 of file telemetry.bib
- : @article{dikmen2012effect
- :                          ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 299 of file telemetry.bib
- : @article{ma2024computer
- :                        ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 442 of file telemetry.bib
- : @incollection{singh2022smart
- :                             ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 451 of file telemetry.bib
- : @article{monteiro2021precision
- :                               ,
-I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "farooqui2024precision"
 Warning--empty journal in karpinszky2023pig
 Warning--empty journal in witten1993practical
-You've used 36 entries,
+You've used 38 entries,
             1940 wiz_defined-function locations,
-            710 strings with 11661 characters,
-and the built_in function-call counts, 16598 in all, are:
-= -- 1593
-> -- 844
-< -- 15
-+ -- 308
-- -- 296
-* -- 1554
-:= -- 2862
-add.period$ -- 115
-call.type$ -- 36
-change.case$ -- 327
-chr.to.int$ -- 36
-cite$ -- 38
-duplicate$ -- 572
-empty$ -- 1058
-format.name$ -- 342
-if$ -- 3195
+            720 strings with 11933 characters,
+and the built_in function-call counts, 17174 in all, are:
+= -- 1654
+> -- 864
+< -- 17
++ -- 314
+- -- 302
+* -- 1595
+:= -- 2972
+add.period$ -- 122
+call.type$ -- 38
+change.case$ -- 339
+chr.to.int$ -- 38
+cite$ -- 40
+duplicate$ -- 595
+empty$ -- 1093
+format.name$ -- 351
+if$ -- 3301
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 34
-newline$ -- 183
-num.names$ -- 108
-pop$ -- 288
+missing$ -- 35
+newline$ -- 194
+num.names$ -- 114
+pop$ -- 295
 preamble$ -- 1
-purify$ -- 327
+purify$ -- 339
 quote$ -- 0
-skip$ -- 425
+skip$ -- 446
 stack$ -- 0
-substring$ -- 1095
-swap$ -- 118
+substring$ -- 1123
+swap$ -- 121
 text.length$ -- 6
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 216
+type$ -- 228
 warning$ -- 2
-while$ -- 131
+while$ -- 136
 width$ -- 0
-write$ -- 472
-(There were 4 error messages)
+write$ -- 498
+(There were 3 warnings)

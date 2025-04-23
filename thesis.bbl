@@ -82,6 +82,18 @@ Jun, K., Kim, S.~J., and Ji, H.~W. (2018).
 K{\'a}rpinszky, A. and Dobsinszki, G. (2023).
 \newblock Pig weight estimation according to rgb image analysis.
 
+\bibitem[\protect\astroncite{Khoi}{2024}]{khoi2024data_tonghop}
+Khoi (2024).
+\newblock {DATA\_TONGHOP}: Pig detection dataset.
+\newblock \url{https://universe.roboflow.com/khoi-xzy9e/data_tonghop/model/2}.
+\newblock Accessed: 2025-04-21.
+
+\bibitem[\protect\astroncite{Kirillov
+  et~al.}{2023}]{kirillov2023segment_anything}
+Kirillov, A. et~al. (2023).
+\newblock Segment anything.
+\newblock {\em arXiv preprint arXiv:2304.02643}.
+
 \bibitem[\protect\astroncite{Kollis et~al.}{2007}]{kollis2007weight}
 Kollis, K., Phang, C.~S., Banhazi, T.~M., and Searle, S.~J. (2007).
 \newblock Weight estimation using image analysis and statistical modelling: A

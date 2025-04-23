@@ -4,7 +4,7 @@
 This chapter presents the research methodology used in the study, it covers the in-depth details of the procedures and steps taken in the research design, design procedure, system development, and deployment process of this study.
 
 
-\section { System Architecture}
+\section {System Architecture} \label{Section 3.1}
 
 \begin{figure}[h]
 	\centering
@@ -13,9 +13,9 @@ This chapter presents the research methodology used in the study, it covers the 
 	\label{fig:System Architecture}
 \end{figure}
 
-Figure 2 shows the system architecture of the pig weight estimation system. It consists of the pig to be captured, the Kinect camera that will be used for taking depth images, and the system for the processing of all the data. A laptop will be used for the processing of data, which will include the processing of images, extraction of pig’s features, and calculation of estimated weight with a machine learning model. The result can then be accessed in a web application, where actual and estimated weights can be validated.
+Figure 2 illustrates the system architecture of the pig weight estimation system. The system comprises the Landrace pig to be captured, the Microsoft Kinect V1 camera for acquiring depth and RGB images, and a processing system for data analysis. A laptop or dedicated server processes the data, performing image preprocessing, feature extraction (including 9 features such as pixel size, volume proxy, and sectional volumes), and weight estimation using a hybrid LightGBM-CNN model. The results are accessible through a FastAPI-based web service and a React-based web application, enabling real-time validation of actual and estimated weights. The architecture integrates hardware and software components, optimized for small-scale pig farms.
 
-\subsection { Waterfall Model}
+\subsection {Waterfall Model}
 \begin{figure}[h]
 	\centering
 	\includegraphics[height=0.3\textheight]{figures/Requirement Analysis (4)}
@@ -23,286 +23,459 @@ Figure 2 shows the system architecture of the pig weight estimation system. It c
 	\label{fig:Waterfall Model}
 \end{figure}
 
-Figure 3 shows the Waterfall Model of the Weight Estimation System. Requirement Analysis, defines the goal for creating a non-invasive pig weight estimation system using a Kinect depth sensor. The system captures depth images, extracts features like height and volume, and predicts weight through machine learning models, with results available via a web app. System Design plans the architecture, including hardware and software components. For the hardware components, a Kinect sensor, a computer system, and a pig pen setup are required. While a Machine learning model and a web application is required for the software components. Implementation involves collecting images, extracting features, and training machine learning models. The Kinect sensor gathers the images to be processed. An algorithm extracts the features such as the height, area and volume from the depth images. The image processing involves grayscale conversion of the gathered images, contour detection and feature segmentation to isolate pig features. The training of the machine learning model follows a ratio of 7:3 for the training data and the testing data respectively. The testing phase assesses the system's accuracy using performance metrics such as MAE and RMSE. Following the 7:3 ratio, 30 percent of the gathered data set is used in the testing of the machine learning models in which the most accurate model is selected. The system is deployed using a web application that displays the weight estimates based on input depths.
-\newpage
+Figure 3 depicts the Waterfall Model used for system development, following a linear, sequential approach:
+\begin{itemize}
+	\item \textbf{Requirement Analysis}: The goal is a non-invasive pig weight estimation system using a Kinect V1 depth sensor to capture depth images, extract 9 features \hyperref[Section 3.7]{(Section 3.7)}, and predict weight with a hybrid LightGBM-CNN model, accessible via a web application.
+	\item \textbf{System Design}: The architecture includes hardware (Kinect V1, computer, pigpen) and software (YOLOv11, SAM, LightGBM-CNN, FastAPI, React) components, designed for compatibility and scalability.
+	\item \textbf{Implementation}: Involves collecting depth and RGB images, extracting features, and training the hybrid model. Image processing includes grayscale conversion, contour detection, PCA-based alignment, and body part segmentation. The dataset follows an 80:20 training-validation split.
+	\item \textbf{Testing}: Evaluates accuracy using Mean Absolute Error (MAE) and Root Mean Squared Error (RMSE) on a test set (20\% of data), selecting the most accurate model for deployment.
+	\item \textbf{Deployment}: The system is deployed via a FastAPI web service and React web application on a local server, enabling real-time weight estimation.
+\end{itemize}
+The Waterfall Model ensures a structured development process with clear milestones.
+
 \subsection {Flowchart}
 \begin{figure}[h]
 	\centering
-	\includegraphics[height=0.6\textheight]{figures/Thesis Flowchart}
+	\includegraphics[height=0.45\textheight]{figures/Flowchart2Large}
 	\caption{Flowchart}
 	\label{fig:Flowchart}
 \end{figure}
 
-Figure 4 outlines the flowchart of the weight estimation system. The process begins with system initialization, where the Kinect camera and other equipment are powered on, and the pig is prepared for imaging. Images are captured using the Kinect camera, and a good quality image is defined as clear, well-lit, free of motion blur, and accurately representing the pig's dimensions. To select the highest quality image, a max voting ensemble algorithm evaluates multiple captured images based on metrics like sharpness, contrast, and brightness (Gonzalez and Woods, 2018). If no satisfactory image is found, additional captures are made until a quality image is obtained. Once a high-quality image is secured, the system moves on to image preprocessing and feature extraction, leading to the prediction of the estimated weight. The final result is then displayed in a web application for user access.
+Figure 4 outlines the flowchart of the weight estimation system, detailing the end-to-end process from initialization to real-time weight prediction:
+\begin{itemize}
+	\item \textbf{System Initialization}: The Kinect V1 camera, computer system, and pigpen are powered on, and the pig is prepared for imaging. The camera is mounted at 1.9 meters, ensuring a clear top-down view of the pig’s back.
+	\item \textbf{Realtime Video Capture}: The Kinect V1 captures synchronized RGB and depth video streams at 1280$\times$480 pixels, 30 frames per second, which translates to 30 images per second. A high-quality image is defined as clear, well-lit, free of motion blur, and accurately representing the pig’s dimensions without occlusion from other pigs.
+	\item \textbf{Object Detection}: YOLOv11 processes the RGB stream to detect pigs, generating bounding boxes for each individual, which are mapped to the depth stream for accurate data extraction.
+	\item \textbf{Segmentation}: The Segment Anything Model (SAM) isolates each pig within its bounding box, creating binary masks to remove background noise from the depth image.
+	\item \textbf{Advanced Image Processing}: The depth image undergoes depth normalization, contrast enhancement, and optional data augmentation to enhance the quality and consistency of the image.
+	\item \textbf{Feature Extraction}: Eleven features are extracted, including pixel size, non-zero pixel count, pixel-to-non-pixel ratio, standard deviation of depth, mean depth, pixel ratio, volume proxy, aspect ratio, and perimeter for each body part.
+	\item \textbf{Preprocessing for Prediction}: Each of the 30 depth images extracted per second is resized to 40$\times$80 pixels, thresholded (values $\leq$1 set to 0), and normalized to [0, 1]. The mean of the features are taken, min-max normalized, and formatted for model input.
+	\item \textbf{Weight Prediction}: The preprocessed depth image and features are sent to the FastAPI /predict/ endpoint. The LightGBM model processes the 9 features for an initial prediction, which is concatenated with CNN features (from the depth image) to produce the final weight prediction.
+	\item \textbf{Result Display}: The predicted weight is returned via the FastAPI API and displayed on the React-based web application, showing the estimated weight alongside confidence indicators for user validation.
+	\item \textbf{Iteration}: The process repeats for continuous real-time estimation, capturing new frames as pigs move within the pigpen, ensuring only high-quality frames are processed.
+\end{itemize}
+The flowchart ensures a robust, automated pipeline for real-time weight estimation, integrating seamlessly with the deployed system.
+
+\section{Experimental Setup}
+
+\newpage
+
 \subsection {Pigpen Diagram}
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[height=0.4\textheight]{figures/Untitled-1wqw}
+	\includegraphics[height=0.4\textheight]{figures/pigpen_diagram}
 	\caption{Pigpen Diagram}
 	\label{fig:Pigpen Diagram}
 \end{figure}
 
-Figure 5 presents a diagram of the pigpen, illustrating the positioning of the Kinect camera. The camera is strategically suspended 1.25 meters above the ground. This height ensures a clear capture of the pig within the pen, while remaining low enough to minimize the likelihood of capturing workers as they move around the area. Additionally, this positioning keeps the camera within its optimal range of 2 meters, maximizing its effectiveness for monitoring purposes. This setup is designed to predict the weight of one pig at a time
+Figure 5 illustrates the pigpen setup, with the Microsoft Kinect V1 camera mounted 1.9 meters above the ground for a top-down view. This height ensures clear visibility of the pigs’ backs within the Kinect’s depth-sensing range (0.8–4.0 meters). The pigpen accommodates multiple pigs, with spacing to minimize occlusion, ensuring accurate volume estimation. The setup captures depth data for multiple pigs in a single frame while preserving individual measurements.
 
-\section{Study Design and Data Collection}
-The study will be conducted in commercial pig weaning farms located in Northern Mindanao, Philippines, focusing on pigs of the Landrace breed. These pigs, with an average live weight ranging from 40 to 100 kilograms, are fed using commercial dry pellet feed and have access to water through standard feeders in the weaning pens. Data collection will take place within these farms, where depth images of the pigs will be captured using the Kinect V1 camera. The camera will record depth data, essential for calculating the distance between the sensor and the top of the pig, and between the sensor and the ground. This is needed for the calculation of the height of the pig, which will be used to estimate the pig's weight.
-Several environmental factors will also be monitored during data collection, such as lighting conditions and temperature. The size of the pen in the weaning barn will be recorded to ensure consistent environmental conditions for all pigs observed. Additionally, the temperature of the area during observation will be measured, as fluctuations in temperature can influence the pigs’ behavior and posture. The lighting conditions within the observation area will also be documented, given that lighting can impact the quality of the depth images captured by the Kinect sensor. By controlling and documenting these variables, the study aims to minimize external factors that could affect the accuracy of the weight estimation model.
+\newpage
 
-\section{Object Detection}
-Object detection in this study isolates the pig within each frame using depth images from Kinect sensors to identify the region of interest (ROI). We employ YOLOv11 (You Only Look Once, version 11), a state-of-the-art single-shot object detection model that delivers superior efficiency and accuracy in real-time applications.
-
-YOLOv11 incorporates several advanced features that make it ideal for agricultural applications, including pig detection. It utilizes an improved backbone and neck architecture, significantly enhancing its feature extraction capabilities. This enhancement allows the model to handle complex object detection tasks, such as identifying pigs with varying poses and sizes, with higher precision. Additionally, YOLOv11 introduces refined architectural designs and optimized training pipelines, achieving faster processing speeds without compromising accuracy, making it highly suitable for real-time detection in a dynamic farm environment.
-
-The model achieves a higher mean Average Precision (mAP) on benchmark datasets, such as COCO, while using 22 percent fewer parameters compared to earlier versions like YOLOv8. This computational efficiency reduces hardware requirements, enabling deployment on edge devices without sacrificing performance. Its flexibility allows seamless integration across various platforms, including edge devices, cloud systems, and NVIDIA GPU-supported hardware, ensuring adaptability to different farm setups and computational infrastructures.
-
-Furthermore, YOLOv11 supports a broad range of computer vision tasks, including instance segmentation, image classification, pose estimation, and oriented object detection. While this study focuses on object detection, YOLOv11’s versatility ensures scalability for future enhancements, making it a robust choice for agricultural applications.
-
-A pre-trained YOLOv11 model, fine-tuned with depth image data specific to our study, was selected to leverage transfer learning. This approach minimizes training overhead and maximizes detection reliability. YOLOv11’s ability to process entire images in a single pass ensures optimized speed and accuracy—key factors for real-time agricultural applications. Its enhanced feature extraction and superior accuracy make it particularly well-suited for detecting complex and variable shapes, such as pigs, in the farm environment.
-
-
-\section{Segmentation Model}
-This study employs the Segmentation Anything Model (SAM) to achieve precise segmentation of the pig within the detected ROI. SAM is uniquely suited for this task due to its prompt-based, generalizable approach, which allows for accurate segmentation with minimal retraining (Kirillov et al., 2023). SAM’s adaptability is essential in agricultural settings, where it reliably captures complex shapes and contours, ensuring high-quality feature extraction of key metrics like height and area. By using SAM, we enhance the segmentation accuracy and efficiency, enabling more consistent and precise data for weight estimation.
-\subsection{Image Preprocessing}
-During the preprocessing stage, the image is converted to grayscale and resized. If its dimensions are smaller than the target size, symmetric padding is applied to ensure the entire pig is visible within the frame. Next, a Gaussian blur with a kernel size of (13,13) is applied; this kernel size is chosen arbitrarily to balance blurring and detail preservation. The blurred image is then subtracted from the original to enhance edges, expressed as follows:
-
-
-\begin{equation}
-	I_{\text{sharp}}(x, y) = I(x, y) + \alpha (I(x, y) - I_{\text{blur}}(x, y))
-\end{equation}
-\myequation{Image Processing}
-
-where I(x,y) is the original intensity and Iblur(x,y) is the blurred intensity. A threshold value of T=5 is chosen for binarization to effectively distinguish the pig’s silhouette from the background; this value is determined based on preliminary testing to optimize contrast without losing important details. This preprocessing workflow ensures a standardized input for subsequent models, facilitating accurate feature extraction.
-
-\subsection{Slicing the Image}
-The image is split into upper and lower halves based on the principal direction of the pig’s body. This is achieved using the eigenvalue decomposition of the covariance matrix derived from the contour points of the pig. First, the centroid of the contour is calculated using the image moments:
-
-\begin{equation}
-	cX = \frac{M_{10}}{M_{00}}, \quad cY = \frac{M_{01}}{M_{00}}
-\end{equation}
-\myequation{Centroid of the Contour}
-
-Where $M_00$ is the area of the contour, and$M_10$, $M_01$ are the first-order moments along with the x and y axes, respectively.
-The covariance matrix $\sigma$ of the contour points is then computed as:
-
-\begin{equation}
-	\Sigma = \frac{1}{N} \sum_{i=1}^{N} (p_i - \mu)(p_i - \mu)^T
-\end{equation}
-\myequation{Covariance Matrix}
-
-Where $p_1$ represents a contour point, $\mu$ is the mean of the contour points, and N is the total number of points. The eigenvector corresponding to the largest eigenvalue defines the primary direction along which the image is sliced. The eigenvector, $v=[v_x, v_y]^T$ , is used to define the slope of the line that divides the pig into upper and lower halves:
-
-\begin{equation}
-	y_line(x)=\frac{v_y}{v_x} (x-cX) + cY
-\end{equation}
-\myequation{Slicing the Image}
-
-After slicing, gaps in the binary mask are filled using a morphological closing operation. This ensures that the segmentation is continuous, filling any small holes that might have been created during slicing.
-
-\begin{equation}
-	I_{\text{filled}} = I_{\text{mask}} \oplus K
-\end{equation}
-\myequation{Morphological Closing}
-
-where K is a kernel of size (5,5) used for morphological closing.
-
-\subsection{Valley Detection}
-To segment the pig into distinct anatomical regions (head, body, legs), we detect valleys along the contour. Valleys correspond to local minima in the pig’s contour, typically where the legs meet the body or the neck separates the head from the shoulders.
-First, we extract the outline of the pig and smooth the contour using linear interpolation. The interpolated contour points are then analyzed using peak detection on the inverted y-coordinates to find the valleys, representing the points of maximum curvature.
-let ${(x_i, y_i)}^N _i=1$ represent the sorted interpolated contour points. The valleys are found by identifying the local maxima in the inverted contour:
-
-\begin{equation}
-	v_i=arg max(-y(x))
-\end{equation}
-\myequation{Valley Detection}
-
-The detected valleys are sorted based on their xxx-coordinates to establish the segmentation boundaries.
-
-\subsection{Segmentation into Sections}
-Using the detected valleys, we define four primary sections: legs, body, shoulders, head. Each section is extracted by crearing binary masks between consecutive valleys:
-
-\begin{equation}
-	S_region (x,y) = I_sharp (x,y) (1_[x_start,x_end])
-\end{equation}
-\myequation{Segmented Region of Interest}
-
-where $S_region$ is the segmented region of interest.
+\subsection{Camera Configuration}
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[height=0.4\textheight]{figures/Untitled-1 (1)}
-	\caption{Schematic representation of segmentation}
-	\label{fig: Schematic representation of segmentation}
+	\includegraphics[height=0.4\textheight]{figures/Camera Setup 2}
+	\caption{Camera Configuration}
+	\label{fig:Camera Configuration}
 \end{figure}
 
-Figure 5 shows a schematic representation of the segmentation of the pig. Following the segmentation process found in the study conducted by, the pig is segmented into four distinct parts: the hind legs, body, shoulder, and head. Using this segmentation framework, an algorithm will be developed to accurately divide the pig into these four areas. This is due to the difference in the pigs overall shape, allowing for more detailed data analysis and improved precision in data collection.
+The Kinect V1 camera captured RGB and depth streams at 640$\times$480 pixels per video, side by side. The depth sensor was calibrated for its effective range, with the 1.9-meter height optimized for detailed body contour capture. A dedicated server processed and stored data in real time, ensuring minimal latency and high data integrity.
 
-\section{Feature Extraction}
-After segmentation, depth information is used to extract key features from the pig’s body. The Kinect sensor provides depth data $D(x,y)$, where the $x-axis$ and $y-axis$ represent the horizontal and vertical pixel coordinates of each point on the pig’s body, respectively. This data indicates the distance between the sensor and a specific point on the pig at a given pixel location $(x,y)$. Important features derived from this data include height, age, area, and gender.
+\section{Study Design and Data Collection}
 
-\subsection{Height Extraction}
-The height of the pig is determined by finding the maximum and minimum depth values within the segmented region. Let S(x,y) be the segmented mask of the pig. The height is calculated as:
+The study was conducted in small, backyard-type pig farms in Cagayan de Oro City, Philippines, focusing on Landrace pigs, known for adaptability and rapid growth. The pigs, weighing 8–22 kilograms and aged 1–2 months, were raised under optimal conditions with high-protein diets, clean water, and regular health monitoring.
 
+Depth data was collected using the Kinect V1 camera, positioned to capture a top-down view of the pigs’ backs, standardizing data collection. The system recorded RGB and depth streams simultaneously, as shown in \hyperref[fig:raw output]{Figure 7}. The RGB stream was processed by YOLOv11 for object detection, generating bounding boxes to localize pigs. These coordinates were mapped to the depth stream to extract corresponding depth data, ensuring accurate spatial and depth association.
+
+Environmental variables, such as lighting and temperature, were controlled to maintain data quality. Poor lighting or extreme temperatures were avoided, and conditions were documented. Only pigs within the 8–22 kg range were included, with data captured when pigs were standing or in postures showing their backs clearly, optimizing volume estimation.
+
+Features extracted included pixel size, non-zero pixel count, pixel-to-non-pixel ratio, standard deviation of depth, mean depth, pixel ratio, volume proxy, aspect ratio, perimeter \hyperref[Section 3.7]{(Section 3.7)}. These served as inputs for the hybrid LightGBM-CNN model. Processing and testing were conducted locally on a dedicated server for real-time feedback.
+
+\subsection{Image Acquisition and Frame Selection}
+
+The Microsoft Kinect V1 camera, mounted overhead at a height of 1.9 meters, was used to capture synchronized RGB and depth streams at 640$\times$480 resolution for each and 30 fps. To ensure high-quality data input, a manual quality assessment was performed. This filtering step selected frames that were sharp, well-lit, and free from motion blur—minimizing segmentation errors in multi-pig environments where occlusions are common.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=0.25\textheight]{figures/Raw Data Collection}
+	\caption{\textit{Raw Data Collection Output.} Screenshot from the Microsoft Kinect V1 video recording: RGB image on the right, depth image on the left. The camera is mounted overhead at 1.9 meters.}
+	\label{fig:raw output}
+\end{figure}
+
+\newpage
+
+\section{Object Detection}
+Pigs were detected in the RGB frames using YOLOv11, a real-time object detection model fine-tuned on the DATA\_TONGHOP dataset\citep{khoi2024data_tonghop}. The resulting bounding box coordinates were then mapped to the corresponding depth frames to extract aligned regions of interest (ROIs).
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=0.25\textheight]{figures/Processed Video}
+	\caption{\textit{Processed Video for Pig Detection.} The pig is detected in the RGB frame using the DATA\_TONGHOP dataset.}
+	\label{fig:processed video}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=0.25\textheight]{figures/Cropped images}
+	\caption{\textit{Cropped images using bounding box coordinates.}}
+	\label{fig:cropped images}
+\end{figure}
+
+\section{Segmentation Model}
+The Segment Anything Model (SAM) was used for background removal and precise segmentation \citep{kirillov2023segment_anything}.SAM produced binary masks that removed background noise and retained only the pig region, improving the clarity and focus of the input. These masks were also used to extract pig-specific depth values.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=0.25\textheight]{figures/Depth image segmentation}
+	\caption{\textit{Depth image segmentation using RGB-based masking.} The RGB-detected pig mask was applied to the depth frame, isolating only the pig and discarding the background depth values.}
+	\label{fig:Depth image segmentation}
+\end{figure}
+
+\section{Data Preprocessing}
+Depth images collected from the Kinect V1 camera were preprocessed to enhance quality and consistency. The preprocessing pipeline included the following steps:
+
+\begin{itemize}
+	\item \textbf{Depth Normalization}: Depth values were normalized to a range of 0–255 using min-max scaling to standardize the input for the CNN model.
+	\item \textbf{Contrast Enhancement}: A gamma correction ($\gamma$ = 1.2) was applied to improve the visibility of depth variations, aiding in feature extraction.
+	\item \textbf{Data Augmentation}: To enhance model robustness and reduce overfitting, optional data augmentation techniques were applied during training, including:
+	\begin{itemize}
+		\item \textbf{Random Flipping}: Images were horizontally flipped with a 50\% probability to simulate variations in pig orientation.
+		\item \textbf{Salt-and-Pepper Noise}: Random noise was introduced with varying probabilities (salt\_prob and pepper\_prob ranging from 0.02 to 0.10) to emulate sensor noise and environmental artifacts.
+	\end{itemize}
+\end{itemize}
+The dataset was split into training and validation sets, stored in separate directories (train\_data and val\_data). Each directory contained subfolders for individual pigs, with depth images manually curated to ensure quality and relevance.
+
+\section{Feature Extraction} \label{Section 3.7}
+
+To accurately predict a pig’s weight using depth images captured from a Microsoft Kinect V1 sensor, a comprehensive set of features was extracted from each segmented image. These features were designed to capture both geometric and depth-related characteristics of the pig’s body as observed in the top-down view provided by the depth camera. The extracted features were used as inputs for the hybrid CN-LGBM model, combining Convolutional Neural Networks (CNN) and Light Gradient Boosting Machine (LightGBM). Each feature was chosen based on its relevance to shape, size, volume, or surface variation, all of which are strongly correlated with body mass.
+
+The extracted features included the following:
+\begin{longtable}{| >{\centering\arraybackslash}m{0.15\linewidth} | >{\centering\arraybackslash}m{0.25\linewidth} | m{0.50\linewidth} |}
+	\caption{Extracted Features}
+	\label{tab:extracted features}\\
+	\hline
+	\textbf{Feature} & \textbf{Description} & \textbf{Equation} \\
+	\hline
+	Pixel Size
+	& 
+	Total number of pixels in the segmented region (height $\times$ width). 
+	&
+	\begin{equation}
+		Pixel \; Size = h \times w
+	\end{equation}
+	\myequation{Pixel Size}
+	\\
+	\hline
+	Non-Zero Pixel Count
+	& 
+	Count of valid (non-zero) depth pixels, excluding background or occluded areas.
+	&
+	\begin{equation}
+		Non-Zero \; Count = \sum(D>0)
+	\end{equation}
+	\myequation{Non-Zero Pixel Count}
+	\\
+	\hline
+	Pixel-to-Non-Pixel Ratio
+	& 
+	Proportion of valid pixels to total pixels in the segmented region.
+	&
+	\begin{equation}
+		Ratio = \frac{Non-Zero \; Count}{Pixel \; Size}
+	\end{equation}
+	\myequation{Pixel-to-Non-Pixel Ratio}
+	\\
+	\hline
+	Standard Deviation of Depth
+	& 
+	Measures variability in depth values across valid pixels.
+	&
+	\begin{equation}
+		\sigma = \sqrt{\frac{1}{n}\sum_{i=1}^{n}(x_i - \bar{x})^2}
+	\end{equation}
+	\myequation{Standard Deviation of Depth}
+	\\
+	\hline
+	Mean Depth
+	& 
+	Average depth value across non-zero pixels. 
+	&
+	\begin{equation}
+		\mu = \frac{1}{n}\sum_{i=1}^{n}x_i \quad where \; x_i > 0
+	\end{equation}
+	\myequation{Mean Depth}
+	\\
+	\hline
+	Pixel Ratio
+	& 
+	Ratio of valid pixels to the entire image resolution.
+	&
+	\begin{equation}
+		Pixel \; Ratio = \frac{Non-Zero \; Count}{1280\times480}
+	\end{equation}
+	\myequation{Pixel Ratio}
+	\\
+	\hline
+	Volume Proxy
+	& 
+	Sum of all valid depth values; proxy for body volume.
+	&
+	\begin{equation}
+		Volume \; Proxy = \sum D
+	\end{equation}
+	\myequation{Volume Proxy}
+	\\
+	\hline
+	Aspect Ratio
+	& 
+	Width-to-height ratio of the pig’s bounding box.
+	&
+	\begin{equation}
+		Aspect \; Ratio = \frac{w}{h}
+	\end{equation}
+	\myequation{Aspect Ratio}
+	\\
+	\hline
+	Perimeter
+	& 
+	Total length around the segmented contour.
+	&
+	\begin{multline}
+		Perimeter = \\ 
+		\sum arcLength (C_i , closed=True)
+	\end{multline}
+	\myequation{Perimeter}
+	\\
+	\hline
+\end{longtable}
+
+All features were normalized using min-max scaling:
 \begin{equation}
-	x_{\text{highest}} = \max\{D(x, y) \mid (x, y) \in S(x, y)\}
+	x_{normalized} = \frac{(x - min(x))}{(max(x) - min(x) + 1e-8)}
 \end{equation}
-\myequation{Highest Intensity}
+\myequation{Min-Max Normalization}
 
-\begin{equation}
-	x_{\text{lowest}} = \min\{D(x, y) \mid (x, y) \in S(x, y)\}
-\end{equation}
-\myequation{Lowest Intensity}
+This normalization ensures that feature values are within a uniform range [0, 1], which improves model convergence and performance in both CNN and LightGBM architectures. Additionally, sectional volumes were computed by dividing the segmented region into smaller subregions, allowing for a more localized analysis of body mass distribution.
 
-\begin{equation}
-	y_{\text{height}} = x_{\text{highest}} - x_{\text{lowest}}
-\end{equation}
-\myequation{Height Extraction}
+These features collectively provide a rich and multi-dimensional input representation of each pig’s physical characteristics, enabling the CN-LGBM model to effectively learn patterns correlated with body weight.
 
-where $x_highest$ denotes the highest intensity and $x_lowest$ denotes the lowest intensity $S(x,y)$.
-
-\subsection{Area Extraction}
-The area occupied by the pig in the image is calculated by counting the number of pixels in the segmented region:
-
-\begin{equation}
-	Area= \sum_{(x, y) \in S(x, y)} 1
-\end{equation}
-\myequation{Area Extraction}
-
-The area corresponds to the total number of pixels within the segmented pig’s contour, representing the surface area in the depth image.
-
-\subsection{Gradient Information from Depth Data}
-The depth gradient across the pig’s body provides additional insight into the pig’s shape. The gradient of the depth image D(x,y) can be computed using the finite difference approximation:
-
-\begin{equation}
-	\delta(x,y)= (\frac{\partial}{\partial x} , \frac{\partial}{\partial y})
-\end{equation}
-\myequation{Depth Gradient}
-
-This gradient gives us information about the slope of the pig’s body, which can be used to under more detailed features such as the body curvature and the slope of different anatomical regions. The gradient magnitude can be used to detect regions of rapid change in depth, such as the transition from the pig’s back to its sides:
-
-\begin{equation}
-	\left| \delta(x,y) \right| = \sqrt{\left( \frac{\partial}{\partial x} \right)^2 + \left( \frac{\partial}{\partial y} \right)^2}
-\end{equation}
-\myequation{Gradient Magnitude}
 
 \section{Model Training}
-In the model training phase, the extracted features will serve as inputs to various regression models aimed at estimating pig weight. We will explore several algorithms to identify the most accurate model for weight estimation: Linear Regression, Ridge Regression, Decision Trees, LightGBM, and XGBoost.
+A hybrid LightGBM-CNN model was developed to leverage tabular features and spatial information for weight estimation, implemented using LightGBM and PyTorch.
 
-The analysis begins with linear regression, which models the linear relationship between features and weight, providing a straightforward baseline for comparison with more complex models (Mullainathan and Spiess, 2017). Ridge regression will be employed as an extension of linear regression, incorporating L2 regularization to mitigate overfitting, especially in cases of multicollinearity among input features. This approach enhances robustness against noisy data (Tikhonov, 1963).
+\newpage
 
-Decision trees will also be utilized for their interpretability and ability to capture complex relationships within the data, though they require careful tuning to avoid overfitting (Breiman et al., 1986). LightGBM (Light Gradient Boosting Machine) is included for its efficiency and scalability with large datasets, utilizing a histogram-based learning approach to achieve faster training and improved accuracy (Ke et al., 2017). Additionally, XGBoost (Extreme Gradient Boosting) will be assessed for its high performance and optimizations for handling missing values and regularization, making it a leading choice in competitive machine-learning environments (Chen and Guestrin, 2016).
-Model performance will be evaluated using metrics such as Mean Absolute Error (MAE) and Root Mean Squared Error (RMSE). MAE provides a clear measure of average error, while RMSE emphasizes larger errors, facilitating a comprehensive assessment of the model's accuracy (Willmott and Matsuura, 2005).
+\subsection{Model Architecture}
 
-\section{Evaluation}
-The trained models will undergo rigorous evaluation using a dedicated test dataset, comprising previously unseen data sampled randomly, which constitutes 30 percent of the overall dataset. This approach ensures that the evaluation accurately reflects the model's ability to generalize to new instances rather than merely memorizing the training data.
-\subsection{Test Dataset}
-By reserving 30 percent of the total dataset as the test dataset, we establish a method for assessing model performance. This test dataset will not have been exposed to the models during training, which is crucial for evaluating how well the models can predict weights on new data. The random sampling method ensures a representative distribution of weights and features, allowing for a fair assessment of the model's predictive capabilities.
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=0.4\textheight]{figures/Untitled-1wqw}
+	\caption{Model Architecture}
+	\label{fig:Model Architecture}
+\end{figure}
 
-\subsection{Performance Metrics}
+\noindent \textbf{LightGBM Model}
 
-To quantitatively evaluate the models, we will utilize the following performance metrics:
-Mean Absolute Error (MAE). MAE calculates the average absolute difference between the actual values and the predicted values. It is a robust metric that does not penalize larger errors as heavily as MSE, making it more appropriate for interpreting the accuracy of regression models. The formula for MAE is:
+The LightGBM regressor was trained on the 9 features (pixel size, non-zero pixel count, pixel-to-non-pixel ratio, standard deviation of depth, mean depth, pixel ratio, volume proxy, aspect ratio, and perimeter to provide an initial weight prediction. The training dataset was split into 80\% training and 20\% validation sets using a random seed for reproducibility. It used default hyperparameters (e.g., 100 trees, learning rate 0.1) and was saved as lgbm\_model.pkl. The model provided an initial weight prediction, evaluated using root mean square error (RMSE).
+\\
+\\
+\noindent \textbf{CNN Model}
 
-\begin{equation}
-	MAE = \frac{1}{N} \sum_{t=1}^{N} \left| \hat{y_t} - y_t \right|
-\end{equation}
-\myequation{Mean Absolute Error}
+The CNN refined predictions using depth images and the LightGBM prediction. The architecture included:
+\begin{itemize}
+	\item \textbf{Convolutional Layers}: Three layers with 32, 64, and 128 channels, respectively, each using 3$\times$3 kernels, ReLU activation, and max-pooling with a 2$\times$2 kernel and stride 2.
+	\item \textbf{Fully Connected Layers}: Three layers with 512, 256, and 1 neurons, respectively, using ReLU activation for the first two layers and linear activation for the output layer.
+	\item \textbf{Input Integration}: The CNN processes depth images (1 channel, 256$\times$384 for training, 40$\times$80 for deployment) and integrates the LightGBM prediction, concatenated with flattened CNN features before the first fully connected layer.
+\end{itemize}
 
-The MAE metric gives a straightforward interpretation of error, as it expresses the average error directly in terms of the target variable (i.e., weight). It also equally weights all errors, making it a preferred choice for evaluating models that must perform reliably across a range of errors.
+\noindent \textbf{Hybrid Integration}
 
-\subsection{Root Mean Squared Error (RMSE)}
-RMSE provides a measure of how well the model's predictions match the actual data, expressed in the same units as the target variable. It is particularly useful as it penalizes larger errors more heavily, making it sensitive to outliers. The equation for RMSE is given by:
+The LightGBM prediction was fed into the CNN as an additional feature, enhancing the model’s ability to combine tabular and spatial data. The final output was a single weight estimate in kilograms.
 
-\begin{equation}
-	RMSE = \sqrt{\frac{1}{N} \sum_{t=1}^{N} \left( y_t - \hat{y_t} \right)^2}
-\end{equation}
-\myequation{Root Mean Squared Error}
+\subsection{Training Procedure}
 
-Where n is the number of observations in the test dataset, yi is the actual weight of the pig for the t-th observation, and yi is the predicted weight of the pig for the t-th observation.
+The dataset was split into 80\% training (4,000 samples) and 20\% validation (1,000 samples) sets using a random seed. The training process involved:
+\begin{itemize}
+	\item \textbf{LightGBM Training}: Trained on the 9 features using default hyperparameters.
+	\item \textbf{CNN Training}: Trained for 15 epochs using the Adam optimizer (learning rate 0.002) and mean squared error (MSE) loss. Depth images were resized to 256$\times$384 and normalized. The LightGBM predictions were concatenated with CNN features. Training and validation losses were plotted to monitor convergence and detect overfitting.
+	\item \textbf{Hybrid Training}: The CNN was fine-tuned with the LightGBM predictions, optimizing the combined model. The best model, based on the lowest validation loss, was saved.
+\end{itemize}
 
-\section{Testing Method}
-The trained model will undergo rigorous evaluation to validate its accuracy. This evaluation will involve a cross-validation process utilizing a new set of pigs in a real-world experimental setup. The experimental process includes testing the system by comparing the predicted weights to the actual weights obtained using a traditional weighing scale. This approach ensures that the model is tested under practical farming conditions and its results are benchmarked against ground truth values.
+\section{Model Evaluation} \label{Section 3.9}
+The hybrid model was evaluated on the test set (1,000 samples) using:
+\begin{itemize}
+	\item \textbf{Mean Absolute Error (MAE)}: Average absolute difference between predicted and actual values, measured in kilograms (kg).
+	\item \textbf{Root Mean Squared Error (RMSE)}: Square root of the average of squared differences between predicted and actual values.
+\end{itemize}
 
-\section{Location}
-The experimental testing will take place at a backyard pig-weaning farm in El Salvador City, Misamis Oriental, Philippines. This location was selected due to its accessibility and suitability for the study. The study will focus on Landrace pigs, a breed well-suited for controlled weight estimation studies, with an average weight range of 40–100 kg. Environmental variables such as lighting, temperature, and pen dimensions will be monitored to ensure consistent conditions throughout the testing period.
+The model achieved an MAE of 0.38 kg and an RMSE of 0.52 kg indicating high accuracy. Five-fold cross-validation yielded an average MAE of 0.40 kg. The hybrid model outperformed standalone LightGBM (RMSE ~0.65 kg) and CNN (RMSE ~0.60 kg) models. Manual review confirmed prediction alignment with pig size and posture.
 
-\section{Data Collection}
-The Kinect sensor will be mounted in a fixed position above the pigpen to capture real-time depth images of the pigs. The system will continuously monitor the pigs and process images in real time to estimate their weight. Each depth image captured by the Kinect sensor will undergo preprocessing to ensure it meets the quality standards required for accurate feature extraction. Low-quality images, such as those affected by motion blur or poor lighting, will be automatically filtered out by an image quality check embedded in the system.
+\section{Model Deployment} \label{Section 3.10}
+To enable practical use in agricultural settings, a deployment pipeline was developed using a FastAPI-based web service, ensuring seamless interaction with the hybrid model for weight prediction.
 
-Once an acceptable image is identified, the system will extract features such as body height, surface area, and volume directly from the depth data. These features will then be inputted into a pre-trained machine-learning model to predict the pig's weight instantly. The estimated weight will be displayed in real time on a connected interface, such as a web application, for immediate validation and monitoring.
+\subsection{Deployment Architecture}
 
-The Kinect sensor will be calibrated at the start of the observation period. This calibration will account for environmental factors such as lighting conditions and the sensor's positioning relative to the ground. For validation purposes, the predicted weight from the system will be periodically compared to the reference weight measured using a traditional weighing scale. These comparisons will be conducted during specific intervals to ensure the accuracy and consistency of real-time predictions.
+The deployment system used FastAPI to create a RESTful API for weight prediction, accepting depth images and features, processing them through the LightGBM and CNN models, and returning predicted weights. The system is lightweight, scalable, and accessible via HTTP requests, suitable for farm management systems or mobile applications. Components included:
 
-\section{Experimental Setup}
+\begin{itemize}
+	\item \textbf{LightGBM Model}: Provides initial predictions based on the 9 features.
+	\item \textbf{CNN Model}: Refines predictions using preprocessed depth images.
+	\item \textbf{FastAPI Server}: Handles requests, validates inputs, and orchestrates predictions.
+\end{itemize}
 
-The experiment aims to evaluate the system's accuracy in real-time pig weight prediction under controlled conditions. The setup includes a Kinect sensor, a computing unit, and a software pipeline for processing depth data and predicting pig weights. The details of the experimental setup are as follows:
+The models were deployed on a server with GPU support for CNN inference, with CPU fallback for compatibility. The server was tested locally but can be hosted on cloud platforms.
 
-\subsection{Environment Preparation}
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=0.4\textheight]{figures/Untitled-1wqw}
+	\caption{Deployment Architecture}
+	\label{fig:Deployment Architecture}
+\end{figure}
 
-\begin{description}
-	
-	\item[Pigpen Setup.]
-	The experiment will take place in a typical pigpen environment to simulate real-world conditions. The area will be cleared of obstructions to ensure the Kinect sensor has an unobstructed view of the pigs.
-	
-	\item[Lighting Conditions.]
-	Ambient lighting will be adjusted to minimize shadows and reflections. While the Kinect sensor primarily uses depth imaging, consistent lighting supports system calibration and overall reliability.
-	
-	\item[Sensor Placement.]
-	The Kinect sensor will be mounted overhead, approximately 1.25 meters above the ground, ensuring a clear top-down view of the pigs. The mounting structure will be stable to prevent movement during the experiment.
-	
-\end{description}
+\subsection{Model Loading and Configuration}
 
-\subsection{Kinect Sensor Calibration}
+\begin{itemize}
+	\item \textbf{LightGBM Model}: Loaded from $lgbm\_model.pkl$ using the pickle library, processing tabular features.
+	\item \textbf{CNN Model}: Loaded from $model\_1745138618.8710697.pt$ using PyTorch, set to evaluation mode $(model.eval())$. The model ran on GPU or CPU based on $torch.cuda.is\_available()$.
+\end{itemize}
 
-\begin{description}
-	
-	\item[Height and Angle.]
-	The sensor will be carefully positioned, 1.25 meters from the ground, to ensure its depth camera captures accurate data, with the angle adjusted to be perpendicular to the ground.
-	
-	\item[Validation with Calibration Objects.]
-	Objects of known dimensions will be placed within the pigpen to verify the sensor’s accuracy in capturing depth and spatial measurements.
-	
-\end{description}
+Error handling managed issues like missing model files or incompatible architectures.
 
-\subsection{Data Collection and Processing}
+\subsection{Input Preprocessing}
 
-\begin{description}
-	\item[Image Capture.]
-	The Kinect sensor will continuously capture depth images of pigs moving naturally within the pen. These images will be processed in real time to extract relevant features.
-	
-	\item[Feature Extraction.]
-	Using depth images, the system will extract features critical to weight prediction, including:
-	\subitem 
-	\textbf{Body Height:} The vertical measurement of the pig from the ground.
-	\subitem
-	\textbf{Surface Area:} The top-down projected area of the pig.
-	\subitem
-	\textbf{Volume:} Estimated using depth data to represent the pig’s three-dimensional structure.
-	
-	\item[Weight Prediction.]
-	Extracted features will be fed into a pre-trained machine learning model that predicts the pig's weight. The model is based on historical data correlating these features with known weights.
-	
-\end{description}
+The API accepts depth images (PNG/JPEG) and optional features:
 
-\subsection{Accuracy Evaluation}
+\begin{itemize}
+	\item \textbf{Image Preprocessing}:
+	\begin{itemize}
+		\item Convert to grayscale, threshold low-intensity pixels ($\leq$1 set to 0).
+		\item Resize to 40$\times$80 pixels using linear interpolation.
+		\item Normalize depth values to [0, 255], then [0, 1].
+		\item Convert to PyTorch tensor (1, 1, 40, 80).
+	\end{itemize}
+	\item \textbf{Feature Processing}:
+	\begin{itemize}
+		\item Accept features as JSON or Pydantic model (FeatureInput).
+		\item Default to zeros if features are missing.
+		\item Reshape features into a 1$\times$9 array for LightGBM.	
+	\end{itemize}
+\end{itemize}
 
-\begin{description}
-	\item[Reference Weights.]
-	A subset of pigs will be manually weighed using a calibrated digital scale to provide ground truth measurements. These reference weights will be used to assess the accuracy of the system's predictions.
-	
-	\item[Performance Metrics.]
-	The predicted weights will be compared against the reference weights using the following statistical measures:
-	\subitem
-	\textbf{Mean Absolute Error (MAE):} Indicates the average absolute deviation of predictions from the true values.
-	\subitem
-	\textbf{Root Mean Square Error (RMSE):} Highlights the magnitude of prediction errors, emphasizing larger discrepancies.
-	\subitem
-	\textbf{Correlation Coefficient (R²):} Evaluates the strength and reliability of the relationship between predicted and actual weights.
-	
-	\item[Repeated Measurements.]
-	To ensure consistency, weight predictions will be recorded multiple times for each pig under varying activity levels (e.g., standing, lying down) and averaged to minimize variability.
-	
-\end{description}
+\subsection{API Endpoint and Functionality}
 
-\subsection{Validation Process}
-The experiment will be conducted in several sessions, with data collected from different pigs of varying sizes to evaluate the system’s ability to generalize. Results will be analyzed to identify any systematic errors, such as over- or under-prediction for specific weight ranges, and adjustments will be made to the machine learning model if necessary.
+\begin{itemize}
+	\item \textbf{Root Endpoint (GET /)}: Returns {"message": "Weight Prediction API is running"}.
+	\item \textbf{Prediction Endpoint (POST /predict/)}:
+	\begin{itemize}
+		\item \textbf{Inputs}: Depth image file, optional features (JSON/Pydantic).
+		\item \textbf{Processing}: Validate image, preprocess, pass to CNN; validate features, pass to LightGBM; concatenate LightGBM prediction with CNN features for final prediction.
+		\item \textbf{Output} JSON response {"predicted\_weight": value}.
+		\item \textbf{Error Handling}: Manages invalid inputs and server issues with appropriate HTTP status codes.
+	\end{itemize}
+\end{itemize}
+
+\subsection{Integration with Data Collection Pipeline}
+
+The API integrates with the data collection pipeline \hyperref[Section 3.1]{(Sections 3.1–3.4)}. Depth images from the Kinect V1 and features from YOLOv11/SAM processing are sent to the API for real-time weight estimation, assuming proper camera positioning and pig visibility.
+
+\section{Web Application for Real-Time Weight Estimation}
+A web application was developed to interface with the Kinect V1 and FastAPI API, enabling real-time weight estimation for farmers.
+
+\subsection{Web Application System Architecture}
+
+The client-server system included:
+
+\begin{itemize}
+	\item \textbf{Client-Side Interface}: Browser-based front-end using React for a user-friendly interface to initiate capture, view streams, and display weights.
+	\item \textbf{Kinect V1 Integration}: Local server process capturing RGB and depth streams.
+	\item \textbf{FastAPI Backend}: Handles prediction requests \hyperref[Section 3.10]{(Section 3.10)}.
+	\item \textbf{Communication Layer}: WebSocket/HTTP for real-time data transfer.
+\end{itemize}
+
+The system was optimized for low-latency performance.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=0.4\textheight]{figures/Untitled-1wqw}
+	\caption{System Architecture}
+	\label{fig:System Architecture2}
+\end{figure}
+
+\newpage
+
+\subsection{Kinect V1 Camera Integration}
+
+The Kinect V1, mounted at 1.9 meters, captured depth and RGB streams at 640×480 pixels, 30 fps:
+
+\begin{itemize}
+	\item \textbf{Driver and SDK}: Microsoft Kinect SDK (v1.8) on a Windows computer.
+	\item \textbf{Real-Time Capture}: Python script using pykinect/OpenKinect captured synchronized streams, prioritizing depth data.
+	\item \textbf{Preprocessing}: Depth frames were thresholded ($\leq$1 set to 0), resized to 40$/times$80, and normalized to [0, 255].
+\end{itemize}
+
+\subsection{Web Application Development}
+
+The React-based application featured:
+
+\begin{itemize}
+	\item \textbf{Live Video Feed}: Displays Kinect RGB stream via WebSocket/MJPEG.
+	\item \textbf{Capture Trigger}: Manual or automated (via YOLOv11) to capture frames with clear pigs.
+	\item \textbf{Prediction Display}: Dashboard showing predicted weights and confidence indicators.
+\end{itemize}
+
+The back-end handled camera communication and forwarded data to the FastAPI server.
+
+\subsection{Real-Time Processing Pipeline}
+
+\begin{itemize}
+	\item \textbf{Frame Capture}: Kinect V1 captures synchronized frames.
+	\item \textbf{Object Detection}: YOLOv11 detects pigs, generating bounding boxes.
+	\item \textbf{Segmentation}: SAM isolates pigs in depth frames.
+	\item \textbf{Feature Extraction}: Computes 9 features.
+	\item \textbf{Prediction Request}: Sends data to FastAPI /predict/ endpoint.
+	\item \textbf{Result Display}: Shows predicted weight on the interface.
+\end{itemize}
+
+The pipeline processed high-quality frames to minimize latency.
+
+\subsection{Deployment and Testing}
+
+Deployed locally on a Windows computer with the Kinect V1, tested in Cagayan de Oro City:
+
+\begin{itemize}
+	\item \textbf{Environmental Control}: Monitored lighting and temperature.
+	\item \textbf{Camera Positioning}: Verified at 1.9 meters.
+	\item \textbf{Performance}: Evaluated latency and accuracy against manual measurements.
+\end{itemize}
+
+The system is lightweight and can be containerized for cloud deployment.
+
+\section{Data Processing Pipeline}
+
+The Kinect sensor will be mounted in a fixed position above the pigpen to capture real-time The pipeline included:
+
+\begin{enumerate}
+	\item \textbf{Data Acquisition}: Kinect V1 captures RGB and depth streams.
+	\item \textbf{Object Detection}: YOLOv11 generates bounding boxes.
+	\item \textbf{Segmentation}: SAM isolates pigs.
+	\item \textbf{Advanced Processing}: Contour detection, PCA alignment, valley detection.
+	\item \textbf{Feature Extraction}: Compute 9 features.
+	\item \textbf{Preprocessing}: Normalize, filter, augment data.
+	\item \textbf{Training}: Train hybrid LightGBM-CNN model.
+	\item \textbf{Evaluation}: Assess with MAE, RMSE, R².
+	\item \textbf{Deployment}: FastAPI API for predictions.
+	\item \textbf{Web Application}: Real-time estimation interface.
+\end{enumerate}
+
+The pipeline was implemented in Python, with the Jupyter notebook (Appendix A) providing the code.
+
+\section{Ethical Considerations}
+
+Non-invasive data collection adhered to animal welfare standards. Minimal disturbance was ensured, and ethical approval was obtained.
+
+\section{Limitations}
+
+The Kinect V1’s depth resolution may be affected by environmental factors. The focus on Landrace pigs (8–22 kg) limits generalizability. Errors in detection, segmentation, or feature extraction could impact accuracy.
